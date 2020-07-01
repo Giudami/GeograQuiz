@@ -5,18 +5,6 @@ information retrieval - slide 14
 
 ## Query SPARQL
 Cerchiamo le città più simili a Roma
-## Approccio 1
-```
-SELECT COUNT(?o) ?country
-WHERE
-{
-dbr:Australia dct:subject ?o .
-?country dct:subject ?o
-FILTER (?country != dbr:Australia).
-} GROUP BY ?country
-ORDER BY DESC(COUNT(?o))
-LIMIT 10
-```
 ## Approccio 3 
 ### Versione WikiData
 ```
@@ -31,6 +19,7 @@ FILTER (?city != wd:Q220).
 ORDER BY DESC(?commonsCount)
 LIMIT 10
 ```
+## Approccio 3 
 ### Versione DBpedia
 ```
 SELECT COUNT(?p) ?country
@@ -43,5 +32,18 @@ FILTER (?country != dbr:Italy).
 } GROUP BY ?country
 ORDER BY DESC(COUNT(?p))
 LIMIT 20
+```
+## Approccio 1
+### Versione DBpedia
+```
+SELECT COUNT(?o) ?country
+WHERE
+{
+dbr:Australia dct:subject ?o .
+?country dct:subject ?o
+FILTER (?country != dbr:Australia).
+} GROUP BY ?country
+ORDER BY DESC(COUNT(?o))
+LIMIT 10
 ```
 
