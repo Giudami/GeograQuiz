@@ -60,3 +60,17 @@ WHERE {
 ?r vrank:rankValue ?rank .
 } ORDER by DESC(?rank)
 ```
+
+
+## Classifica piloti motosport
+```
+PREFIX vrank:<http://purl.org/voc/vrank#>
+SELECT ?astronaut ?rank
+FROM <http://dbpedia.org>
+FROM <http://people.aifb.kit.edu/ath/#DBpedia_PageRank>
+WHERE {
+?astronaut rdf:type dbo:Athlete, dbo:Person, dbo:MotorsportRacer. 
+?astronaut vrank:hasRank ?r .
+?r vrank:rankValue ?rank .
+} ORDER by DESC(?rank)
+```
