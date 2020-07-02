@@ -116,7 +116,7 @@ filter (
 ```
 PREFIX vrank: <http://purl.org/voc/vrank#>
 
-SELECT  ?country ?countryLabel ?capital ?capitalLabel ?flag ?popolation ?surface ?unicode ?map ?rank
+SELECT ?country ?countryLabel ?capital ?capitalLabel ?flag ?popolation ?surface ?unicode ?map ?rank
 
 WHERE
 {
@@ -125,17 +125,17 @@ WHERE
   FILTER NOT EXISTS {?country wdt:P31 wd:Q3024240}
   #and no an ancient civilisation (needed to exclude ancient Egypt)
   FILTER NOT EXISTS {?country wdt:P31 wd:Q28171280}
-  OPTIONAL { ?country wdt:P36 ?capital } .
-  OPTIONAL { ?country wdt:P41 ?flag } .
-  OPTIONAL { ?country wdt:P1082 ?popolation } .
-  OPTIONAL { ?country wdt:P2046 ?surface } .
-  OPTIONAL { ?country wdt:P487 ?unicode } .
-  OPTIONAL { ?country wdt:P242 ?map } .
-    
+   ?country wdt:P36 ?capital  .
+   ?country wdt:P41 ?flag .
+   ?country wdt:P1082 ?popolation .
+   ?country wdt:P2046 ?surface  .
+   ?country wdt:P487 ?unicode  .
+   ?country wdt:P242 ?map  .
+   ?country wikibase:sitelinks ?linkcount .
   SERVICE <http://dbpedia.org/sparql> {
       ?country vrank:hasRank/vrank:rankValue ?rank .
   }  
 
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
-} ORDER BY DESC(?rank)
+} ORDER BY DESC(?linkcount)
 ```
