@@ -114,10 +114,7 @@ filter (
 ```
 ## Stati per importanza
 ```
-PREFIX vrank: <http://purl.org/voc/vrank#>
-
-SELECT ?country ?countryLabel ?capital ?capitalLabel ?flag ?popolation ?surface ?unicode ?map ?rank
-
+SELECT ?country ?countryLabel ?capital ?capitalLabel ?flag ?popolation ?surface ?unicode ?map 
 WHERE
 {
   ?country wdt:P31 wd:Q3624078 .
@@ -131,22 +128,127 @@ WHERE
    ?country wdt:P2046 ?surface  .
    ?country wdt:P487 ?unicode  .
    ?country wdt:P242 ?map  .
-   ?country wikibase:sitelinks ?linkcount .
-  SERVICE <http://dbpedia.org/sparql> {
-      ?country vrank:hasRank/vrank:rankValue ?rank .
-  }  
+   ?country wikibase:sitelinks ?linkcount . 
 
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
 } ORDER BY DESC(?linkcount)
+LIMIT 200
 ```
 ## Politici (senza label)
 ```
-SELECT ?politician ?country WHERE {
+SELECT DISTINCT ?politician ?country WHERE {
   ?politician wdt:P31 wd:Q5;
-    wdt:P106 wd:Q82955;
+    wdt:P106/wdt:P279* wd:Q82955;
     wdt:P27 ?country;
     wikibase:sitelinks ?linkcount.
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
 }
 ORDER BY DESC (?linkcount)
+LIMIT 200
+```
+## Scienziati (senza label)
+```
+SELECT DISTINCT ?scientist ?country WHERE {
+  ?scientist wdt:P31 wd:Q5;
+    wdt:P106/wdt:P279* wd:Q901;
+    wdt:P27 ?country;
+    wikibase:sitelinks ?linkcount.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+ORDER BY DESC (?linkcount)
+LIMIT 200
+```
+## Atleta (da rivedere, trova Putin, Bill Gates, ecc..)
+```
+SELECT DISTINCT ?athlete ?country WHERE {
+  ?athlete wdt:P31 wd:Q5;
+    wdt:P106/wdt:P279* wd:Q2066131;
+    wdt:P27 ?country;
+    wikibase:sitelinks ?linkcount.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+ORDER BY DESC (?linkcount)
+LIMIT 200
+```
+## Attori 
+```
+SELECT DISTINCT ?actor ?country WHERE {
+  ?actor wdt:P31 wd:Q5;
+    wdt:P106/wdt:P279* wd:Q10800557;
+    wdt:P27 ?country;
+    wikibase:sitelinks ?linkcount.
+  MINUS{
+    {?actor wdt:P106/wdt:P279* wd:Q639669.} UNION { ?actor wdt:P106/wdt:P279* wd:Q36180.}
+    }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+ORDER BY DESC (?linkcount)
+LIMIT 200
+```
+## Architetti
+```
+SELECT DISTINCT ?architect ?country WHERE {
+  ?architect wdt:P31 wd:Q5;
+    wdt:P106/wdt:P279* wd:Q42973;
+    wdt:P27 ?country;
+    wikibase:sitelinks ?linkcount.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+ORDER BY DESC (?linkcount)
+LIMIT 200
+```
+## Cantanti
+```
+SELECT DISTINCT ?singer ?country WHERE {
+  ?singer wdt:P31 wd:Q5;
+    wdt:P106/wdt:P279* wd:Q177220;
+    wdt:P106/wdt:P279* wd:Q753110;
+    wdt:P27 ?country;
+    wikibase:sitelinks ?linkcount.
+  MINUS { 
+    {?singer wdt:P106/wdt:P279* wd:Q49757.} UNION {?singer wdt:P106/wdt:P279* wd:Q55960555.} 
+    }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+ORDER BY DESC (?linkcount)
+LIMIT 200
+```
+## Compositori
+```
+SELECT DISTINCT ?musician ?country WHERE {
+  ?musician wdt:P31 wd:Q5;
+    wdt:P106/wdt:P279* wd:Q36834;
+    wdt:P27 ?country;
+    wikibase:sitelinks ?linkcount.
+    MINUS { 
+    {?musician wdt:P106/wdt:P279* wd:Q49757.} UNION {?musician wdt:P106/wdt:P279* wd:Q36180.} 
+    }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+ORDER BY DESC (?linkcount)
+LIMIT 200
+```
+## Registi
+```
+SELECT DISTINCT ?filmDirector ?country WHERE {
+  ?filmDirector wdt:P31 wd:Q5;
+    wdt:P106/wdt:P279* wd:Q1414443;
+    wdt:P27 ?country;
+    wikibase:sitelinks ?linkcount.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+ORDER BY DESC (?linkcount)
+LIMIT 200
+```
+## Pittori
+```
+SELECT DISTINCT ?painter ?country WHERE {
+  ?painter wdt:P31 wd:Q5;
+    wdt:P106/wdt:P279* wd:Q1028181;
+    wdt:P27 ?country;
+    wikibase:sitelinks ?linkcount.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+ORDER BY DESC (?linkcount)
+LIMIT 200
 ```
