@@ -90,3 +90,25 @@ MINUS {
    }
 } ORDER by DESC(?rank)
 ```
+
+## Attori non vedi cosa scritto
+non per essere razzisti, ma sono troppo presenti, e nel caso degli indiani troppo sconosciuti fuori dall'india
+```
+PREFIX vrank:<http://purl.org/voc/vrank#>
+SELECT ?astronaut ?rank ?nationality
+FROM <http://dbpedia.org>
+FROM <http://people.aifb.kit.edu/ath/#DBpedia_PageRank>
+WHERE {
+?astronaut <http://purl.org/linguistics/gold/hypernym> dbr:Actor.
+?astronaut vrank:hasRank ?r .
+?r vrank:rankValue ?rank . 
+?astronaut dbp:nationality ?nationality 
+filter (
+?nationality != "American"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> && 
+?nationality != "British"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> && 
+?nationality != "Indian"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> &&
+?nationality != "Japanese"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> &&
+?nationality != "Canadian"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> &&
+ ?nationality != "English"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>)
+} ORDER by DESC(?rank)
+```
