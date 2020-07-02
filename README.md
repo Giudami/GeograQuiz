@@ -139,3 +139,14 @@ WHERE
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
 } ORDER BY DESC(?linkcount)
 ```
+## Politici (senza label)
+```
+SELECT ?politician ?country WHERE {
+  ?politician wdt:P31 wd:Q5;
+    wdt:P106 wd:Q82955;
+    wdt:P27 ?country;
+    wikibase:sitelinks ?linkcount.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+ORDER BY DESC (?linkcount)
+```
