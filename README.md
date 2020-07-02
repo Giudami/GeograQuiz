@@ -240,7 +240,7 @@ SELECT DISTINCT ?filmDirector ?country WHERE {
 ORDER BY DESC (?linkcount)
 LIMIT 200
 ```
-## Pittori
+## Pittori (da rivedere perché spunta hitler)
 ```
 SELECT DISTINCT ?painter ?country WHERE {
   ?painter wdt:P31 wd:Q5;
