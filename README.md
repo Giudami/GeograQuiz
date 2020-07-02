@@ -112,3 +112,27 @@ filter (
  ?nationality != "English"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>)
 } ORDER by DESC(?rank)
 ```
+## Stati per importanza
+```
+#nazioni 
+PREFIX vrank: <http://purl.org/voc/vrank#>
+
+SELECT DISTINCT ?country ?countryLabel ?capital ?capitalLabel ?rank
+
+WHERE
+{
+  ?country wdt:P31 wd:Q3624078 .
+  #not a former country
+  FILTER NOT EXISTS {?country wdt:P31 wd:Q3024240}
+  #and no an ancient civilisation (needed to exclude ancient Egypt)
+  FILTER NOT EXISTS {?country wdt:P31 wd:Q28171280}
+  OPTIONAL { ?country wdt:P36 ?capital } .
+  
+  SERVICE <http://dbpedia.org/sparql> {
+      ?country vrank:hasRank/vrank:rankValue ?rank .
+  }  
+
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+}
+ORDER BY DESC(?rank)
+```
