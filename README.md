@@ -47,3 +47,16 @@ ORDER BY DESC(COUNT(?o))
 LIMIT 10
 ```
 
+
+## Classifica giocatori di calcio
+```
+PREFIX vrank:<http://purl.org/voc/vrank#>
+SELECT ?astronaut ?rank
+FROM <http://dbpedia.org>
+FROM <http://people.aifb.kit.edu/ath/#DBpedia_PageRank>
+WHERE {
+?astronaut rdf:type dbo:Athlete, dbo:Person; <http://purl.org/linguistics/gold/hypernym> dbr:Footballer . 
+?astronaut vrank:hasRank ?r .
+?r vrank:rankValue ?rank .
+} ORDER by DESC(?rank)
+```
