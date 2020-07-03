@@ -12,16 +12,13 @@ from telegram.ext import (Updater, CommandHandler, PollAnswerHandler, PollHandle
                           Filters)
 from telegram import (Poll, ParseMode, KeyboardButton, KeyboardButtonPollType,
                       ReplyKeyboardMarkup, ReplyKeyboardRemove)
-from cairosvg import svg2png
 import logging
 
 import random
 
 import json
 
-from svglib.svglib import svg2rlg
-from reportlab.graphics import renderPDF, renderPM
-
+import request
 
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -98,7 +95,7 @@ def quiz(update, context):
         questions = [getCountryLabel(question)
                      for question in questions]
 
-        svg2png(bytestring=result["image"], write_to='output.png')
+        svg2png(result["image"])
 
     # print(indexForUri)
     message = update.effective_message.reply_poll(result["title"],
@@ -186,6 +183,14 @@ def countryForCapitalQuestion():
     result = {"title": country["capitalLabel"] + " è la capitale di quale tra le seguenti nazioni?",
               "options": options, "correct": country["country"]}
     return result
+
+
+def svg2png(url):
+    url = requests.get(url).url
+    url = url.split("/")
+    ans = "https://upload.wikimedia.org/wikipedia/commons/thumb/" + url[-3] + "/" + url[-2] + "/" + \
+        url[-1] + "/600px-" + url[-1] + ".png"
+    return ans
 
 
 def main():
