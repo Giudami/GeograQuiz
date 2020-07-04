@@ -252,3 +252,21 @@ SELECT DISTINCT ?painter ?country WHERE {
 ORDER BY DESC (?linkcount)
 LIMIT 200
 ```
+## vaffanculo
+```
+SELECT ?country ?related (COUNT(?properties) AS ?commonsCount )
+WHERE
+{
+?country ?properties ?ontology.
+ #not a former country
+ FILTER NOT EXISTS {?country wdt:P31 wd:Q3024240}
+ #and no an ancient civilisation (needed to exclude ancient Egypt)
+ FILTER NOT EXISTS {?country wdt:P31 wd:Q28171280}
+?related wdt:P31 wd:Q6256.
+?country wdt:P31 wd:Q6256 ;
+?properties ?ontology ;
+?properties ?related
+FILTER(?country != ?ontology)
+} GROUP BY ?country ?related
+ORDER BY DESC(?commonsCount)
+```
