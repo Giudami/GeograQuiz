@@ -27,7 +27,7 @@ options_number = 3
 countries = None
 countries_count = 0
 index_for_uri = {}
-quiz_types = 2
+quiz_types = 3
 
 
 def start(update, context):
@@ -37,32 +37,46 @@ def start(update, context):
 
 
 def quiz(update, context):
-    quizType = random.randrange(quiz_types)
+    quizType = 2  # random.randrange(quiz_types)
 
-    if (quizType == 1):
+    if (quizType == 0):
         result = country_for_capital_question()
         questions = result["options"]
         correct_option = questions.index(result["correct"])
         questions = [get_country_label(question) for question in questions]
 
-    elif (quizType == 0):
+    elif (quizType == 1):
         result = map_question()
         questions = result["options"]
         correct_option = questions.index(result["correct"])
-        questions = [get_country_label(question)
+        questions = [get_country_label(round(question))
                      for question in questions]
 
         image = svg2png(result["image"])
 
         update.message.reply_photo(image)
 
+    elif (quizType == 2):
+        result = popolation_question()
+        questions = result["options"]
+        correct_option = questions.index(result["correct"])
+
     message = update.effective_message.reply_poll(result["title"],
-                                                  questions, type=Poll.QUIZ, is_anonymous=False,
+                                                  questions, type=Poll.QUIZ,
+                                                  is_anonymous=False,
                                                   correct_option_id=correct_option,
                                                   explanation="asdasdasd")
+
     # Save some info about the poll the bot_data for later use in receive_quiz_answer
-    payload = {message.poll.id: {"chat_id": update.effective_chat.id,
-                                 "message_id": message.message_id}}
+    payload = {
+        message.poll.id: {
+            "chat_id":
+            update.effective_chat.id,
+            "message_id":
+            message.message_id
+        }
+    }
+
     context.bot_data.update(payload)
 
 
@@ -111,17 +125,35 @@ def random_elems(elems, n):
 def map_question():
     country_index = random.randrange(countries_count)
     country = countries[country_index]
-    mapIndex = random.randrange(len(country["maps"]))
-    image = country["maps"][mapIndex]
     options = random_elems(country["related"], options_number)
     options.append(country["country"])
     random.shuffle(options)
+    mapIndex = random.randrange(len(country["maps"]))
+    image = country["maps"][mapIndex]
 
     result = {
         "title": "Qual è la nazione in figura?",
         "image": image,
         "options": options,
         "correct": country["country"]
+    }
+    return result
+
+
+def popolation_question():
+    country_index = random.randrange(countries_count)
+    country = countries[country_index]
+    popolation = country["popolation"]
+    options = ['{:,}'.format(popolation).replace(',', '.')]
+    for i in range(options_number):
+        options.append('{:,}'.format(
+            (round(popolation + popolation * (random.random() - 0.5)))).replace(',', '.'))
+
+    random.shuffle(options)
+    result = {
+        "title": country["countryLabel"] + ": a quanto ammonta la sua popolazione?",
+        "options": options,
+        "correct": '{:,}'.format(popolation).replace(',', '.')
     }
     return result
 
@@ -143,17 +175,15 @@ def country_for_capital_question():
 def svg2png(url):
     url = requests.get(url).url
     url = url.split("/")
-    ans = "https://upload.wikimedia.org/wikipedia/commons/thumb/" + url[-3] + "/" + url[-2] + "/" + \
-        url[-1] + "/400px-" + url[-1] + ".png"
+    ans = "https://upload.wikimedia.org/wikipedia/commons/thumb/" + \
+        url[-3] + "/" + url[-2] + "/" + url[-1] + "/400px-" + url[-1] + ".png"
     return ans
 
 
 def main():
 
-    # print(country_for_capital_question())
     # Create the Updater and pass it your bot's token.
     # Make sure to set use_context=True to use the new context based callbacks
-    # Post version 12 this will no longer be necessary
     updater = Updater(
         "1368648049:AAFIi3WlDUVvRBHRMp_llCBXmrHIcB6KXQ4", use_context=True)
     dp = updater.dispatcher
@@ -163,11 +193,8 @@ def main():
     dp.add_handler(MessageHandler(Filters.poll, receive_poll))
     dp.add_handler(CommandHandler('help', help_handler))
 
-    # Start the Bot
     updater.start_polling()
 
-    # Run the bot until the user presses Ctrl-C or the process receives SIGINT,
-    # SIGTERM or SIGABRT
     updater.idle()
 
 
