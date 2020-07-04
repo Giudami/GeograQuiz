@@ -1,12 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-# This program is dedicated to the public domain under the CC0 license.
-
-"""
-Basic example for a bot that works with polls. Only 3 people are allowed to interact with each
-poll/quiz the bot generates. The preview command generates a closed poll/quiz, excatly like the
-one the user sends the bot
-"""
 from telegram.utils.helpers import mention_html
 from telegram.ext import (Updater, CommandHandler,
                           PollAnswerHandler, PollHandler, MessageHandler, Filters)
@@ -27,17 +18,21 @@ options_number = 3
 countries = None
 countries_count = 0
 index_for_uri = {}
-quiz_types = 3
+quiz_types = 4
 
 
 def start(update, context):
 
     update.message.reply_text(
-        'Per favore digita /quiz per ottenere un nuovo quiz')
+        'Digita /nuovo per avviare un nuovo quiz')
+
+
+def new_quiz(update, context):
+    print(update, context)
 
 
 def quiz(update, context):
-    quizType = 2  # random.randrange(quiz_types)
+    quizType = random.randrange(quiz_types)
 
     if (quizType == 0):
         result = country_for_capital_question()
@@ -49,7 +44,7 @@ def quiz(update, context):
         result = map_question()
         questions = result["options"]
         correct_option = questions.index(result["correct"])
-        questions = [get_country_label(round(question))
+        questions = [get_country_label(question)
                      for question in questions]
 
         image = svg2png(result["image"])
@@ -57,6 +52,17 @@ def quiz(update, context):
         update.message.reply_photo(image)
 
     elif (quizType == 2):
+        result = flag_question()
+        questions = result["options"]
+        correct_option = questions.index(result["correct"])
+        questions = [get_country_label(question)
+                     for question in questions]
+
+        image = svg2png(result["image"])
+
+        update.message.reply_photo(image)
+
+    elif (quizType == 3):
         result = popolation_question()
         questions = result["options"]
         correct_option = questions.index(result["correct"])
@@ -172,6 +178,23 @@ def country_for_capital_question():
     return result
 
 
+def flag_question():
+    country_index = random.randrange(countries_count)
+    country = countries[country_index]
+    options = random_elems(country["related"], options_number)
+    options.append(country["country"])
+    random.shuffle(options)
+    image = country["flag"]
+
+    result = {
+        "title": "A quale nazione appartiene questa bandiera?",
+        "image": image,
+        "options": options,
+        "correct": country["country"]
+    }
+    return result
+
+
 def svg2png(url):
     url = requests.get(url).url
     url = url.split("/")
@@ -188,6 +211,7 @@ def main():
         "1368648049:AAFIi3WlDUVvRBHRMp_llCBXmrHIcB6KXQ4", use_context=True)
     dp = updater.dispatcher
     dp.add_handler(CommandHandler('start', start))
+    dp.add_handler(CommandHandler('nuovo', new_quiz))
     dp.add_handler(CommandHandler('quiz', quiz))
     dp.add_handler(PollHandler(receive_quiz_answer))
     dp.add_handler(MessageHandler(Filters.poll, receive_poll))
