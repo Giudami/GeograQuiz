@@ -32,7 +32,7 @@ def new_quiz(update, context):
 
 
 def quiz(update, context):
-    quizType = 3  # random.randrange(quiz_types)
+    quizType = random.randrange(quiz_types)
 
     if (quizType == 0):
         result = country_for_capital_question()
@@ -70,8 +70,7 @@ def quiz(update, context):
     message = update.effective_message.reply_poll(result["title"],
                                                   questions, type=Poll.QUIZ,
                                                   is_anonymous=False,
-                                                  correct_option_id=correct_option,
-                                                  explanation="asdasdasd")
+                                                  correct_option_id=correct_option)
 
     # Save some info about the poll the bot_data for later use in receive_quiz_answer
     payload = {
@@ -83,39 +82,32 @@ def quiz(update, context):
         }
     }
 
+    print("id:", payload)  # id della chat
+
     context.bot_data.update(payload)
 
 
 def get_country_label(URI):
-    return countries[index_for_uri[URI]]["countryLabel"]
+    if (URI in index_for_uri):
+        return countries[index_for_uri[URI]]["countryLabel"]
+    else:
+        return URI
 
 
 def receive_quiz_answer(update, context):
-    """Close quiz after three participants took it"""
-    # the bot can receive closed poll updates we don't care about
-    if update.poll.is_closed:
+    print(update)  # id dell'utente
+    """Summarize a users poll vote"""
+    answer = update.poll_answer
+    poll_id = answer.poll_id
+    try:
+        questions = context.bot_data[poll_id]["questions"]
+    # this means this poll answer update is from an old poll, we can't do our answering then
+    except KeyError:
         return
-    if update.poll.total_voter_count == 3:
-        try:
-            quiz_data = context.bot_data[update.poll.id]
-        # this means this poll answer update is from an old poll, we can't stop it then
-        except KeyError:
-            return
-        context.bot.stop_poll(quiz_data["chat_id"], quiz_data["message_id"])
 
-
-def receive_poll(update, context):
-    """On receiving polls, reply to it by a closed poll copying the received poll"""
-    actual_poll = update.effective_message.poll
-    # Only need to set the question and options, since all other parameters don't matter for
-    # a closed poll
-    update.effective_message.reply_poll(
-        question=actual_poll.question,
-        options=[o.text for o in actual_poll.options],
-        # with is_closed true, the poll/quiz is immediately closed
-        is_closed=True,
-        reply_markup=ReplyKeyboardRemove()
-    )
+    if context.bot_data[poll_id]["answers"] == 3:
+        context.bot.stop_poll(context.bot_data[poll_id]["chat_id"],
+                              context.bot_data[poll_id]["message_id"])
 
 
 def help_handler(update, context):
@@ -222,8 +214,7 @@ def main():
     dp.add_handler(CommandHandler('start', start))
     dp.add_handler(CommandHandler('nuovo', new_quiz))
     dp.add_handler(CommandHandler('quiz', quiz))
-    dp.add_handler(PollHandler(receive_quiz_answer))
-    dp.add_handler(MessageHandler(Filters.poll, receive_poll))
+    dp.add_handler(PollAnswerHandler(receive_quiz_answer))
     dp.add_handler(CommandHandler('help', help_handler))
 
     updater.start_polling()
