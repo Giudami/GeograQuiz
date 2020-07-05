@@ -1,0 +1,4582 @@
+[
+  {
+    "capitalLabel": "Tokyo",
+    "country": "http://www.wikidata.org/entity/Q17",
+    "surface": "377972.28",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Japan%20on%20the%20globe%20%28de-facto%29%20%28Japan%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Japan.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q884",
+      "http://www.wikidata.org/entity/Q16",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q38",
+      "http://www.wikidata.org/entity/Q40",
+      "http://www.wikidata.org/entity/Q43"
+    ],
+    "unicode": "\ud83c\uddef\ud83c\uddf5",
+    "capital": "http://www.wikidata.org/entity/Q1490",
+    "countryLabel": "Giappone",
+    "population": "126785797"
+  },
+  {
+    "capitalLabel": "Washington",
+    "country": "http://www.wikidata.org/entity/Q30",
+    "surface": "9826675",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/USA%20orthographic.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20United%20States.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q16",
+      "http://www.wikidata.org/entity/Q96",
+      "http://www.wikidata.org/entity/Q17",
+      "http://www.wikidata.org/entity/Q20",
+      "http://www.wikidata.org/entity/Q27",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q36",
+      "http://www.wikidata.org/entity/Q38"
+    ],
+    "unicode": "\ud83c\uddfa\ud83c\uddf8",
+    "capital": "http://www.wikidata.org/entity/Q61",
+    "countryLabel": "Stati Uniti d'America",
+    "population": "325145963"
+  },
+  {
+    "capitalLabel": "Mosca",
+    "country": "http://www.wikidata.org/entity/Q159",
+    "surface": "17125200",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Russian%20Federation%20%28orthographic%20projection%29%20-%20Crimea%20disputed.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Russian%20Federation%20%28orthographic%20projection%29%20-%20Crimea%20disputed.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Russia.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q17",
+      "http://www.wikidata.org/entity/Q20",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q36",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q211",
+      "http://www.wikidata.org/entity/Q232",
+      "http://www.wikidata.org/entity/Q423"
+    ],
+    "unicode": "\ud83c\uddf7\ud83c\uddfa",
+    "capital": "http://www.wikidata.org/entity/Q649",
+    "countryLabel": "Russia",
+    "population": "146804372"
+  },
+  {
+    "capitalLabel": "Ankara",
+    "country": "http://www.wikidata.org/entity/Q43",
+    "surface": "783562.05296",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationTurkey.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Turkey%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Turkey.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q219",
+      "http://www.wikidata.org/entity/Q794",
+      "http://www.wikidata.org/entity/Q796",
+      "http://www.wikidata.org/entity/Q858",
+      "http://www.wikidata.org/entity/Q155",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q218",
+      "http://www.wikidata.org/entity/Q224"
+    ],
+    "unicode": "\ud83c\uddf9\ud83c\uddf7",
+    "capital": "http://www.wikidata.org/entity/Q3640",
+    "countryLabel": "Turchia",
+    "population": "82003882"
+  },
+  {
+    "capitalLabel": "Parigi",
+    "country": "http://www.wikidata.org/entity/Q142",
+    "surface": "643801",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/EU-France%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20France.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q38",
+      "http://www.wikidata.org/entity/Q39",
+      "http://www.wikidata.org/entity/Q155",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q16",
+      "http://www.wikidata.org/entity/Q17",
+      "http://www.wikidata.org/entity/Q20",
+      "http://www.wikidata.org/entity/Q27"
+    ],
+    "unicode": "\ud83c\uddeb\ud83c\uddf7",
+    "capital": "http://www.wikidata.org/entity/Q90",
+    "countryLabel": "Francia",
+    "population": "66628000"
+  },
+  {
+    "capitalLabel": "Helsinki",
+    "country": "http://www.wikidata.org/entity/Q33",
+    "surface": "338424.38",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/EU-Finland.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Finland%20on%20the%20globe%20%28Europe%20centered%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationFinland.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Finland.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q20",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q38",
+      "http://www.wikidata.org/entity/Q43",
+      "http://www.wikidata.org/entity/Q96",
+      "http://www.wikidata.org/entity/Q115",
+      "http://www.wikidata.org/entity/Q142"
+    ],
+    "unicode": "\ud83c\uddeb\ud83c\uddee",
+    "capital": "http://www.wikidata.org/entity/Q1757",
+    "countryLabel": "Finlandia",
+    "population": "5501043"
+  },
+  {
+    "capitalLabel": "Berlino",
+    "country": "http://www.wikidata.org/entity/Q183",
+    "surface": "357400",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/EU-Germany.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Germany%20on%20the%20globe%20%28Europe%20centered%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationGermany.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Germany.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q36",
+      "http://www.wikidata.org/entity/Q39",
+      "http://www.wikidata.org/entity/Q40",
+      "http://www.wikidata.org/entity/Q55",
+      "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q213",
+      "http://www.wikidata.org/entity/Q16"
+    ],
+    "unicode": "\ud83c\udde9\ud83c\uddea",
+    "capital": "http://www.wikidata.org/entity/Q64",
+    "countryLabel": "Germania",
+    "population": "83149300"
+  },
+  {
+    "capitalLabel": "Roma",
+    "country": "http://www.wikidata.org/entity/Q38",
+    "surface": "301338",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/EU-Italy.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Italy%20on%20the%20globe%20%28Europe%20centered%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationItaly.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Italy.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q39",
+      "http://www.wikidata.org/entity/Q40",
+      "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q258",
+      "http://www.wikidata.org/entity/Q298",
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q419",
+      "http://www.wikidata.org/entity/Q423"
+    ],
+    "unicode": "\ud83c\uddee\ud83c\uddf9",
+    "capital": "http://www.wikidata.org/entity/Q220",
+    "countryLabel": "Italia",
+    "population": "60317000"
+  },
+  {
+    "capitalLabel": "Pechino",
+    "country": "http://www.wikidata.org/entity/Q148",
+    "surface": "9596961",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/CHN%20orthographic.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationPRChina.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20People%27s%20Republic%20of%20China.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q668",
+      "http://www.wikidata.org/entity/Q711",
+      "http://www.wikidata.org/entity/Q813",
+      "http://www.wikidata.org/entity/Q819",
+      "http://www.wikidata.org/entity/Q836",
+      "http://www.wikidata.org/entity/Q837",
+      "http://www.wikidata.org/entity/Q843"
+    ],
+    "unicode": "\ud83c\udde8\ud83c\uddf3",
+    "capital": "http://www.wikidata.org/entity/Q956",
+    "countryLabel": "Cina",
+    "population": "1409517397"
+  },
+  {
+    "capitalLabel": "Varsavia",
+    "country": "http://www.wikidata.org/entity/Q36",
+    "surface": "312683",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/EU-Poland.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationPoland.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Poland%20on%20the%20globe%20%28Europe%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Poland.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q213",
+      "http://www.wikidata.org/entity/Q214",
+      "http://www.wikidata.org/entity/Q16",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q38",
+      "http://www.wikidata.org/entity/Q43"
+    ],
+    "unicode": "\ud83c\uddf5\ud83c\uddf1",
+    "capital": "http://www.wikidata.org/entity/Q270",
+    "countryLabel": "Polonia",
+    "population": "38433600"
+  },
+  {
+    "capitalLabel": "Santiago del Cile",
+    "country": "http://www.wikidata.org/entity/Q298",
+    "surface": "756102",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/CHL%20orthographic.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Chile.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q419",
+      "http://www.wikidata.org/entity/Q750",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q38",
+      "http://www.wikidata.org/entity/Q40",
+      "http://www.wikidata.org/entity/Q43",
+      "http://www.wikidata.org/entity/Q77"
+    ],
+    "unicode": "\ud83c\udde8\ud83c\uddf1",
+    "capital": "http://www.wikidata.org/entity/Q2887",
+    "countryLabel": "Cile",
+    "population": "18054726"
+  },
+  {
+    "capitalLabel": "Oslo",
+    "country": "http://www.wikidata.org/entity/Q20",
+    "surface": "385207",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Europe-Norway.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationNorway.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Norway%20on%20the%20globe%20%28Europe%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Norway.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q739",
+      "http://www.wikidata.org/entity/Q801",
+      "http://www.wikidata.org/entity/Q833",
+      "http://www.wikidata.org/entity/Q837",
+      "http://www.wikidata.org/entity/Q843",
+      "http://www.wikidata.org/entity/Q851",
+      "http://www.wikidata.org/entity/Q889",
+      "http://www.wikidata.org/entity/Q408"
+    ],
+    "unicode": "\ud83c\uddf3\ud83c\uddf4",
+    "capital": "http://www.wikidata.org/entity/Q585",
+    "countryLabel": "Norvegia",
+    "population": "5367580"
+  },
+  {
+    "capitalLabel": "Nuova Delhi",
+    "country": "http://www.wikidata.org/entity/Q668",
+    "surface": "3287263",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/India%20%28orthographic%20projection%29-2.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationIndia.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20India.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q836",
+      "http://www.wikidata.org/entity/Q837",
+      "http://www.wikidata.org/entity/Q902",
+      "http://www.wikidata.org/entity/Q917",
+      "http://www.wikidata.org/entity/Q16",
+      "http://www.wikidata.org/entity/Q17",
+      "http://www.wikidata.org/entity/Q27"
+    ],
+    "unicode": "\ud83c\uddee\ud83c\uddf3",
+    "capital": "http://www.wikidata.org/entity/Q987",
+    "countryLabel": "India",
+    "population": "1326093247"
+  },
+  {
+    "capitalLabel": "Madrid",
+    "country": "http://www.wikidata.org/entity/Q29",
+    "surface": "505990",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationSpain.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/EU-Spain.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Spain%20on%20the%20globe%20%28Europe%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Spain.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q45",
+      "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q1028",
+      "http://www.wikidata.org/entity/Q16",
+      "http://www.wikidata.org/entity/Q17",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q36",
+      "http://www.wikidata.org/entity/Q38"
+    ],
+    "unicode": "\ud83c\uddea\ud83c\uddf8",
+    "capital": "http://www.wikidata.org/entity/Q2807",
+    "countryLabel": "Spagna",
+    "population": "46733038"
+  },
+  {
+    "capitalLabel": "Ottawa",
+    "country": "http://www.wikidata.org/entity/Q16",
+    "surface": "9984670",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/CAN%20orthographic.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationCanada.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Canada%20%28Pantone%29.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q145",
+      "http://www.wikidata.org/entity/Q17",
+      "http://www.wikidata.org/entity/Q20",
+      "http://www.wikidata.org/entity/Q27",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q36",
+      "http://www.wikidata.org/entity/Q38"
+    ],
+    "unicode": "\ud83c\udde8\ud83c\udde6",
+    "capital": "http://www.wikidata.org/entity/Q1930",
+    "countryLabel": "Canada",
+    "population": "37894799"
+  },
+  {
+    "capitalLabel": "Brasilia",
+    "country": "http://www.wikidata.org/entity/Q155",
+    "surface": "8515767",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/BRA%20orthographic.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationBrazil.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Brazil.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q419",
+      "http://www.wikidata.org/entity/Q717",
+      "http://www.wikidata.org/entity/Q733",
+      "http://www.wikidata.org/entity/Q734",
+      "http://www.wikidata.org/entity/Q739",
+      "http://www.wikidata.org/entity/Q750",
+      "http://www.wikidata.org/entity/Q77",
+      "http://www.wikidata.org/entity/Q142"
+    ],
+    "unicode": "\ud83c\udde7\ud83c\uddf7",
+    "capital": "http://www.wikidata.org/entity/Q2844",
+    "countryLabel": "Brasile",
+    "population": "210147125"
+  },
+  {
+    "capitalLabel": "Vienna",
+    "country": "http://www.wikidata.org/entity/Q40",
+    "surface": "83878.99",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Austria%20on%20the%20globe%20%28Europe%20centered%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/EU-Austria.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationAustria.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Austria.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q38",
+      "http://www.wikidata.org/entity/Q39",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q213",
+      "http://www.wikidata.org/entity/Q214",
+      "http://www.wikidata.org/entity/Q16",
+      "http://www.wikidata.org/entity/Q17",
+      "http://www.wikidata.org/entity/Q35"
+    ],
+    "unicode": "\ud83c\udde6\ud83c\uddf9",
+    "capital": "http://www.wikidata.org/entity/Q1741",
+    "countryLabel": "Austria",
+    "population": "8809212"
+  },
+  {
+    "capitalLabel": "Atene",
+    "country": "http://www.wikidata.org/entity/Q41",
+    "surface": "131957",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/EU-Greece.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Greece%20on%20the%20globe%20%28Europe%20centered%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationGreece.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Greece.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q43",
+      "http://www.wikidata.org/entity/Q219",
+      "http://www.wikidata.org/entity/Q16",
+      "http://www.wikidata.org/entity/Q17",
+      "http://www.wikidata.org/entity/Q20",
+      "http://www.wikidata.org/entity/Q27",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q35"
+    ],
+    "unicode": "\ud83c\uddec\ud83c\uddf7",
+    "capital": "http://www.wikidata.org/entity/Q1524",
+    "countryLabel": "Grecia",
+    "population": "10760421"
+  },
+  {
+    "capitalLabel": "Londra",
+    "country": "http://www.wikidata.org/entity/Q145",
+    "surface": "242495.406794",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Europe-UK.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20United%20Kingdom.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q27",
+      "http://www.wikidata.org/entity/Q258",
+      "http://www.wikidata.org/entity/Q265",
+      "http://www.wikidata.org/entity/Q298",
+      "http://www.wikidata.org/entity/Q334",
+      "http://www.wikidata.org/entity/Q398",
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q419"
+    ],
+    "unicode": "\ud83c\uddec\ud83c\udde7",
+    "capital": "http://www.wikidata.org/entity/Q84",
+    "countryLabel": "Regno Unito",
+    "population": "66022273"
+  },
+  {
+    "capitalLabel": "Kiev",
+    "country": "http://www.wikidata.org/entity/Q212",
+    "surface": "603629",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Europe-Ukraine%20%28disputed%20territory%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationUkraine.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Ukraine%20on%20the%20globe%20%28Europe%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Ukraine.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q36",
+      "http://www.wikidata.org/entity/Q214",
+      "http://www.wikidata.org/entity/Q218",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q664",
+      "http://www.wikidata.org/entity/Q668",
+      "http://www.wikidata.org/entity/Q796",
+      "http://www.wikidata.org/entity/Q801"
+    ],
+    "unicode": "\ud83c\uddfa\ud83c\udde6",
+    "capital": "http://www.wikidata.org/entity/Q1899",
+    "countryLabel": "Ucraina",
+    "population": "42558328"
+  },
+  {
+    "capitalLabel": "Berna",
+    "country": "http://www.wikidata.org/entity/Q39",
+    "surface": "41285",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Europe-Switzerland.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationSwitzerland.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Switzerland%20on%20the%20globe%20%28Europe%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Switzerland.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q38",
+      "http://www.wikidata.org/entity/Q40",
+      "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q258",
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q794"
+    ],
+    "unicode": "\ud83c\udde8\ud83c\udded",
+    "capital": "http://www.wikidata.org/entity/Q70",
+    "countryLabel": "Svizzera",
+    "population": "8466017"
+  },
+  {
+    "capitalLabel": "Bruxelles",
+    "country": "http://www.wikidata.org/entity/Q31",
+    "surface": "30528",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Belgium%20%28orthographic%20projection%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/EU-Belgium.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Belgium%20%28civil%29.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q55",
+      "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q29999",
+      "http://www.wikidata.org/entity/Q77",
+      "http://www.wikidata.org/entity/Q96",
+      "http://www.wikidata.org/entity/Q145",
+      "http://www.wikidata.org/entity/Q148"
+    ],
+    "unicode": "\ud83c\udde7\ud83c\uddea",
+    "capital": "http://www.wikidata.org/entity/Q239",
+    "countryLabel": "Belgio",
+    "population": "11431406"
+  },
+  {
+    "capitalLabel": "Stoccolma",
+    "country": "http://www.wikidata.org/entity/Q34",
+    "surface": "528861.06",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/EU-Sweden.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationSweden.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Sweden%20on%20the%20globe%20%28Europe%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Sweden.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q20",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q16",
+      "http://www.wikidata.org/entity/Q17",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q38",
+      "http://www.wikidata.org/entity/Q43",
+      "http://www.wikidata.org/entity/Q77"
+    ],
+    "unicode": "\ud83c\uddf8\ud83c\uddea",
+    "capital": "http://www.wikidata.org/entity/Q1754",
+    "countryLabel": "Svezia",
+    "population": "10343403"
+  },
+  {
+    "capitalLabel": "Bogot\u00e0",
+    "country": "http://www.wikidata.org/entity/Q739",
+    "surface": "1141748",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/COL%20orthographic%20%28San%20Andr%C3%A9s%20and%20Providencia%20special%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationColombia.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Colombia.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q155",
+      "http://www.wikidata.org/entity/Q419",
+      "http://www.wikidata.org/entity/Q717",
+      "http://www.wikidata.org/entity/Q736",
+      "http://www.wikidata.org/entity/Q811",
+      "http://www.wikidata.org/entity/Q27",
+      "http://www.wikidata.org/entity/Q38",
+      "http://www.wikidata.org/entity/Q40"
+    ],
+    "unicode": "\ud83c\udde8\ud83c\uddf4",
+    "capital": "http://www.wikidata.org/entity/Q2841",
+    "countryLabel": "Colombia",
+    "population": "49065615"
+  },
+  {
+    "capitalLabel": "Canberra",
+    "country": "http://www.wikidata.org/entity/Q408",
+    "surface": "7692024",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/AUS%20orthographic.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Australia%20%28converted%29.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q574",
+      "http://www.wikidata.org/entity/Q664",
+      "http://www.wikidata.org/entity/Q691",
+      "http://www.wikidata.org/entity/Q252",
+      "http://www.wikidata.org/entity/Q781",
+      "http://www.wikidata.org/entity/Q783",
+      "http://www.wikidata.org/entity/Q786",
+      "http://www.wikidata.org/entity/Q792"
+    ],
+    "unicode": "\ud83c\udde6\ud83c\uddfa",
+    "capital": "http://www.wikidata.org/entity/Q3114",
+    "countryLabel": "Australia",
+    "population": "24511800"
+  },
+  {
+    "capitalLabel": "Teheran",
+    "country": "http://www.wikidata.org/entity/Q794",
+    "surface": "1648195",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Iran%20%28orthographic%20projection%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationIran.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Iran.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q43",
+      "http://www.wikidata.org/entity/Q796",
+      "http://www.wikidata.org/entity/Q843",
+      "http://www.wikidata.org/entity/Q874",
+      "http://www.wikidata.org/entity/Q889",
+      "http://www.wikidata.org/entity/Q145",
+      "http://www.wikidata.org/entity/Q155",
+      "http://www.wikidata.org/entity/Q183"
+    ],
+    "unicode": "\ud83c\uddee\ud83c\uddf7",
+    "capital": "http://www.wikidata.org/entity/Q3616",
+    "countryLabel": "Iran",
+    "population": "79966230"
+  },
+  {
+    "capitalLabel": "Citt\u00e0 del Messico",
+    "country": "http://www.wikidata.org/entity/Q96",
+    "surface": "1972550",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/MEX%20orthographic.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Mexico.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q774",
+      "http://www.wikidata.org/entity/Q16",
+      "http://www.wikidata.org/entity/Q17",
+      "http://www.wikidata.org/entity/Q20",
+      "http://www.wikidata.org/entity/Q27",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q36"
+    ],
+    "unicode": "\ud83c\uddf2\ud83c\uddfd",
+    "capital": "http://www.wikidata.org/entity/Q1489",
+    "countryLabel": "Messico",
+    "population": "130526945"
+  },
+  {
+    "capitalLabel": "Il Cairo",
+    "country": "http://www.wikidata.org/entity/Q79",
+    "surface": "1010407.87",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/EGY%20orthographic.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationEgypt.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Egypt.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q1016",
+      "http://www.wikidata.org/entity/Q1049",
+      "http://www.wikidata.org/entity/Q801",
+      "http://www.wikidata.org/entity/Q16",
+      "http://www.wikidata.org/entity/Q17",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q38",
+      "http://www.wikidata.org/entity/Q39"
+    ],
+    "unicode": "\ud83c\uddea\ud83c\uddec",
+    "capital": "http://www.wikidata.org/entity/Q85",
+    "countryLabel": "Egitto",
+    "population": "94798827"
+  },
+  {
+    "capitalLabel": "Lisbona",
+    "country": "http://www.wikidata.org/entity/Q45",
+    "surface": "92212",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/EU-Portugal.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationPortugal.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Portugal%20on%20the%20globe%20%28Europe%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Portugal.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q38",
+      "http://www.wikidata.org/entity/Q77",
+      "http://www.wikidata.org/entity/Q145",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q155",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q219",
+      "http://www.wikidata.org/entity/Q252"
+    ],
+    "unicode": "\ud83c\uddf5\ud83c\uddf9",
+    "capital": "http://www.wikidata.org/entity/Q597",
+    "countryLabel": "Portogallo",
+    "population": "10600000"
+  },
+  {
+    "capitalLabel": "Gerusalemme",
+    "country": "http://www.wikidata.org/entity/Q801",
+    "surface": "20770",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Israel%20%28orthographic%20projection%29%20with%20disputed%20territories.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationIsrael.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Israel.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q810",
+      "http://www.wikidata.org/entity/Q858",
+      "http://www.wikidata.org/entity/Q79",
+      "http://www.wikidata.org/entity/Q258",
+      "http://www.wikidata.org/entity/Q262",
+      "http://www.wikidata.org/entity/Q298",
+      "http://www.wikidata.org/entity/Q334",
+      "http://www.wikidata.org/entity/Q408"
+    ],
+    "unicode": "\ud83c\uddee\ud83c\uddf1",
+    "capital": "http://www.wikidata.org/entity/Q1218",
+    "countryLabel": "Israele",
+    "population": "9093000"
+  },
+  {
+    "capitalLabel": "Buenos Aires",
+    "country": "http://www.wikidata.org/entity/Q414",
+    "surface": "2780400",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/ARG%20orthographic.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Argentina.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q155",
+      "http://www.wikidata.org/entity/Q77",
+      "http://www.wikidata.org/entity/Q298",
+      "http://www.wikidata.org/entity/Q733",
+      "http://www.wikidata.org/entity/Q750",
+      "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q145",
+      "http://www.wikidata.org/entity/Q148"
+    ],
+    "unicode": "\ud83c\udde6\ud83c\uddf7",
+    "capital": "http://www.wikidata.org/entity/Q1486",
+    "countryLabel": "Argentina",
+    "population": "44938712"
+  },
+  {
+    "capitalLabel": "Sofia",
+    "country": "http://www.wikidata.org/entity/Q219",
+    "surface": "110993.6",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Bulgaria%20on%20the%20globe%20%28Europe%20centered%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationBulgaria.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Bulgaria.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q218",
+      "http://www.wikidata.org/entity/Q43",
+      "http://www.wikidata.org/entity/Q258",
+      "http://www.wikidata.org/entity/Q265",
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q711",
+      "http://www.wikidata.org/entity/Q796"
+    ],
+    "unicode": "\ud83c\udde7\ud83c\uddec",
+    "capital": "http://www.wikidata.org/entity/Q472",
+    "countryLabel": "Bulgaria",
+    "population": "7000039"
+  },
+  {
+    "capitalLabel": "Baku",
+    "country": "http://www.wikidata.org/entity/Q227",
+    "surface": "86600",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Azerbaijan%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Azerbaijan.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q43",
+      "http://www.wikidata.org/entity/Q794",
+      "http://www.wikidata.org/entity/Q16",
+      "http://www.wikidata.org/entity/Q17",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q36",
+      "http://www.wikidata.org/entity/Q38"
+    ],
+    "unicode": "\ud83c\udde6\ud83c\uddff",
+    "capital": "http://www.wikidata.org/entity/Q9248",
+    "countryLabel": "Azerbaigian",
+    "population": "10000000"
+  },
+  {
+    "capitalLabel": "Sofia",
+    "country": "http://www.wikidata.org/entity/Q219",
+    "surface": "110993.6",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/EU-Bulgaria.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Bulgaria.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q43",
+      "http://www.wikidata.org/entity/Q218",
+      "http://www.wikidata.org/entity/Q45",
+      "http://www.wikidata.org/entity/Q55",
+      "http://www.wikidata.org/entity/Q79",
+      "http://www.wikidata.org/entity/Q96",
+      "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q145"
+    ],
+    "unicode": "\ud83c\udde7\ud83c\uddec",
+    "capital": "http://www.wikidata.org/entity/Q472",
+    "countryLabel": "Bulgaria",
+    "population": "7000039"
+  },
+  {
+    "capitalLabel": "Tirana",
+    "country": "http://www.wikidata.org/entity/Q222",
+    "surface": "28748",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Albania%20%28orthographic%20projection%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationAlbania.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Locator%20map%20of%20Albania.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Albania.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q145",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q224",
+      "http://www.wikidata.org/entity/Q17",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q38"
+    ],
+    "unicode": "\ud83c\udde6\ud83c\uddf1",
+    "capital": "http://www.wikidata.org/entity/Q19689",
+    "countryLabel": "Albania",
+    "population": "3020209"
+  },
+  {
+    "capitalLabel": "Minsk",
+    "country": "http://www.wikidata.org/entity/Q184",
+    "surface": "207600.496983",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Belarus%20on%20the%20globe%20%28Europe%20centered%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Europe-Belarus.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationBelarus.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Belarus.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q36",
+      "http://www.wikidata.org/entity/Q211",
+      "http://www.wikidata.org/entity/Q27",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q38",
+      "http://www.wikidata.org/entity/Q39",
+      "http://www.wikidata.org/entity/Q55"
+    ],
+    "unicode": "\ud83c\udde7\ud83c\uddfe",
+    "capital": "http://www.wikidata.org/entity/Q2280",
+    "countryLabel": "Bielorussia",
+    "population": "9408400"
+  },
+  {
+    "capitalLabel": "Reykjav\u00edk",
+    "country": "http://www.wikidata.org/entity/Q189",
+    "surface": "103004",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Europe-Iceland.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Iceland%20on%20the%20globe%20%28Europe%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Iceland.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q38",
+      "http://www.wikidata.org/entity/Q96",
+      "http://www.wikidata.org/entity/Q145",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q211"
+    ],
+    "unicode": "\ud83c\uddee\ud83c\uddf8",
+    "capital": "http://www.wikidata.org/entity/Q1764",
+    "countryLabel": "Islanda",
+    "population": "357050"
+  },
+  {
+    "capitalLabel": "Zagabria",
+    "country": "http://www.wikidata.org/entity/Q224",
+    "surface": "56594",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationCroatia.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Croatia%20on%20the%20globe%20%28Europe%20centered%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/EU-Croatia.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Croatia.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q236",
+      "http://www.wikidata.org/entity/Q711",
+      "http://www.wikidata.org/entity/Q794",
+      "http://www.wikidata.org/entity/Q851",
+      "http://www.wikidata.org/entity/Q858",
+      "http://www.wikidata.org/entity/Q902",
+      "http://www.wikidata.org/entity/Q928",
+      "http://www.wikidata.org/entity/Q298"
+    ],
+    "unicode": "\ud83c\udded\ud83c\uddf7",
+    "capital": "http://www.wikidata.org/entity/Q1435",
+    "countryLabel": "Croazia",
+    "population": "4105493"
+  },
+  {
+    "capitalLabel": "Vilnius",
+    "country": "http://www.wikidata.org/entity/Q37",
+    "surface": "65300",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/EU-Lithuania.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Lithuania%20on%20the%20globe%20%28Europe%20centered%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationLithuania.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Lithuania.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q36",
+      "http://www.wikidata.org/entity/Q211",
+      "http://www.wikidata.org/entity/Q38",
+      "http://www.wikidata.org/entity/Q40",
+      "http://www.wikidata.org/entity/Q145",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q218"
+    ],
+    "unicode": "\ud83c\uddf1\ud83c\uddf9",
+    "capital": "http://www.wikidata.org/entity/Q216",
+    "countryLabel": "Lituania",
+    "population": "2790842"
+  },
+  {
+    "capitalLabel": "Bloemfontein",
+    "country": "http://www.wikidata.org/entity/Q258",
+    "surface": "1221037",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationSouthAfrica.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationSouthAfrica.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationSouthAfrica.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/ZAF%20orthographic.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/ZAF%20orthographic.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/ZAF%20orthographic.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20South%20Africa.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q1013",
+      "http://www.wikidata.org/entity/Q1029",
+      "http://www.wikidata.org/entity/Q1030",
+      "http://www.wikidata.org/entity/Q1050",
+      "http://www.wikidata.org/entity/Q954",
+      "http://www.wikidata.org/entity/Q963",
+      "http://www.wikidata.org/entity/Q16",
+      "http://www.wikidata.org/entity/Q17"
+    ],
+    "unicode": "\ud83c\uddff\ud83c\udde6",
+    "capital": "http://www.wikidata.org/entity/Q37701",
+    "countryLabel": "Sudafrica",
+    "population": "57725600"
+  },
+  {
+    "capitalLabel": "Tallinn",
+    "country": "http://www.wikidata.org/entity/Q191",
+    "surface": "45339",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Estonia%20on%20the%20globe%20%28Europe%20centered%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/EU-Estonia.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationEstonia.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Estonia.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q211",
+      "http://www.wikidata.org/entity/Q265",
+      "http://www.wikidata.org/entity/Q298",
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q668",
+      "http://www.wikidata.org/entity/Q854",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q35"
+    ],
+    "unicode": "\ud83c\uddea\ud83c\uddea",
+    "capital": "http://www.wikidata.org/entity/Q1770",
+    "countryLabel": "Estonia",
+    "population": "1324820"
+  },
+  {
+    "capitalLabel": "Belgrado",
+    "country": "http://www.wikidata.org/entity/Q403",
+    "surface": "88361",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Serbia%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Serbia.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q218",
+      "http://www.wikidata.org/entity/Q219",
+      "http://www.wikidata.org/entity/Q224",
+      "http://www.wikidata.org/entity/Q236",
+      "http://www.wikidata.org/entity/Q258",
+      "http://www.wikidata.org/entity/Q262",
+      "http://www.wikidata.org/entity/Q265",
+      "http://www.wikidata.org/entity/Q298"
+    ],
+    "unicode": "\ud83c\uddf7\ud83c\uddf8",
+    "capital": "http://www.wikidata.org/entity/Q3711",
+    "countryLabel": "Serbia",
+    "population": "7022268"
+  },
+  {
+    "capitalLabel": "Bucarest",
+    "country": "http://www.wikidata.org/entity/Q218",
+    "surface": "238397",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/EU-Romania.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Romania%20on%20the%20globe%20%28Europe%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Romania.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q219",
+      "http://www.wikidata.org/entity/Q36",
+      "http://www.wikidata.org/entity/Q38",
+      "http://www.wikidata.org/entity/Q39",
+      "http://www.wikidata.org/entity/Q43",
+      "http://www.wikidata.org/entity/Q96",
+      "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q145"
+    ],
+    "unicode": "\ud83c\uddf7\ud83c\uddf4",
+    "capital": "http://www.wikidata.org/entity/Q19660",
+    "countryLabel": "Romania",
+    "population": "19586539"
+  },
+  {
+    "capitalLabel": "Islamabad",
+    "country": "http://www.wikidata.org/entity/Q843",
+    "surface": "881913",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationPakistan.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Pakistan%20on%20the%20globe%20%28de-facto%20and%20claimed%20hatched%29%20%28Afro-Eurasia%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Pakistan.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q794",
+      "http://www.wikidata.org/entity/Q889",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q298",
+      "http://www.wikidata.org/entity/Q334",
+      "http://www.wikidata.org/entity/Q398",
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q423"
+    ],
+    "unicode": "\ud83c\uddf5\ud83c\uddf0",
+    "capital": "http://www.wikidata.org/entity/Q1362",
+    "countryLabel": "Pakistan",
+    "population": "197015955"
+  },
+  {
+    "capitalLabel": "Praga",
+    "country": "http://www.wikidata.org/entity/Q213",
+    "surface": "78866",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/EU-Czech%20Republic.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Czech%20Republic.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q36",
+      "http://www.wikidata.org/entity/Q40",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q214",
+      "http://www.wikidata.org/entity/Q16",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q38"
+    ],
+    "unicode": "\ud83c\udde8\ud83c\uddff",
+    "capital": "http://www.wikidata.org/entity/Q1085",
+    "countryLabel": "Repubblica Ceca",
+    "population": "10693939"
+  },
+  {
+    "capitalLabel": "Giacarta",
+    "country": "http://www.wikidata.org/entity/Q252",
+    "surface": "1904570",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Indonesia%20%28orthographic%20projection%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationIndonesia.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Indonesia.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q334",
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q574",
+      "http://www.wikidata.org/entity/Q668",
+      "http://www.wikidata.org/entity/Q691",
+      "http://www.wikidata.org/entity/Q833",
+      "http://www.wikidata.org/entity/Q869",
+      "http://www.wikidata.org/entity/Q881"
+    ],
+    "unicode": "\ud83c\uddee\ud83c\udde9",
+    "capital": "http://www.wikidata.org/entity/Q3630",
+    "countryLabel": "Indonesia",
+    "population": "263991379"
+  },
+  {
+    "capitalLabel": "Kabul",
+    "country": "http://www.wikidata.org/entity/Q889",
+    "surface": "652230",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Afghanistan%20on%20the%20globe%20%28Afghanistan%20centered%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationAfghanistan.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Afghanistan.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q794",
+      "http://www.wikidata.org/entity/Q843",
+      "http://www.wikidata.org/entity/Q863",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q38",
+      "http://www.wikidata.org/entity/Q43",
+      "http://www.wikidata.org/entity/Q96"
+    ],
+    "unicode": "\ud83c\udde6\ud83c\uddeb",
+    "capital": "http://www.wikidata.org/entity/Q5838",
+    "countryLabel": "Afghanistan",
+    "population": "34940837"
+  },
+  {
+    "capitalLabel": "Bratislava",
+    "country": "http://www.wikidata.org/entity/Q214",
+    "surface": "49035",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/EU-Slovakia.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationSlovakia.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Slovakia%20on%20the%20globe%20%28Europe%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Slovakia.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q213",
+      "http://www.wikidata.org/entity/Q36",
+      "http://www.wikidata.org/entity/Q40",
+      "http://www.wikidata.org/entity/Q145",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q219",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q35"
+    ],
+    "unicode": "\ud83c\uddf8\ud83c\uddf0",
+    "capital": "http://www.wikidata.org/entity/Q1780",
+    "countryLabel": "Slovacchia",
+    "population": "5397036"
+  },
+  {
+    "capitalLabel": "Budapest",
+    "country": "http://www.wikidata.org/entity/Q28",
+    "surface": "93011.4",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/EU-Hungary.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Hungary%20on%20the%20globe%20%28Europe%20centered%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationHungary.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Hungary.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q40",
+      "http://www.wikidata.org/entity/Q214",
+      "http://www.wikidata.org/entity/Q218",
+      "http://www.wikidata.org/entity/Q224",
+      "http://www.wikidata.org/entity/Q1016",
+      "http://www.wikidata.org/entity/Q1044",
+      "http://www.wikidata.org/entity/Q1045",
+      "http://www.wikidata.org/entity/Q1049"
+    ],
+    "unicode": "\ud83c\udded\ud83c\uddfa",
+    "capital": "http://www.wikidata.org/entity/Q1781",
+    "countryLabel": "Ungheria",
+    "population": "9937628"
+  },
+  {
+    "capitalLabel": "Erevan",
+    "country": "http://www.wikidata.org/entity/Q399",
+    "surface": "29743.423459",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Armenia%20%28orthographic%20projection%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationArmenia.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Armenia.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q43",
+      "http://www.wikidata.org/entity/Q794",
+      "http://www.wikidata.org/entity/Q16",
+      "http://www.wikidata.org/entity/Q17",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q38",
+      "http://www.wikidata.org/entity/Q39"
+    ],
+    "unicode": "\ud83c\udde6\ud83c\uddf2",
+    "capital": "http://www.wikidata.org/entity/Q1953",
+    "countryLabel": "Armenia",
+    "population": "2930450"
+  },
+  {
+    "capitalLabel": "Tbilisi",
+    "country": "http://www.wikidata.org/entity/Q230",
+    "surface": "69700",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Georgia%20%28orthographic--projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Georgia.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q43",
+      "http://www.wikidata.org/entity/Q16",
+      "http://www.wikidata.org/entity/Q17",
+      "http://www.wikidata.org/entity/Q27",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q36",
+      "http://www.wikidata.org/entity/Q38"
+    ],
+    "unicode": "\ud83c\uddec\ud83c\uddea",
+    "capital": "http://www.wikidata.org/entity/Q994",
+    "countryLabel": "Georgia",
+    "population": "3717100"
+  },
+  {
+    "capitalLabel": "Riad",
+    "country": "http://www.wikidata.org/entity/Q851",
+    "surface": "2250000",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationSaudiArabia.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Saudi%20Arabia%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Saudi%20Arabia.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q398",
+      "http://www.wikidata.org/entity/Q796",
+      "http://www.wikidata.org/entity/Q805",
+      "http://www.wikidata.org/entity/Q842",
+      "http://www.wikidata.org/entity/Q846",
+      "http://www.wikidata.org/entity/Q878",
+      "http://www.wikidata.org/entity/Q145",
+      "http://www.wikidata.org/entity/Q148"
+    ],
+    "unicode": "\ud83c\uddf8\ud83c\udde6",
+    "capital": "http://www.wikidata.org/entity/Q3692",
+    "countryLabel": "Arabia Saudita",
+    "population": "33000000"
+  },
+  {
+    "capitalLabel": "Hanoi",
+    "country": "http://www.wikidata.org/entity/Q881",
+    "surface": "331690",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Vietnam%20on%20the%20globe%20%28Asia%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Vietnam.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q424",
+      "http://www.wikidata.org/entity/Q819",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q843",
+      "http://www.wikidata.org/entity/Q851",
+      "http://www.wikidata.org/entity/Q884",
+      "http://www.wikidata.org/entity/Q902",
+      "http://www.wikidata.org/entity/Q916"
+    ],
+    "unicode": "\ud83c\uddfb\ud83c\uddf3",
+    "capital": "http://www.wikidata.org/entity/Q1858",
+    "countryLabel": "Vietnam",
+    "population": "94660000"
+  },
+  {
+    "capitalLabel": "Andorra la Vella",
+    "country": "http://www.wikidata.org/entity/Q228",
+    "surface": "468",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Andorra%20on%20the%20globe%20%28Europe%20centered%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Location%20Andorra%20Europe.png",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationAndorra.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Andorra.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q38",
+      "http://www.wikidata.org/entity/Q183"
+    ],
+    "unicode": "\ud83c\udde6\ud83c\udde9",
+    "capital": "http://www.wikidata.org/entity/Q1863",
+    "countryLabel": "Andorra",
+    "population": "76177"
+  },
+  {
+    "capitalLabel": "Nur-Sultan",
+    "country": "http://www.wikidata.org/entity/Q232",
+    "surface": "2724900",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Kazakhstan%20%28orthographic%20projection%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationKazakhstan.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Kazakhstan.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q265",
+      "http://www.wikidata.org/entity/Q43",
+      "http://www.wikidata.org/entity/Q96",
+      "http://www.wikidata.org/entity/Q145",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q16",
+      "http://www.wikidata.org/entity/Q30"
+    ],
+    "unicode": "\ud83c\uddf0\ud83c\uddff",
+    "capital": "http://www.wikidata.org/entity/Q1520",
+    "countryLabel": "Kazakistan",
+    "population": "18276500"
+  },
+  {
+    "capitalLabel": "Seul",
+    "country": "http://www.wikidata.org/entity/Q884",
+    "surface": "100295",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/South%20Korea%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20South%20Korea.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q17",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q334",
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q668",
+      "http://www.wikidata.org/entity/Q712",
+      "http://www.wikidata.org/entity/Q733",
+      "http://www.wikidata.org/entity/Q739"
+    ],
+    "unicode": "\ud83c\uddf0\ud83c\uddf7",
+    "capital": "http://www.wikidata.org/entity/Q8684",
+    "countryLabel": "Corea del Sud",
+    "population": "51466201"
+  },
+  {
+    "capitalLabel": "Algeri",
+    "country": "http://www.wikidata.org/entity/Q262",
+    "surface": "2381741",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/DZA%20orthographic.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationAlgeria.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Algeria.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q1016",
+      "http://www.wikidata.org/entity/Q1028",
+      "http://www.wikidata.org/entity/Q948",
+      "http://www.wikidata.org/entity/Q16",
+      "http://www.wikidata.org/entity/Q17",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q43",
+      "http://www.wikidata.org/entity/Q79"
+    ],
+    "unicode": "\ud83c\udde9\ud83c\uddff",
+    "capital": "http://www.wikidata.org/entity/Q3561",
+    "countryLabel": "Algeria",
+    "population": "41318142"
+  },
+  {
+    "capitalLabel": "Bangkok",
+    "country": "http://www.wikidata.org/entity/Q869",
+    "surface": "513119.5",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationThailand.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Thailand%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Thailand.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q424",
+      "http://www.wikidata.org/entity/Q819",
+      "http://www.wikidata.org/entity/Q833",
+      "http://www.wikidata.org/entity/Q902",
+      "http://www.wikidata.org/entity/Q917",
+      "http://www.wikidata.org/entity/Q921",
+      "http://www.wikidata.org/entity/Q928",
+      "http://www.wikidata.org/entity/Q334"
+    ],
+    "unicode": "\ud83c\uddf9\ud83c\udded",
+    "capital": "http://www.wikidata.org/entity/Q1861",
+    "countryLabel": "Thailandia",
+    "population": "65931550"
+  },
+  {
+    "capitalLabel": "Baghdad",
+    "country": "http://www.wikidata.org/entity/Q796",
+    "surface": "437072",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Iraq%20%28orthographic%20projection%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationIraq.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Iraq.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q43",
+      "http://www.wikidata.org/entity/Q794",
+      "http://www.wikidata.org/entity/Q810",
+      "http://www.wikidata.org/entity/Q851",
+      "http://www.wikidata.org/entity/Q858",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q38"
+    ],
+    "unicode": "\ud83c\uddee\ud83c\uddf6",
+    "capital": "http://www.wikidata.org/entity/Q1530",
+    "countryLabel": "Iraq",
+    "population": "38274618"
+  },
+  {
+    "capitalLabel": "Riga",
+    "country": "http://www.wikidata.org/entity/Q211",
+    "surface": "64589",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/EU-Latvia.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Latvia%20on%20the%20globe%20%28Europe%20centered%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationLatvia.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Latvia.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q36",
+      "http://www.wikidata.org/entity/Q38",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q219",
+      "http://www.wikidata.org/entity/Q16",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q408"
+    ],
+    "unicode": "\ud83c\uddf1\ud83c\uddfb",
+    "capital": "http://www.wikidata.org/entity/Q1773",
+    "countryLabel": "Lettonia",
+    "population": "1909000"
+  },
+  {
+    "capitalLabel": "Copenaghen",
+    "country": "http://www.wikidata.org/entity/Q35",
+    "surface": "42925.46",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Denmark%20on%20the%20globe%20%28Europe%20centered%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/EU-Denmark.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationDenmark.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Denmark.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q20",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q16",
+      "http://www.wikidata.org/entity/Q17",
+      "http://www.wikidata.org/entity/Q27",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q36",
+      "http://www.wikidata.org/entity/Q38"
+    ],
+    "unicode": "\ud83c\udde9\ud83c\uddf0",
+    "capital": "http://www.wikidata.org/entity/Q1748",
+    "countryLabel": "Danimarca",
+    "population": "5827463"
+  },
+  {
+    "capitalLabel": "Lubiana",
+    "country": "http://www.wikidata.org/entity/Q215",
+    "surface": "20273",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/EU-Slovenia.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationSlovenia.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Slovenia%20on%20the%20globe%20%28Europe%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Slovenia.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q38",
+      "http://www.wikidata.org/entity/Q224",
+      "http://www.wikidata.org/entity/Q214",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q55",
+      "http://www.wikidata.org/entity/Q79",
+      "http://www.wikidata.org/entity/Q96",
+      "http://www.wikidata.org/entity/Q183"
+    ],
+    "unicode": "\ud83c\uddf8\ud83c\uddee",
+    "capital": "http://www.wikidata.org/entity/Q437",
+    "countryLabel": "Slovenia",
+    "population": "2066880"
+  },
+  {
+    "capitalLabel": "Caracas",
+    "country": "http://www.wikidata.org/entity/Q717",
+    "surface": "916445",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/VEN%20orthographic.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Venezuela.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q734",
+      "http://www.wikidata.org/entity/Q739",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q145",
+      "http://www.wikidata.org/entity/Q155",
+      "http://www.wikidata.org/entity/Q833",
+      "http://www.wikidata.org/entity/Q881"
+    ],
+    "unicode": "\ud83c\uddfb\ud83c\uddea",
+    "capital": "http://www.wikidata.org/entity/Q1533",
+    "countryLabel": "Venezuela",
+    "population": "28515829"
+  },
+  {
+    "capitalLabel": "Sarajevo",
+    "country": "http://www.wikidata.org/entity/Q225",
+    "surface": "51197",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Bosnia%20and%20Herzegovina%20on%20the%20globe%20%28Europe%20centered%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Europe-Bosnia%20and%20Herzegovina.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationBosniaAndHerzegovina.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Bosnia%20and%20Herzegovina.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q224",
+      "http://www.wikidata.org/entity/Q236",
+      "http://www.wikidata.org/entity/Q38",
+      "http://www.wikidata.org/entity/Q43",
+      "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q218",
+      "http://www.wikidata.org/entity/Q252"
+    ],
+    "unicode": "\ud83c\udde7\ud83c\udde6",
+    "capital": "http://www.wikidata.org/entity/Q11194",
+    "countryLabel": "Bosnia ed Erzegovina",
+    "population": "3507017"
+  },
+  {
+    "capitalLabel": "Lussemburgo",
+    "country": "http://www.wikidata.org/entity/Q32",
+    "surface": "2586.4",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/EU-Luxembourg.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationLuxembourg.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Luxembourg%20on%20the%20globe%20%28Europe%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Luxembourg.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q881",
+      "http://www.wikidata.org/entity/Q902",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q38",
+      "http://www.wikidata.org/entity/Q148"
+    ],
+    "unicode": "\ud83c\uddf1\ud83c\uddfa",
+    "capital": "http://www.wikidata.org/entity/Q1842",
+    "countryLabel": "Lussemburgo",
+    "population": "626108"
+  },
+  {
+    "capitalLabel": "Chi\u0219in\u0103u",
+    "country": "http://www.wikidata.org/entity/Q217",
+    "surface": "33846",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationMoldova.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Locator%20map%20of%20Moldova.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Moldova%20on%20the%20globe%20%28Europe%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Moldova.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q218",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q38",
+      "http://www.wikidata.org/entity/Q39",
+      "http://www.wikidata.org/entity/Q40"
+    ],
+    "unicode": "\ud83c\uddf2\ud83c\udde9",
+    "capital": "http://www.wikidata.org/entity/Q21197",
+    "countryLabel": "Moldavia",
+    "population": "2550900"
+  },
+  {
+    "capitalLabel": "Dacca",
+    "country": "http://www.wikidata.org/entity/Q902",
+    "surface": "147570",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Bangladesh%20%28orthographic%20projection%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationBangladesh.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Bangladesh.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q668",
+      "http://www.wikidata.org/entity/Q836",
+      "http://www.wikidata.org/entity/Q16",
+      "http://www.wikidata.org/entity/Q17",
+      "http://www.wikidata.org/entity/Q27",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q36"
+    ],
+    "unicode": "\ud83c\udde7\ud83c\udde9",
+    "capital": "http://www.wikidata.org/entity/Q1354",
+    "countryLabel": "Bangladesh",
+    "population": "164669751"
+  },
+  {
+    "capitalLabel": "Addis Abeba",
+    "country": "http://www.wikidata.org/entity/Q115",
+    "surface": "1104300",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Ethiopia%20on%20the%20globe%20%28Africa%20centered%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationEthiopia.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Ethiopia.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q114",
+      "http://www.wikidata.org/entity/Q977",
+      "http://www.wikidata.org/entity/Q1045",
+      "http://www.wikidata.org/entity/Q833",
+      "http://www.wikidata.org/entity/Q953",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q668",
+      "http://www.wikidata.org/entity/Q801"
+    ],
+    "unicode": "\ud83c\uddea\ud83c\uddf9",
+    "capital": "http://www.wikidata.org/entity/Q3624",
+    "countryLabel": "Etiopia",
+    "population": "104957438"
+  },
+  {
+    "capitalLabel": "Nicosia",
+    "country": "http://www.wikidata.org/entity/Q229",
+    "surface": "9242.45",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Cyprus%20in%20its%20region%20%28de-facto%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/EU-Cyprus%20highlighted.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationCyprus.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Cyprus.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q801",
+      "http://www.wikidata.org/entity/Q16",
+      "http://www.wikidata.org/entity/Q20",
+      "http://www.wikidata.org/entity/Q27",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q36",
+      "http://www.wikidata.org/entity/Q38"
+    ],
+    "unicode": "\ud83c\udde8\ud83c\uddfe",
+    "capital": "http://www.wikidata.org/entity/Q3856",
+    "countryLabel": "Cipro",
+    "population": "1141166"
+  },
+  {
+    "capitalLabel": "Abuja",
+    "country": "http://www.wikidata.org/entity/Q1033",
+    "surface": "923768",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationNigeria.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Nigeria%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Nigeria.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q1032",
+      "http://www.wikidata.org/entity/Q1009",
+      "http://www.wikidata.org/entity/Q657",
+      "http://www.wikidata.org/entity/Q96",
+      "http://www.wikidata.org/entity/Q114",
+      "http://www.wikidata.org/entity/Q117",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q155"
+    ],
+    "unicode": "\ud83c\uddf3\ud83c\uddec",
+    "capital": "http://www.wikidata.org/entity/Q3787",
+    "countryLabel": "Nigeria",
+    "population": "190886311"
+  },
+  {
+    "capitalLabel": "Singapore",
+    "country": "http://www.wikidata.org/entity/Q334",
+    "surface": "719.1",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Singapore%20on%20the%20globe%20%28Southeast%20Asia%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Singapore.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q252",
+      "http://www.wikidata.org/entity/Q833",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q16",
+      "http://www.wikidata.org/entity/Q17",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q55",
+      "http://www.wikidata.org/entity/Q96"
+    ],
+    "unicode": "\ud83c\uddf8\ud83c\uddec",
+    "capital": "http://www.wikidata.org/entity/Q334",
+    "countryLabel": "Singapore",
+    "population": "5888926"
+  },
+  {
+    "capitalLabel": "La Valletta",
+    "country": "http://www.wikidata.org/entity/Q233",
+    "surface": "316",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/EU-Malta.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Malta%20on%20the%20globe%20%28Europe%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Malta.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q38",
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q668",
+      "http://www.wikidata.org/entity/Q801",
+      "http://www.wikidata.org/entity/Q843",
+      "http://www.wikidata.org/entity/Q17",
+      "http://www.wikidata.org/entity/Q30"
+    ],
+    "unicode": "\ud83c\uddf2\ud83c\uddf9",
+    "capital": "http://www.wikidata.org/entity/Q23800",
+    "countryLabel": "Malta",
+    "population": "465292"
+  },
+  {
+    "capitalLabel": "Pyongyang",
+    "country": "http://www.wikidata.org/entity/Q423",
+    "surface": "120540",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationNorthKorea.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/North%20Korea%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20North%20Korea.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q258",
+      "http://www.wikidata.org/entity/Q262",
+      "http://www.wikidata.org/entity/Q265",
+      "http://www.wikidata.org/entity/Q298",
+      "http://www.wikidata.org/entity/Q334",
+      "http://www.wikidata.org/entity/Q398",
+      "http://www.wikidata.org/entity/Q408"
+    ],
+    "unicode": "\ud83c\uddf0\ud83c\uddf5",
+    "capital": "http://www.wikidata.org/entity/Q18808",
+    "countryLabel": "Corea del Nord",
+    "population": "25490965"
+  },
+  {
+    "capitalLabel": "Kuala Lumpur",
+    "country": "http://www.wikidata.org/entity/Q833",
+    "surface": "330290",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationMalaysia.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Malaysia%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Malaysia.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q252",
+      "http://www.wikidata.org/entity/Q334",
+      "http://www.wikidata.org/entity/Q869",
+      "http://www.wikidata.org/entity/Q921",
+      "http://www.wikidata.org/entity/Q928",
+      "http://www.wikidata.org/entity/Q16",
+      "http://www.wikidata.org/entity/Q17",
+      "http://www.wikidata.org/entity/Q20"
+    ],
+    "unicode": "\ud83c\uddf2\ud83c\uddfe",
+    "capital": "http://www.wikidata.org/entity/Q1865",
+    "countryLabel": "Malaysia",
+    "population": "31624264"
+  },
+  {
+    "capitalLabel": "Damasco",
+    "country": "http://www.wikidata.org/entity/Q858",
+    "surface": "185180",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationSyria.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Syria%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Syria.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q43",
+      "http://www.wikidata.org/entity/Q796",
+      "http://www.wikidata.org/entity/Q801",
+      "http://www.wikidata.org/entity/Q810",
+      "http://www.wikidata.org/entity/Q822",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q219",
+      "http://www.wikidata.org/entity/Q224"
+    ],
+    "unicode": "\ud83c\uddf8\ud83c\uddfe",
+    "capital": "http://www.wikidata.org/entity/Q3766",
+    "countryLabel": "Siria",
+    "population": "18269868"
+  },
+  {
+    "capitalLabel": "L'Avana",
+    "country": "http://www.wikidata.org/entity/Q241",
+    "surface": "109884",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationCuba.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Cuba%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Cuba.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q16",
+      "http://www.wikidata.org/entity/Q77",
+      "http://www.wikidata.org/entity/Q96",
+      "http://www.wikidata.org/entity/Q145",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q155",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q252"
+    ],
+    "unicode": "\ud83c\udde8\ud83c\uddfa",
+    "capital": "http://www.wikidata.org/entity/Q1563",
+    "countryLabel": "Cuba",
+    "population": "11484636"
+  },
+  {
+    "capitalLabel": "Lima",
+    "country": "http://www.wikidata.org/entity/Q419",
+    "surface": "1285216",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/PER%20orthographic.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Peru.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q155",
+      "http://www.wikidata.org/entity/Q298",
+      "http://www.wikidata.org/entity/Q739",
+      "http://www.wikidata.org/entity/Q750",
+      "http://www.wikidata.org/entity/Q17",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q38",
+      "http://www.wikidata.org/entity/Q77"
+    ],
+    "unicode": "\ud83c\uddf5\ud83c\uddea",
+    "capital": "http://www.wikidata.org/entity/Q2868",
+    "countryLabel": "Per\u00f9",
+    "population": "29381884"
+  },
+  {
+    "capitalLabel": "Katmandu",
+    "country": "http://www.wikidata.org/entity/Q837",
+    "surface": "147181.254346",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Nepal%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Nepal.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q668",
+      "http://www.wikidata.org/entity/Q17",
+      "http://www.wikidata.org/entity/Q20",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q252"
+    ],
+    "unicode": "\ud83c\uddf3\ud83c\uddf5",
+    "capital": "http://www.wikidata.org/entity/Q3037",
+    "countryLabel": "Nepal",
+    "population": "29400000"
+  },
+  {
+    "capitalLabel": "Skopje",
+    "country": "http://www.wikidata.org/entity/Q221",
+    "surface": "25713",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Location%20Macedonia%20Europe.png",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationNorthMacedonia.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/North%20Macedonia%20on%20the%20globe%20%28Europe%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20North%20Macedonia.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q219",
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q801",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q38",
+      "http://www.wikidata.org/entity/Q40"
+    ],
+    "unicode": "\ud83c\uddf2\ud83c\uddf0",
+    "capital": "http://www.wikidata.org/entity/Q384",
+    "countryLabel": "Macedonia del Nord",
+    "population": "2075301"
+  },
+  {
+    "capitalLabel": "Wellington",
+    "country": "http://www.wikidata.org/entity/Q664",
+    "surface": "268021",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationNewZealand.png",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/NZL%20orthographic.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20New%20Zealand.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q16",
+      "http://www.wikidata.org/entity/Q17",
+      "http://www.wikidata.org/entity/Q20",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q38",
+      "http://www.wikidata.org/entity/Q43"
+    ],
+    "unicode": "\ud83c\uddf3\ud83c\uddff",
+    "capital": "http://www.wikidata.org/entity/Q23661",
+    "countryLabel": "Nuova Zelanda",
+    "population": "4942500"
+  },
+  {
+    "capitalLabel": "Luanda",
+    "country": "http://www.wikidata.org/entity/Q916",
+    "surface": "1246700",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Angola%20on%20the%20globe%20%28Angola%20centered%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationAngola.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Angola.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q1030",
+      "http://www.wikidata.org/entity/Q953",
+      "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q155",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q1011",
+      "http://www.wikidata.org/entity/Q1033"
+    ],
+    "unicode": "\ud83c\udde6\ud83c\uddf4",
+    "capital": "http://www.wikidata.org/entity/Q3897",
+    "countryLabel": "Angola",
+    "population": "29784193"
+  },
+  {
+    "capitalLabel": "Manila",
+    "country": "http://www.wikidata.org/entity/Q928",
+    "surface": "343448",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationPhilippines.png",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Ph%20physical%20map.png",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/PHL%20orthographic.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Philippines.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q252",
+      "http://www.wikidata.org/entity/Q695",
+      "http://www.wikidata.org/entity/Q833",
+      "http://www.wikidata.org/entity/Q16",
+      "http://www.wikidata.org/entity/Q17",
+      "http://www.wikidata.org/entity/Q27",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q35"
+    ],
+    "unicode": "\ud83c\uddf5\ud83c\udded",
+    "capital": "http://www.wikidata.org/entity/Q1461",
+    "countryLabel": "Filippine",
+    "population": "104918090"
+  },
+  {
+    "capitalLabel": "Ulan Bator",
+    "country": "http://www.wikidata.org/entity/Q711",
+    "surface": "1566000",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Mongolia%20%28orthographic%20projection%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationMongolia.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Mongolia.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q668",
+      "http://www.wikidata.org/entity/Q851",
+      "http://www.wikidata.org/entity/Q881",
+      "http://www.wikidata.org/entity/Q928",
+      "http://www.wikidata.org/entity/Q334",
+      "http://www.wikidata.org/entity/Q408"
+    ],
+    "unicode": "\ud83c\uddf2\ud83c\uddf3",
+    "capital": "http://www.wikidata.org/entity/Q23430",
+    "countryLabel": "Mongolia",
+    "population": "3075647"
+  },
+  {
+    "capitalLabel": "Podgorica",
+    "country": "http://www.wikidata.org/entity/Q236",
+    "surface": "13812",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Europe-Montenegro.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationMontenegro.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Montenegro%20on%20the%20globe%20%28Europe%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Montenegro.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q224",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q1016",
+      "http://www.wikidata.org/entity/Q17",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q38",
+      "http://www.wikidata.org/entity/Q183"
+    ],
+    "unicode": "\ud83c\uddf2\ud83c\uddea",
+    "capital": "http://www.wikidata.org/entity/Q23564",
+    "countryLabel": "Montenegro",
+    "population": "622359"
+  },
+  {
+    "capitalLabel": "Dublino",
+    "country": "http://www.wikidata.org/entity/Q27",
+    "surface": "70273",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/EU-Ireland.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Ireland%20on%20the%20globe%20%28Europe%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Ireland.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q145",
+      "http://www.wikidata.org/entity/Q16",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q38",
+      "http://www.wikidata.org/entity/Q96",
+      "http://www.wikidata.org/entity/Q115",
+      "http://www.wikidata.org/entity/Q142"
+    ],
+    "unicode": "\ud83c\uddee\ud83c\uddea",
+    "capital": "http://www.wikidata.org/entity/Q1761",
+    "countryLabel": "Irlanda",
+    "population": "4761865"
+  },
+  {
+    "capitalLabel": "Monaco Vecchia",
+    "country": "http://www.wikidata.org/entity/Q235",
+    "surface": "2.02",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Location%20Monaco%20Europe.png",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationMonaco.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Monaco%20on%20the%20globe%20%28Europe%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Monaco.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q17",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q38",
+      "http://www.wikidata.org/entity/Q183"
+    ],
+    "unicode": "\ud83c\uddf2\ud83c\udde8",
+    "capital": "http://www.wikidata.org/entity/Q55115",
+    "countryLabel": "Principato di Monaco",
+    "population": "38695"
+  },
+  {
+    "capitalLabel": "Tripoli",
+    "country": "http://www.wikidata.org/entity/Q1016",
+    "surface": "1759541",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationLibya.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Libya%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Libya.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q262",
+      "http://www.wikidata.org/entity/Q657",
+      "http://www.wikidata.org/entity/Q79",
+      "http://www.wikidata.org/entity/Q928",
+      "http://www.wikidata.org/entity/Q953",
+      "http://www.wikidata.org/entity/Q258",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q668"
+    ],
+    "unicode": "\ud83c\uddf1\ud83c\uddfe",
+    "capital": "http://www.wikidata.org/entity/Q3579",
+    "countryLabel": "Libia",
+    "population": "6678567"
+  },
+  {
+    "capitalLabel": "Nairobi",
+    "country": "http://www.wikidata.org/entity/Q114",
+    "surface": "581309",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Kenya%20%28orthographic%20projection%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationKenya.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Kenya.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q924",
+      "http://www.wikidata.org/entity/Q958",
+      "http://www.wikidata.org/entity/Q115",
+      "http://www.wikidata.org/entity/Q1036",
+      "http://www.wikidata.org/entity/Q1045",
+      "http://www.wikidata.org/entity/Q1049",
+      "http://www.wikidata.org/entity/Q258",
+      "http://www.wikidata.org/entity/Q262"
+    ],
+    "unicode": "\ud83c\uddf0\ud83c\uddea",
+    "capital": "http://www.wikidata.org/entity/Q3870",
+    "countryLabel": "Kenya",
+    "population": "48468138"
+  },
+  {
+    "capitalLabel": "Khartum",
+    "country": "http://www.wikidata.org/entity/Q1049",
+    "surface": "1886068",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationSudan.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Sudan%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Sudan.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q657",
+      "http://www.wikidata.org/entity/Q958",
+      "http://www.wikidata.org/entity/Q79",
+      "http://www.wikidata.org/entity/Q114",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q794",
+      "http://www.wikidata.org/entity/Q833",
+      "http://www.wikidata.org/entity/Q843"
+    ],
+    "unicode": "\ud83c\uddf8\ud83c\udde9",
+    "capital": "http://www.wikidata.org/entity/Q1963",
+    "countryLabel": "Sudan",
+    "population": "40533330"
+  },
+  {
+    "capitalLabel": "Vaduz",
+    "country": "http://www.wikidata.org/entity/Q347",
+    "surface": "160",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Liechtenstein%20in%20Europe%20%28-rivers%20-mini%20map%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Liechtenstein%20on%20the%20globe%20%28Europe%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Liechtenstein.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q39",
+      "http://www.wikidata.org/entity/Q40",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q38",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q213",
+      "http://www.wikidata.org/entity/Q214",
+      "http://www.wikidata.org/entity/Q423"
+    ],
+    "unicode": "\ud83c\uddf1\ud83c\uddee",
+    "capital": "http://www.wikidata.org/entity/Q1844",
+    "countryLabel": "Liechtenstein",
+    "population": "37922"
+  },
+  {
+    "capitalLabel": "Phnom Penh",
+    "country": "http://www.wikidata.org/entity/Q424",
+    "surface": "181035",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Cambodia%20on%20the%20globe%20%28Asia%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Cambodia.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q869",
+      "http://www.wikidata.org/entity/Q881",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q252",
+      "http://www.wikidata.org/entity/Q17"
+    ],
+    "unicode": "\ud83c\uddf0\ud83c\udded",
+    "capital": "http://www.wikidata.org/entity/Q1850",
+    "countryLabel": "Cambogia",
+    "population": "16005373"
+  },
+  {
+    "capitalLabel": "Mogadiscio",
+    "country": "http://www.wikidata.org/entity/Q1045",
+    "surface": "637657",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Somalia%20%28orthographic%20projection%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationSomalia.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Somalia.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q114",
+      "http://www.wikidata.org/entity/Q115",
+      "http://www.wikidata.org/entity/Q977",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q805",
+      "http://www.wikidata.org/entity/Q843",
+      "http://www.wikidata.org/entity/Q878",
+      "http://www.wikidata.org/entity/Q884"
+    ],
+    "unicode": "\ud83c\uddf8\ud83c\uddf4",
+    "capital": "http://www.wikidata.org/entity/Q2449",
+    "countryLabel": "Somalia",
+    "population": "11031386"
+  },
+  {
+    "capitalLabel": "Accra",
+    "country": "http://www.wikidata.org/entity/Q117",
+    "surface": "238535",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Ghana%20%28orthographic%20projection%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationGhana.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Ghana.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q1008",
+      "http://www.wikidata.org/entity/Q945",
+      "http://www.wikidata.org/entity/Q965",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q1033",
+      "http://www.wikidata.org/entity/Q30"
+    ],
+    "unicode": "\ud83c\uddec\ud83c\udded",
+    "capital": "http://www.wikidata.org/entity/Q3761",
+    "countryLabel": "Ghana",
+    "population": "26908262"
+  },
+  {
+    "capitalLabel": "Citt\u00e0 di San Marino",
+    "country": "http://www.wikidata.org/entity/Q238",
+    "surface": "61.2",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Location%20San%20Marino%20Europe.png",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationSanMarino.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/San%20Marino%20on%20the%20globe%20%28Europe%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20San%20Marino.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q38",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q145",
+      "http://www.wikidata.org/entity/Q183"
+    ],
+    "unicode": "\ud83c\uddf8\ud83c\uddf2",
+    "capital": "http://www.wikidata.org/entity/Q1848",
+    "countryLabel": "San Marino",
+    "population": "33400"
+  },
+  {
+    "capitalLabel": "Montevideo",
+    "country": "http://www.wikidata.org/entity/Q77",
+    "surface": "176215",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/URY%20orthographic.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Uruguay.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q155",
+      "http://www.wikidata.org/entity/Q298",
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q419",
+      "http://www.wikidata.org/entity/Q668",
+      "http://www.wikidata.org/entity/Q717",
+      "http://www.wikidata.org/entity/Q733",
+      "http://www.wikidata.org/entity/Q736"
+    ],
+    "unicode": "\ud83c\uddfa\ud83c\uddfe",
+    "capital": "http://www.wikidata.org/entity/Q1335",
+    "countryLabel": "Uruguay",
+    "population": "3456750"
+  },
+  {
+    "capitalLabel": "Kinshasa",
+    "country": "http://www.wikidata.org/entity/Q974",
+    "surface": "2344858",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/COD%20orthographic.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationDRCongo.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Democratic%20Republic%20of%20the%20Congo.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q971",
+      "http://www.wikidata.org/entity/Q953",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q155",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q16"
+    ],
+    "unicode": "\ud83c\udde8\ud83c\udde9",
+    "capital": "http://www.wikidata.org/entity/Q3838",
+    "countryLabel": "Repubblica Democratica del Congo",
+    "population": "86790567"
+  },
+  {
+    "capitalLabel": "Sri Jayawardenapura Kotte",
+    "country": "http://www.wikidata.org/entity/Q854",
+    "surface": "65610",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Sri%20Lanka%20%28orthographic%20projection%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Sri%20Lanka%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Sri%20Lanka.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q17",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q39",
+      "http://www.wikidata.org/entity/Q114",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q252"
+    ],
+    "unicode": "\ud83c\uddf1\ud83c\uddf0",
+    "capital": "http://www.wikidata.org/entity/Q41963",
+    "countryLabel": "Sri Lanka",
+    "population": "21444000"
+  },
+  {
+    "capitalLabel": "Dodoma",
+    "country": "http://www.wikidata.org/entity/Q924",
+    "surface": "947303",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationTanzania.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Tanzania%20on%20the%20globe%20%28Africa%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Tanzania.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q953",
+      "http://www.wikidata.org/entity/Q114",
+      "http://www.wikidata.org/entity/Q1037",
+      "http://www.wikidata.org/entity/Q902",
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q668",
+      "http://www.wikidata.org/entity/Q833"
+    ],
+    "unicode": "\ud83c\uddf9\ud83c\uddff",
+    "capital": "http://www.wikidata.org/entity/Q3866",
+    "countryLabel": "Tanzania",
+    "population": "57310019"
+  },
+  {
+    "capitalLabel": "Harare",
+    "country": "http://www.wikidata.org/entity/Q954",
+    "surface": "390757",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Zimbabwe%20%28orthographic%20projection%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationZimbabwe.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Zimbabwe%20on%20the%20globe%20%28Africa%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Zimbabwe.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q953",
+      "http://www.wikidata.org/entity/Q258",
+      "http://www.wikidata.org/entity/Q843",
+      "http://www.wikidata.org/entity/Q916",
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q801",
+      "http://www.wikidata.org/entity/Q114"
+    ],
+    "unicode": "\ud83c\uddff\ud83c\uddfc",
+    "capital": "http://www.wikidata.org/entity/Q3921",
+    "countryLabel": "Zimbabwe",
+    "population": "16529904"
+  },
+  {
+    "capitalLabel": "Rabat",
+    "country": "http://www.wikidata.org/entity/Q1028",
+    "surface": "446550",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationMorocco2.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Morocco%20WS-excluded%20%28orthographic%20projection%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Morocco%20WS-included%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Morocco.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q262",
+      "http://www.wikidata.org/entity/Q1025",
+      "http://www.wikidata.org/entity/Q843",
+      "http://www.wikidata.org/entity/Q851",
+      "http://www.wikidata.org/entity/Q912",
+      "http://www.wikidata.org/entity/Q948",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q668"
+    ],
+    "unicode": "\ud83c\uddf2\ud83c\udde6",
+    "capital": "http://www.wikidata.org/entity/Q3551",
+    "countryLabel": "Marocco",
+    "population": "36029138"
+  },
+  {
+    "capitalLabel": "Quito",
+    "country": "http://www.wikidata.org/entity/Q736",
+    "surface": "283560",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/ECU%20orthographic.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationEcuador.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Ecuador.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q739",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q77",
+      "http://www.wikidata.org/entity/Q96",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q155",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q408"
+    ],
+    "unicode": "\ud83c\uddea\ud83c\udde8",
+    "capital": "http://www.wikidata.org/entity/Q2900",
+    "countryLabel": "Ecuador",
+    "population": "16624858"
+  },
+  {
+    "capitalLabel": "Vientiane",
+    "country": "http://www.wikidata.org/entity/Q819",
+    "surface": "236800",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Laos%20on%20the%20globe%20%28Asia%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Laos.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q869",
+      "http://www.wikidata.org/entity/Q881",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q668",
+      "http://www.wikidata.org/entity/Q833",
+      "http://www.wikidata.org/entity/Q851"
+    ],
+    "unicode": "\ud83c\uddf1\ud83c\udde6",
+    "capital": "http://www.wikidata.org/entity/Q9326",
+    "countryLabel": "Laos",
+    "population": "6858160"
+  },
+  {
+    "capitalLabel": "Sucre",
+    "country": "http://www.wikidata.org/entity/Q750",
+    "surface": "1098581",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/BOL%20orthographic.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/BOL%20orthographic.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationBolivia.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationBolivia.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Bolivia.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q298",
+      "http://www.wikidata.org/entity/Q419",
+      "http://www.wikidata.org/entity/Q155",
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q794",
+      "http://www.wikidata.org/entity/Q801",
+      "http://www.wikidata.org/entity/Q258",
+      "http://www.wikidata.org/entity/Q148"
+    ],
+    "unicode": "\ud83c\udde7\ud83c\uddf4",
+    "capital": "http://www.wikidata.org/entity/Q2907",
+    "countryLabel": "Bolivia",
+    "population": "11051600"
+  },
+  {
+    "capitalLabel": "Aden",
+    "country": "http://www.wikidata.org/entity/Q805",
+    "surface": "555000",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Yemen%20%28orthographic%20projection%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Yemen%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Yemen.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q842",
+      "http://www.wikidata.org/entity/Q851",
+      "http://www.wikidata.org/entity/Q878",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q38",
+      "http://www.wikidata.org/entity/Q43",
+      "http://www.wikidata.org/entity/Q145",
+      "http://www.wikidata.org/entity/Q148"
+    ],
+    "unicode": "\ud83c\uddfe\ud83c\uddea",
+    "capital": "http://www.wikidata.org/entity/Q131694",
+    "countryLabel": "Yemen",
+    "population": "28250420"
+  },
+  {
+    "capitalLabel": "Naypyidaw",
+    "country": "http://www.wikidata.org/entity/Q836",
+    "surface": "676577.2",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Myanmar%20on%20the%20globe%20%28Myanmar%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Myanmar.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q668",
+      "http://www.wikidata.org/entity/Q902",
+      "http://www.wikidata.org/entity/Q252",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q183"
+    ],
+    "unicode": "\ud83c\uddf2\ud83c\uddf2",
+    "capital": "http://www.wikidata.org/entity/Q37400",
+    "countryLabel": "Birmania",
+    "population": "53370609"
+  },
+  {
+    "capitalLabel": "Antananarivo",
+    "country": "http://www.wikidata.org/entity/Q1019",
+    "surface": "587295",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationMadagascar.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/MDG%20orthographic.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Madagascar.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q668",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q252",
+      "http://www.wikidata.org/entity/Q970"
+    ],
+    "unicode": "\ud83c\uddf2\ud83c\uddec",
+    "capital": "http://www.wikidata.org/entity/Q3915",
+    "countryLabel": "Madagascar",
+    "population": "25570895"
+  },
+  {
+    "capitalLabel": "Windhoek",
+    "country": "http://www.wikidata.org/entity/Q1030",
+    "surface": "825615",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationNamibia.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Namibia%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Namibia.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q953",
+      "http://www.wikidata.org/entity/Q963",
+      "http://www.wikidata.org/entity/Q258",
+      "http://www.wikidata.org/entity/Q916",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q16",
+      "http://www.wikidata.org/entity/Q30"
+    ],
+    "unicode": "\ud83c\uddf3\ud83c\udde6",
+    "capital": "http://www.wikidata.org/entity/Q3935",
+    "countryLabel": "Namibia",
+    "population": "2533794"
+  },
+  {
+    "capitalLabel": "Asunci\u00f3n",
+    "country": "http://www.wikidata.org/entity/Q733",
+    "surface": "406756",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationParaguay.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/PRY%20orthographic.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Paraguay%20%28reverse%29.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q155",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q17",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q38",
+      "http://www.wikidata.org/entity/Q77",
+      "http://www.wikidata.org/entity/Q96",
+      "http://www.wikidata.org/entity/Q408"
+    ],
+    "unicode": "\ud83c\uddf5\ud83c\uddfe",
+    "capital": "http://www.wikidata.org/entity/Q2933",
+    "countryLabel": "Paraguay",
+    "population": "6811297"
+  },
+  {
+    "capitalLabel": "Tunisi",
+    "country": "http://www.wikidata.org/entity/Q948",
+    "surface": "163610",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationTunisia.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Tunisia%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Tunisia.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q262",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q38",
+      "http://www.wikidata.org/entity/Q43",
+      "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q1028"
+    ],
+    "unicode": "\ud83c\uddf9\ud83c\uddf3",
+    "capital": "http://www.wikidata.org/entity/Q3572",
+    "countryLabel": "Tunisia",
+    "population": "11565204"
+  },
+  {
+    "capitalLabel": "Amman",
+    "country": "http://www.wikidata.org/entity/Q810",
+    "surface": "89341",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Jordan%20on%20the%20globe%20%28Afro-Eurasia%20centered%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationJordan.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Jordan.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q796",
+      "http://www.wikidata.org/entity/Q801",
+      "http://www.wikidata.org/entity/Q858",
+      "http://www.wikidata.org/entity/Q79",
+      "http://www.wikidata.org/entity/Q96",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q902",
+      "http://www.wikidata.org/entity/Q408"
+    ],
+    "unicode": "\ud83c\uddef\ud83c\uddf4",
+    "capital": "http://www.wikidata.org/entity/Q3805",
+    "countryLabel": "Giordania",
+    "population": "10428241"
+  },
+  {
+    "capitalLabel": "Beirut",
+    "country": "http://www.wikidata.org/entity/Q822",
+    "surface": "10452",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Lebanon%20%28orthographic%20projection%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationLebanon.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Lebanon.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q858",
+      "http://www.wikidata.org/entity/Q16",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q38",
+      "http://www.wikidata.org/entity/Q77",
+      "http://www.wikidata.org/entity/Q96",
+      "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q155"
+    ],
+    "unicode": "\ud83c\uddf1\ud83c\udde7",
+    "capital": "http://www.wikidata.org/entity/Q3820",
+    "countryLabel": "Libano",
+    "population": "6100075"
+  },
+  {
+    "capitalLabel": "Du\u0161anbe",
+    "country": "http://www.wikidata.org/entity/Q863",
+    "surface": "143100",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationTajikistan.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Tajikistan%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Tajikistan.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q889",
+      "http://www.wikidata.org/entity/Q265",
+      "http://www.wikidata.org/entity/Q813",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q902",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q668",
+      "http://www.wikidata.org/entity/Q794"
+    ],
+    "unicode": "\ud83c\uddf9\ud83c\uddef",
+    "capital": "http://www.wikidata.org/entity/Q9365",
+    "countryLabel": "Tagikistan",
+    "population": "8921343"
+  },
+  {
+    "capitalLabel": "Thimphu",
+    "country": "http://www.wikidata.org/entity/Q917",
+    "surface": "38394",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Bhutan%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Bhutan.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q668",
+      "http://www.wikidata.org/entity/Q17",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q155",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q837",
+      "http://www.wikidata.org/entity/Q843"
+    ],
+    "unicode": "\ud83c\udde7\ud83c\uddf9",
+    "capital": "http://www.wikidata.org/entity/Q9270",
+    "countryLabel": "Bhutan",
+    "population": "807610"
+  },
+  {
+    "capitalLabel": "Yamoussoukro",
+    "country": "http://www.wikidata.org/entity/Q1008",
+    "surface": "322463",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/CIV%20orthographic.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationCotedIvoire.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20C%C3%B4te%20d%27Ivoire.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q117",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q668",
+      "http://www.wikidata.org/entity/Q902",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q96",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q183"
+    ],
+    "unicode": "\ud83c\udde8\ud83c\uddee",
+    "capital": "http://www.wikidata.org/entity/Q3768",
+    "countryLabel": "Costa d'Avorio",
+    "population": "24294750"
+  },
+  {
+    "capitalLabel": "Bi\u0161kek",
+    "country": "http://www.wikidata.org/entity/Q813",
+    "surface": "199951",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationKyrgyzstan.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Kyrgyzstan.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q863",
+      "http://www.wikidata.org/entity/Q265",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q843",
+      "http://www.wikidata.org/entity/Q851",
+      "http://www.wikidata.org/entity/Q902",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q794"
+    ],
+    "unicode": "\ud83c\uddf0\ud83c\uddec",
+    "capital": "http://www.wikidata.org/entity/Q9361",
+    "countryLabel": "Kirghizistan",
+    "population": "6201500"
+  },
+  {
+    "capitalLabel": "Yaound\u00e9",
+    "country": "http://www.wikidata.org/entity/Q1009",
+    "surface": "475442",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/CMR%20orthographic.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationCameroon.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Cameroon.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q1033",
+      "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q657",
+      "http://www.wikidata.org/entity/Q929",
+      "http://www.wikidata.org/entity/Q971"
+    ],
+    "unicode": "\ud83c\udde8\ud83c\uddf2",
+    "capital": "http://www.wikidata.org/entity/Q3808",
+    "countryLabel": "Camerun",
+    "population": "24053727"
+  },
+  {
+    "capitalLabel": "Tashkent",
+    "country": "http://www.wikidata.org/entity/Q265",
+    "surface": "448978",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/UZB%20orthographic.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Uzbekistan.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q232",
+      "http://www.wikidata.org/entity/Q863",
+      "http://www.wikidata.org/entity/Q874",
+      "http://www.wikidata.org/entity/Q813",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q145",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q218"
+    ],
+    "unicode": "\ud83c\uddfa\ud83c\uddff",
+    "capital": "http://www.wikidata.org/entity/Q269",
+    "countryLabel": "Uzbekistan",
+    "population": "32387200"
+  },
+  {
+    "capitalLabel": "N\u2019Djamena",
+    "country": "http://www.wikidata.org/entity/Q657",
+    "surface": "1284000",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationChad.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/TCD%20orthographic.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Chad.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q1016",
+      "http://www.wikidata.org/entity/Q1033",
+      "http://www.wikidata.org/entity/Q1049",
+      "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q218",
+      "http://www.wikidata.org/entity/Q30"
+    ],
+    "unicode": "\ud83c\uddf9\ud83c\udde9",
+    "capital": "http://www.wikidata.org/entity/Q3659",
+    "countryLabel": "Ciad",
+    "population": "15477751"
+  },
+  {
+    "capitalLabel": "Bi\u0161kek",
+    "country": "http://www.wikidata.org/entity/Q813",
+    "surface": "199951",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Kyrgyzstan%20on%20the%20globe%20%28Eurasia%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Kyrgyzstan.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q863",
+      "http://www.wikidata.org/entity/Q265",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q843",
+      "http://www.wikidata.org/entity/Q851",
+      "http://www.wikidata.org/entity/Q902",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q794"
+    ],
+    "unicode": "\ud83c\uddf0\ud83c\uddec",
+    "capital": "http://www.wikidata.org/entity/Q9361",
+    "countryLabel": "Kirghizistan",
+    "population": "6201500"
+  },
+  {
+    "capitalLabel": "Doha",
+    "country": "http://www.wikidata.org/entity/Q846",
+    "surface": "11437",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/QAT%20orthographic.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Qatar.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q851",
+      "http://www.wikidata.org/entity/Q805",
+      "http://www.wikidata.org/entity/Q858",
+      "http://www.wikidata.org/entity/Q902",
+      "http://www.wikidata.org/entity/Q928",
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q801"
+    ],
+    "unicode": "\ud83c\uddf6\ud83c\udde6",
+    "capital": "http://www.wikidata.org/entity/Q3861",
+    "countryLabel": "Qatar",
+    "population": "2639211"
+  },
+  {
+    "capitalLabel": "Abu Dhabi",
+    "country": "http://www.wikidata.org/entity/Q878",
+    "surface": "83600",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/United%20Arab%20Emirates%20on%20the%20globe%20%28United%20Arab%20Emirates%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20United%20Arab%20Emirates.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q842",
+      "http://www.wikidata.org/entity/Q851",
+      "http://www.wikidata.org/entity/Q16",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q43",
+      "http://www.wikidata.org/entity/Q79",
+      "http://www.wikidata.org/entity/Q96",
+      "http://www.wikidata.org/entity/Q114"
+    ],
+    "unicode": "\ud83c\udde6\ud83c\uddea",
+    "capital": "http://www.wikidata.org/entity/Q1519",
+    "countryLabel": "Emirati Arabi Uniti",
+    "population": "9400145"
+  },
+  {
+    "capitalLabel": "Kampala",
+    "country": "http://www.wikidata.org/entity/Q1036",
+    "surface": "241038",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationUganda.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Uganda%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Uganda.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q958",
+      "http://www.wikidata.org/entity/Q114",
+      "http://www.wikidata.org/entity/Q668",
+      "http://www.wikidata.org/entity/Q801",
+      "http://www.wikidata.org/entity/Q833",
+      "http://www.wikidata.org/entity/Q902",
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q423"
+    ],
+    "unicode": "\ud83c\uddfa\ud83c\uddec",
+    "capital": "http://www.wikidata.org/entity/Q3894",
+    "countryLabel": "Uganda",
+    "population": "42862958"
+  },
+  {
+    "capitalLabel": "Bamako",
+    "country": "http://www.wikidata.org/entity/Q912",
+    "surface": "1240192",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationMali.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Mali%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Mali.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q1025",
+      "http://www.wikidata.org/entity/Q1028",
+      "http://www.wikidata.org/entity/Q16",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q668"
+    ],
+    "unicode": "\ud83c\uddf2\ud83c\uddf1",
+    "capital": "http://www.wikidata.org/entity/Q3703",
+    "countryLabel": "Mali",
+    "population": "18541980"
+  },
+  {
+    "capitalLabel": "Lusaka",
+    "country": "http://www.wikidata.org/entity/Q953",
+    "surface": "752618",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationZambia.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Zambia%20%28orthographic%20projection%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Zambia%20on%20the%20globe%20%28Zambia%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Zambia.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q974",
+      "http://www.wikidata.org/entity/Q1020",
+      "http://www.wikidata.org/entity/Q1029",
+      "http://www.wikidata.org/entity/Q1030",
+      "http://www.wikidata.org/entity/Q916",
+      "http://www.wikidata.org/entity/Q924",
+      "http://www.wikidata.org/entity/Q954",
+      "http://www.wikidata.org/entity/Q963"
+    ],
+    "unicode": "\ud83c\uddff\ud83c\uddf2",
+    "capital": "http://www.wikidata.org/entity/Q3881",
+    "countryLabel": "Zambia",
+    "population": "17094130"
+  },
+  {
+    "capitalLabel": "Porto-Novo",
+    "country": "http://www.wikidata.org/entity/Q962",
+    "surface": "114763",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/BEN%20orthographic.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Benin%20on%20the%20globe%20%28Africa%20centered%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationBenin.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Benin.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q668",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q155",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q945"
+    ],
+    "unicode": "\ud83c\udde7\ud83c\uddef",
+    "capital": "http://www.wikidata.org/entity/Q3799",
+    "countryLabel": "Benin",
+    "population": "11175692"
+  },
+  {
+    "capitalLabel": "Maputo",
+    "country": "http://www.wikidata.org/entity/Q1029",
+    "surface": "801590",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationMozambique.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Mozambique%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Mozambique.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q258",
+      "http://www.wikidata.org/entity/Q953",
+      "http://www.wikidata.org/entity/Q1020",
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q668",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q16"
+    ],
+    "unicode": "\ud83c\uddf2\ud83c\uddff",
+    "capital": "http://www.wikidata.org/entity/Q3889",
+    "countryLabel": "Mozambico",
+    "population": "29668834"
+  },
+  {
+    "capitalLabel": "Al Kuwait",
+    "country": "http://www.wikidata.org/entity/Q817",
+    "surface": "17818",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/KWT%20orthographic.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Kuwait.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q851",
+      "http://www.wikidata.org/entity/Q796",
+      "http://www.wikidata.org/entity/Q833",
+      "http://www.wikidata.org/entity/Q843",
+      "http://www.wikidata.org/entity/Q878",
+      "http://www.wikidata.org/entity/Q902",
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q423"
+    ],
+    "unicode": "\ud83c\uddf0\ud83c\uddfc",
+    "capital": "http://www.wikidata.org/entity/Q35178",
+    "countryLabel": "Kuwait",
+    "population": "4600000"
+  },
+  {
+    "capitalLabel": "A\u015fgabat",
+    "country": "http://www.wikidata.org/entity/Q874",
+    "surface": "491210",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationTurkmenistan.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Turkmenistan%20on%20the%20globe%20%28Turkmenistan%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Turkmenistan.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q265",
+      "http://www.wikidata.org/entity/Q794",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q668",
+      "http://www.wikidata.org/entity/Q833",
+      "http://www.wikidata.org/entity/Q843",
+      "http://www.wikidata.org/entity/Q851",
+      "http://www.wikidata.org/entity/Q902"
+    ],
+    "unicode": "\ud83c\uddf9\ud83c\uddf2",
+    "capital": "http://www.wikidata.org/entity/Q23438",
+    "countryLabel": "Turkmenistan",
+    "population": "5850901"
+  },
+  {
+    "capitalLabel": "Nouakchott",
+    "country": "http://www.wikidata.org/entity/Q1025",
+    "surface": "1030700",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationMauritania.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Mauritania%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Mauritania.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q912",
+      "http://www.wikidata.org/entity/Q1041",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q801",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q183"
+    ],
+    "unicode": "\ud83c\uddf2\ud83c\uddf7",
+    "capital": "http://www.wikidata.org/entity/Q3688",
+    "countryLabel": "Mauritania",
+    "population": "4420184"
+  },
+  {
+    "capitalLabel": "Gaborone",
+    "country": "http://www.wikidata.org/entity/Q963",
+    "surface": "581737",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Botswana%20%28orthographic%20projection%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationBotswana.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Botswana.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q1030",
+      "http://www.wikidata.org/entity/Q258",
+      "http://www.wikidata.org/entity/Q953",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q423"
+    ],
+    "unicode": "\ud83c\udde7\ud83c\uddfc",
+    "capital": "http://www.wikidata.org/entity/Q3919",
+    "countryLabel": "Botswana",
+    "population": "2291661"
+  },
+  {
+    "capitalLabel": "San Jos\u00e9",
+    "country": "http://www.wikidata.org/entity/Q800",
+    "surface": "51100",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Costa%20Rica%20%28orthographic%20projection%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationCostaRica.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Costa%20Rica%20%28state%29.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q298",
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q77",
+      "http://www.wikidata.org/entity/Q96",
+      "http://www.wikidata.org/entity/Q155"
+    ],
+    "unicode": "\ud83c\udde8\ud83c\uddf7",
+    "capital": "http://www.wikidata.org/entity/Q3070",
+    "countryLabel": "Costa Rica",
+    "population": "4905769"
+  },
+  {
+    "capitalLabel": "Niamey",
+    "country": "http://www.wikidata.org/entity/Q1032",
+    "surface": "1268260.197893",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationNiger.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Niger%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Niger.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q1033",
+      "http://www.wikidata.org/entity/Q262",
+      "http://www.wikidata.org/entity/Q657",
+      "http://www.wikidata.org/entity/Q912",
+      "http://www.wikidata.org/entity/Q962",
+      "http://www.wikidata.org/entity/Q965",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q801"
+    ],
+    "unicode": "\ud83c\uddf3\ud83c\uddea",
+    "capital": "http://www.wikidata.org/entity/Q3674",
+    "countryLabel": "Niger",
+    "population": "21477348"
+  },
+  {
+    "capitalLabel": "Ouagadougou",
+    "country": "http://www.wikidata.org/entity/Q965",
+    "surface": "274200",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationBurkinaFaso.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/BFA%20orthographic.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Burkina%20Faso%20on%20the%20globe%20%28Africa%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Burkina%20Faso.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q117",
+      "http://www.wikidata.org/entity/Q16",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q1008",
+      "http://www.wikidata.org/entity/Q1032"
+    ],
+    "unicode": "\ud83c\udde7\ud83c\uddeb",
+    "capital": "http://www.wikidata.org/entity/Q3777",
+    "countryLabel": "Burkina Faso",
+    "population": "19193382"
+  },
+  {
+    "capitalLabel": "Asmara",
+    "country": "http://www.wikidata.org/entity/Q986",
+    "surface": "117600",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Eritrea%20on%20the%20globe%20%28Africa%20centered%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationEritrea.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Eritrea.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q977",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q801",
+      "http://www.wikidata.org/entity/Q805",
+      "http://www.wikidata.org/entity/Q851",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q148"
+    ],
+    "unicode": "\ud83c\uddea\ud83c\uddf7",
+    "capital": "http://www.wikidata.org/entity/Q3642",
+    "countryLabel": "Eritrea",
+    "population": "3497000"
+  },
+  {
+    "capitalLabel": "Dakar",
+    "country": "http://www.wikidata.org/entity/Q1041",
+    "surface": "196722",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationSenegal.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Senegal%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Senegal.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q1025",
+      "http://www.wikidata.org/entity/Q1011",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q96",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q423"
+    ],
+    "unicode": "\ud83c\uddf8\ud83c\uddf3",
+    "capital": "http://www.wikidata.org/entity/Q3718",
+    "countryLabel": "Senegal",
+    "population": "15850567"
+  },
+  {
+    "capitalLabel": "Gitega",
+    "country": "http://www.wikidata.org/entity/Q967",
+    "surface": "27834",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationBurundi.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Burundi%20%28orthographic%20projection%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Burundi%20on%20the%20globe%20%28Africa%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Burundi.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q974",
+      "http://www.wikidata.org/entity/Q1037",
+      "http://www.wikidata.org/entity/Q924"
+    ],
+    "unicode": "\ud83c\udde7\ud83c\uddee",
+    "capital": "http://www.wikidata.org/entity/Q167551",
+    "countryLabel": "Burundi",
+    "population": "10864245"
+  },
+  {
+    "capitalLabel": "Tegucigalpa",
+    "country": "http://www.wikidata.org/entity/Q783",
+    "surface": "112492",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Honduras%20%28orthographic%20projection%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationHonduras.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Honduras%20%28darker%20variant%29.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q96",
+      "http://www.wikidata.org/entity/Q155",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q774",
+      "http://www.wikidata.org/entity/Q792",
+      "http://www.wikidata.org/entity/Q811"
+    ],
+    "unicode": "\ud83c\udded\ud83c\uddf3",
+    "capital": "http://www.wikidata.org/entity/Q3238",
+    "countryLabel": "Honduras",
+    "population": "9265067"
+  },
+  {
+    "capitalLabel": "Panama",
+    "country": "http://www.wikidata.org/entity/Q804",
+    "surface": "74177.3",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationPanama.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/PAN%20orthographic.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Panama.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q739",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q668",
+      "http://www.wikidata.org/entity/Q902",
+      "http://www.wikidata.org/entity/Q16",
+      "http://www.wikidata.org/entity/Q77",
+      "http://www.wikidata.org/entity/Q96",
+      "http://www.wikidata.org/entity/Q148"
+    ],
+    "unicode": "\ud83c\uddf5\ud83c\udde6",
+    "capital": "http://www.wikidata.org/entity/Q3306",
+    "countryLabel": "Panama",
+    "population": "4098587"
+  },
+  {
+    "capitalLabel": "Mascate",
+    "country": "http://www.wikidata.org/entity/Q842",
+    "surface": "309500",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Oman%20%28better%29%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Oman.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q805",
+      "http://www.wikidata.org/entity/Q851",
+      "http://www.wikidata.org/entity/Q878",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q833",
+      "http://www.wikidata.org/entity/Q843",
+      "http://www.wikidata.org/entity/Q902"
+    ],
+    "unicode": "\ud83c\uddf4\ud83c\uddf2",
+    "capital": "http://www.wikidata.org/entity/Q3826",
+    "countryLabel": "Oman",
+    "population": "4829480"
+  },
+  {
+    "capitalLabel": "Banjul",
+    "country": "http://www.wikidata.org/entity/Q1005",
+    "surface": "11300",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Gambia%20%28orthographic%20projection%20with%20inset%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationGambia.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20The%20Gambia.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q794",
+      "http://www.wikidata.org/entity/Q902",
+      "http://www.wikidata.org/entity/Q928",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q1041"
+    ],
+    "unicode": "\ud83c\uddec\ud83c\uddf2",
+    "capital": "http://www.wikidata.org/entity/Q3726",
+    "countryLabel": "Gambia",
+    "population": "2100568"
+  },
+  {
+    "capitalLabel": "Conakry",
+    "country": "http://www.wikidata.org/entity/Q1006",
+    "surface": "245857",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Guinea%20%28orthographic%20projection%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationGuinea.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Guinea.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q912",
+      "http://www.wikidata.org/entity/Q1007",
+      "http://www.wikidata.org/entity/Q1008",
+      "http://www.wikidata.org/entity/Q1014"
+    ],
+    "unicode": "\ud83c\uddec\ud83c\uddf3",
+    "capital": "http://www.wikidata.org/entity/Q3733",
+    "countryLabel": "Guinea",
+    "population": "12717176"
+  },
+  {
+    "capitalLabel": "Kigali",
+    "country": "http://www.wikidata.org/entity/Q1037",
+    "surface": "26338",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationRwanda.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Rwanda%20on%20the%20globe%20%28Africa%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Rwanda.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q924",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q114",
+      "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q1020",
+      "http://www.wikidata.org/entity/Q423"
+    ],
+    "unicode": "\ud83c\uddf7\ud83c\uddfc",
+    "capital": "http://www.wikidata.org/entity/Q3859",
+    "countryLabel": "Ruanda",
+    "population": "12208407"
+  },
+  {
+    "capitalLabel": "Bangui",
+    "country": "http://www.wikidata.org/entity/Q929",
+    "surface": "622984",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/CAF%20orthographic.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationCentralAfricanRepublic.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Central%20African%20Republic.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q974",
+      "http://www.wikidata.org/entity/Q1009",
+      "http://www.wikidata.org/entity/Q1049",
+      "http://www.wikidata.org/entity/Q657",
+      "http://www.wikidata.org/entity/Q971",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q1008"
+    ],
+    "unicode": "\ud83c\udde8\ud83c\uddeb",
+    "capital": "http://www.wikidata.org/entity/Q3832",
+    "countryLabel": "Repubblica Centrafricana",
+    "population": "4659080"
+  },
+  {
+    "capitalLabel": "Gibuti",
+    "country": "http://www.wikidata.org/entity/Q977",
+    "surface": "23200",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Djibouti%20%28orthographic%20projection%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationDjibouti.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Djibouti.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q115",
+      "http://www.wikidata.org/entity/Q986",
+      "http://www.wikidata.org/entity/Q1045",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q408"
+    ],
+    "unicode": "\ud83c\udde9\ud83c\uddef",
+    "capital": "http://www.wikidata.org/entity/Q3604",
+    "countryLabel": "Gibuti",
+    "population": "956985"
+  },
+  {
+    "capitalLabel": "Freetown",
+    "country": "http://www.wikidata.org/entity/Q1044",
+    "surface": "71740",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationSierraLeone.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Sierra%20Leone%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Sierra%20Leone.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q1014",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q902",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q1006"
+    ],
+    "unicode": "\ud83c\uddf8\ud83c\uddf1",
+    "capital": "http://www.wikidata.org/entity/Q3780",
+    "countryLabel": "Sierra Leone",
+    "population": "7557212"
+  },
+  {
+    "capitalLabel": "Bandar Seri Begawan",
+    "country": "http://www.wikidata.org/entity/Q921",
+    "surface": "5765.313533",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Brunei%20on%20the%20globe%20%28Southeast%20Asia%20centered%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationBrunei.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Brunei.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q833",
+      "http://www.wikidata.org/entity/Q334",
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q424",
+      "http://www.wikidata.org/entity/Q664",
+      "http://www.wikidata.org/entity/Q668",
+      "http://www.wikidata.org/entity/Q819"
+    ],
+    "unicode": "\ud83c\udde7\ud83c\uddf3",
+    "capital": "http://www.wikidata.org/entity/Q9279",
+    "countryLabel": "Brunei",
+    "population": "428697"
+  },
+  {
+    "capitalLabel": "Lilongwe",
+    "country": "http://www.wikidata.org/entity/Q1020",
+    "surface": "118484.186083",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationMalawi.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Malawi%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Malawi.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q953",
+      "http://www.wikidata.org/entity/Q1029",
+      "http://www.wikidata.org/entity/Q801",
+      "http://www.wikidata.org/entity/Q833",
+      "http://www.wikidata.org/entity/Q902",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q183"
+    ],
+    "unicode": "\ud83c\uddf2\ud83c\uddfc",
+    "capital": "http://www.wikidata.org/entity/Q3876",
+    "countryLabel": "Malawi",
+    "population": "18622104"
+  },
+  {
+    "capitalLabel": "Brazzaville",
+    "country": "http://www.wikidata.org/entity/Q971",
+    "surface": "342000",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationRCongo.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Republic%20of%20the%20Congo%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Republic%20of%20the%20Congo.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q974",
+      "http://www.wikidata.org/entity/Q258",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q916"
+    ],
+    "unicode": "\ud83c\udde8\ud83c\uddec",
+    "capital": "http://www.wikidata.org/entity/Q3844",
+    "countryLabel": "Repubblica del Congo",
+    "population": "5260750"
+  },
+  {
+    "capitalLabel": "Libreville",
+    "country": "http://www.wikidata.org/entity/Q1000",
+    "surface": "267667",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Gabon%20%28orthographic%20projection%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationGabon.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Gabon.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q971",
+      "http://www.wikidata.org/entity/Q1009"
+    ],
+    "unicode": "\ud83c\uddec\ud83c\udde6",
+    "capital": "http://www.wikidata.org/entity/Q3825",
+    "countryLabel": "Gabon",
+    "population": "2025137"
+  },
+  {
+    "capitalLabel": "Manama",
+    "country": "http://www.wikidata.org/entity/Q398",
+    "surface": "765.004788",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Map%20of%20Bahrain.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Bahrain.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q851",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q145",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q805",
+      "http://www.wikidata.org/entity/Q833",
+      "http://www.wikidata.org/entity/Q843"
+    ],
+    "unicode": "\ud83c\udde7\ud83c\udded",
+    "capital": "http://www.wikidata.org/entity/Q3882",
+    "countryLabel": "Bahrein",
+    "population": "1492584"
+  },
+  {
+    "capitalLabel": "Port-au-Prince",
+    "country": "http://www.wikidata.org/entity/Q790",
+    "surface": "27750",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationHaiti.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Haiti%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Haiti.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q16",
+      "http://www.wikidata.org/entity/Q96",
+      "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q155",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q298",
+      "http://www.wikidata.org/entity/Q717"
+    ],
+    "unicode": "\ud83c\udded\ud83c\uddf9",
+    "capital": "http://www.wikidata.org/entity/Q34261",
+    "countryLabel": "Haiti",
+    "population": "10981229"
+  },
+  {
+    "capitalLabel": "Male",
+    "country": "http://www.wikidata.org/entity/Q826",
+    "surface": "298",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Maldives%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Maldives.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q668",
+      "http://www.wikidata.org/entity/Q833",
+      "http://www.wikidata.org/entity/Q843",
+      "http://www.wikidata.org/entity/Q851"
+    ],
+    "unicode": "\ud83c\uddf2\ud83c\uddfb",
+    "capital": "http://www.wikidata.org/entity/Q9347",
+    "countryLabel": "Maldive",
+    "population": "436330"
+  },
+  {
+    "capitalLabel": "Lom\u00e9",
+    "country": "http://www.wikidata.org/entity/Q945",
+    "surface": "56785",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationTogo.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Togo%20on%20the%20globe%20%28Africa%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Togo.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q117",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q962",
+      "http://www.wikidata.org/entity/Q965"
+    ],
+    "unicode": "\ud83c\uddf9\ud83c\uddec",
+    "capital": "http://www.wikidata.org/entity/Q3792",
+    "countryLabel": "Togo",
+    "population": "7797694"
+  },
+  {
+    "capitalLabel": "Praia",
+    "country": "http://www.wikidata.org/entity/Q1011",
+    "surface": "4033",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/CPV%20orthographic%20NaturalEarth.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationCapeVerde.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Cape%20Verde.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q916",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q45",
+      "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q155",
+      "http://www.wikidata.org/entity/Q183"
+    ],
+    "unicode": "\ud83c\udde8\ud83c\uddfb",
+    "capital": "http://www.wikidata.org/entity/Q3751",
+    "countryLabel": "Capo Verde",
+    "population": "546388"
+  },
+  {
+    "capitalLabel": "Bissau",
+    "country": "http://www.wikidata.org/entity/Q1007",
+    "surface": "36125",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Guinea-Bissau%20on%20the%20globe%20%28Africa%20centered%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationGuineaBissau.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Guinea-Bissau.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q1006",
+      "http://www.wikidata.org/entity/Q1041"
+    ],
+    "unicode": "\ud83c\uddec\ud83c\uddfc",
+    "capital": "http://www.wikidata.org/entity/Q3739",
+    "countryLabel": "Guinea-Bissau",
+    "population": "1861283"
+  },
+  {
+    "capitalLabel": "Paramaribo",
+    "country": "http://www.wikidata.org/entity/Q730",
+    "surface": "163270",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationSuriname.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/SUR%20orthographic.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Suriname.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q734",
+      "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q155",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q96",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q183"
+    ],
+    "unicode": "\ud83c\uddf8\ud83c\uddf7",
+    "capital": "http://www.wikidata.org/entity/Q3001",
+    "countryLabel": "Suriname",
+    "population": "563402"
+  },
+  {
+    "capitalLabel": "Georgetown",
+    "country": "http://www.wikidata.org/entity/Q734",
+    "surface": "214970",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/GUY%20orthographic.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationGuyana.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Guyana.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q717",
+      "http://www.wikidata.org/entity/Q155",
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q668",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q96",
+      "http://www.wikidata.org/entity/Q183"
+    ],
+    "unicode": "\ud83c\uddec\ud83c\uddfe",
+    "capital": "http://www.wikidata.org/entity/Q10717",
+    "countryLabel": "Guyana",
+    "population": "777859"
+  },
+  {
+    "capitalLabel": "Monrovia",
+    "country": "http://www.wikidata.org/entity/Q1014",
+    "surface": "111369",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Liberia%20%28orthographic%20projection%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationLiberia.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Liberia.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q1044",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q668",
+      "http://www.wikidata.org/entity/Q902",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q1006"
+    ],
+    "unicode": "\ud83c\uddf1\ud83c\uddf7",
+    "capital": "http://www.wikidata.org/entity/Q3748",
+    "countryLabel": "Liberia",
+    "population": "4731906"
+  },
+  {
+    "capitalLabel": "San Salvador",
+    "country": "http://www.wikidata.org/entity/Q792",
+    "surface": "20742",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/El%20Salvador%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20El%20Salvador.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q77",
+      "http://www.wikidata.org/entity/Q96",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q298",
+      "http://www.wikidata.org/entity/Q774",
+      "http://www.wikidata.org/entity/Q783"
+    ],
+    "unicode": "\ud83c\uddf8\ud83c\uddfb",
+    "capital": "http://www.wikidata.org/entity/Q3110",
+    "countryLabel": "El Salvador",
+    "population": "6420746"
+  },
+  {
+    "capitalLabel": "Dili",
+    "country": "http://www.wikidata.org/entity/Q574",
+    "surface": "14918.72",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationEastTimor.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Timor%20Leste%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20East%20Timor.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q252",
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q45",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q155",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q40362"
+    ],
+    "unicode": "\ud83c\uddf9\ud83c\uddf1",
+    "capital": "http://www.wikidata.org/entity/Q9310",
+    "countryLabel": "Timor Est",
+    "population": "1296311"
+  },
+  {
+    "capitalLabel": "Kingston",
+    "country": "http://www.wikidata.org/entity/Q766",
+    "surface": "10991.90954",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationJamaica.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Jamaica%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Jamaica.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q96",
+      "http://www.wikidata.org/entity/Q117",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q155",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q16",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q423"
+    ],
+    "unicode": "\ud83c\uddef\ud83c\uddf2",
+    "capital": "http://www.wikidata.org/entity/Q34692",
+    "countryLabel": "Giamaica",
+    "population": "2890299"
+  },
+  {
+    "capitalLabel": "Belmopan",
+    "country": "http://www.wikidata.org/entity/Q242",
+    "surface": "22966",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Belize%20in%20its%20region.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/BLZ%20orthographic.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationBelize.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Belize.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q774",
+      "http://www.wikidata.org/entity/Q96",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q155",
+      "http://www.wikidata.org/entity/Q183"
+    ],
+    "unicode": "\ud83c\udde7\ud83c\uddff",
+    "capital": "http://www.wikidata.org/entity/Q3043",
+    "countryLabel": "Belize",
+    "population": "374681"
+  },
+  {
+    "capitalLabel": "Malabo",
+    "country": "http://www.wikidata.org/entity/Q983",
+    "surface": "28051",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/GNQ%20orthographic.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationEquatorialGuinea.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Equatorial%20Guinea.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q155",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q1009",
+      "http://www.wikidata.org/entity/Q1006"
+    ],
+    "unicode": "\ud83c\uddec\ud83c\uddf6",
+    "capital": "http://www.wikidata.org/entity/Q3818",
+    "countryLabel": "Guinea Equatoriale",
+    "population": "1267689"
+  },
+  {
+    "capitalLabel": "Moroni",
+    "country": "http://www.wikidata.org/entity/Q970",
+    "surface": "2034",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationComoros.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Comoros%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Comoros.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q924",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q1019",
+      "http://www.wikidata.org/entity/Q1029",
+      "http://www.wikidata.org/entity/Q1042",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q148"
+    ],
+    "unicode": "\ud83c\uddf0\ud83c\uddf2",
+    "capital": "http://www.wikidata.org/entity/Q3901",
+    "countryLabel": "Comore",
+    "population": "823652"
+  },
+  {
+    "capitalLabel": "Lobamba",
+    "country": "http://www.wikidata.org/entity/Q1050",
+    "surface": "17364",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationEswatini.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationEswatini.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Eswatini%20on%20the%20globe%20%28Africa%20centered%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Eswatini%20on%20the%20globe%20%28Africa%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Eswatini.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q258",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q1029"
+    ],
+    "unicode": "\ud83c\uddf8\ud83c\uddff",
+    "capital": "http://www.wikidata.org/entity/Q101418",
+    "countryLabel": "Swaziland",
+    "population": "1367254"
+  },
+  {
+    "capitalLabel": "Managua",
+    "country": "http://www.wikidata.org/entity/Q811",
+    "surface": "130375",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationNicaragua.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Nicaragua%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Nicaragua.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q739",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q35",
+      "http://www.wikidata.org/entity/Q96",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q801"
+    ],
+    "unicode": "\ud83c\uddf3\ud83c\uddee",
+    "capital": "http://www.wikidata.org/entity/Q3274",
+    "countryLabel": "Nicaragua",
+    "population": "6217581"
+  },
+  {
+    "capitalLabel": "Maseru",
+    "country": "http://www.wikidata.org/entity/Q1013",
+    "surface": "30355",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Lesotho%20%28orthographic%20projection%20with%20inset%29.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationLesotho.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Lesotho.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q258",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q668"
+    ],
+    "unicode": "\ud83c\uddf1\ud83c\uddf8",
+    "capital": "http://www.wikidata.org/entity/Q3909",
+    "countryLabel": "Lesotho",
+    "population": "2233339"
+  },
+  {
+    "capitalLabel": "Nassau",
+    "country": "http://www.wikidata.org/entity/Q778",
+    "surface": "13878",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Bahamas%20in%20its%20region.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Bahamas%20on%20the%20globe%20%28Americas%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Bahamas.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q30"
+    ],
+    "unicode": "\ud83c\udde7\ud83c\uddf8",
+    "capital": "http://www.wikidata.org/entity/Q2467",
+    "countryLabel": "Bahamas",
+    "population": "395361"
+  },
+  {
+    "capitalLabel": "Citt\u00e0 del Guatemala",
+    "country": "http://www.wikidata.org/entity/Q774",
+    "surface": "108889",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/GTM%20orthographic.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationGuatemala.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Guatemala.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q96",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q77",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q668",
+      "http://www.wikidata.org/entity/Q801"
+    ],
+    "unicode": "\ud83c\uddec\ud83c\uddf9",
+    "capital": "http://www.wikidata.org/entity/Q1555",
+    "countryLabel": "Guatemala",
+    "population": "17263239"
+  },
+  {
+    "capitalLabel": "Port Moresby",
+    "country": "http://www.wikidata.org/entity/Q691",
+    "surface": "462840",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationPapuaNewGuinea.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Papua%20New%20Guinea%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Papua%20New%20Guinea.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q252",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q801",
+      "http://www.wikidata.org/entity/Q902",
+      "http://www.wikidata.org/entity/Q928",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q142"
+    ],
+    "unicode": "\ud83c\uddf5\ud83c\uddec",
+    "capital": "http://www.wikidata.org/entity/Q36526",
+    "countryLabel": "Papua Nuova Guinea",
+    "population": "8251162"
+  },
+  {
+    "capitalLabel": "Port Louis",
+    "country": "http://www.wikidata.org/entity/Q1027",
+    "surface": "2040",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Mauritius%20on%20the%20globe%20%28Africa%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Mauritius.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q258",
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q668"
+    ],
+    "unicode": "\ud83c\uddf2\ud83c\uddfa",
+    "capital": "http://www.wikidata.org/entity/Q3929",
+    "countryLabel": "Mauritius",
+    "population": "1264613"
+  },
+  {
+    "capitalLabel": "Suva",
+    "country": "http://www.wikidata.org/entity/Q712",
+    "surface": "18274",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Fiji%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Fiji.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q664",
+      "http://www.wikidata.org/entity/Q668",
+      "http://www.wikidata.org/entity/Q672",
+      "http://www.wikidata.org/entity/Q685",
+      "http://www.wikidata.org/entity/Q833",
+      "http://www.wikidata.org/entity/Q884",
+      "http://www.wikidata.org/entity/Q902"
+    ],
+    "unicode": "\ud83c\uddeb\ud83c\uddef",
+    "capital": "http://www.wikidata.org/entity/Q38807",
+    "countryLabel": "Figi",
+    "population": "905502"
+  },
+  {
+    "capitalLabel": "Victoria",
+    "country": "http://www.wikidata.org/entity/Q1042",
+    "surface": "459",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/SYC%20orthographic.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Seychelles.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q114",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q668"
+    ],
+    "unicode": "\ud83c\uddf8\ud83c\udde8",
+    "capital": "http://www.wikidata.org/entity/Q3940",
+    "countryLabel": "Seychelles",
+    "population": "95843"
+  },
+  {
+    "capitalLabel": "Bridgetown",
+    "country": "http://www.wikidata.org/entity/Q244",
+    "surface": "439",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/BRB%20orthographic.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationBarbados.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Barbados.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q17",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q145",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q155",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q1033"
+    ],
+    "unicode": "\ud83c\udde7\ud83c\udde7",
+    "capital": "http://www.wikidata.org/entity/Q36168",
+    "countryLabel": "Barbados",
+    "population": "285719"
+  },
+  {
+    "capitalLabel": "Giuba",
+    "country": "http://www.wikidata.org/entity/Q958",
+    "surface": "619745.304981",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationSouthSudan.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/South%20Sudan%20on%20the%20globe%20%28Africa%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20South%20Sudan.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q1049",
+      "http://www.wikidata.org/entity/Q114",
+      "http://www.wikidata.org/entity/Q1036",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q668",
+      "http://www.wikidata.org/entity/Q902",
+      "http://www.wikidata.org/entity/Q928",
+      "http://www.wikidata.org/entity/Q79"
+    ],
+    "unicode": "\ud83c\uddf8\ud83c\uddf8",
+    "capital": "http://www.wikidata.org/entity/Q1947",
+    "countryLabel": "Sudan del Sud",
+    "population": "12575714"
+  },
+  {
+    "capitalLabel": "Santo Domingo",
+    "country": "http://www.wikidata.org/entity/Q786",
+    "surface": "48670.82",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationDominicanRepublic.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Dominican%20Republic%20on%20the%20globe%20%28Americas%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Dominican%20Republic.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q77",
+      "http://www.wikidata.org/entity/Q96",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q717",
+      "http://www.wikidata.org/entity/Q790"
+    ],
+    "unicode": "\ud83c\udde9\ud83c\uddf4",
+    "capital": "http://www.wikidata.org/entity/Q34820",
+    "countryLabel": "Repubblica Dominicana",
+    "population": "10403761"
+  },
+  {
+    "capitalLabel": "S\u00e3o Tom\u00e9",
+    "country": "http://www.wikidata.org/entity/Q1039",
+    "surface": "1001",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Sao%20Tome%20and%20Principe%20on%20the%20globe%20%28Africa%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Sao%20Tome%20and%20Principe.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q45",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q423"
+    ],
+    "unicode": "\ud83c\uddf8\ud83c\uddf9",
+    "capital": "http://www.wikidata.org/entity/Q3932",
+    "countryLabel": "S\u00e3o Tom\u00e9 e Pr\u00edncipe",
+    "population": "204327"
+  },
+  {
+    "capitalLabel": "Saint John's",
+    "country": "http://www.wikidata.org/entity/Q781",
+    "surface": "440.29",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/ATG%20orthographic.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Antigua%20and%20Barbuda.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q148"
+    ],
+    "unicode": "\ud83c\udde6\ud83c\uddec",
+    "capital": "http://www.wikidata.org/entity/Q36262",
+    "countryLabel": "Antigua e Barbuda",
+    "population": "102012"
+  },
+  {
+    "capitalLabel": "Roseau",
+    "country": "http://www.wikidata.org/entity/Q784",
+    "surface": "751.096551",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/LocationDominica.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Dominica%20on%20the%20globe%20%28Americas%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Dominica.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q717",
+      "http://www.wikidata.org/entity/Q786"
+    ],
+    "unicode": "\ud83c\udde9\ud83c\uddf2",
+    "capital": "http://www.wikidata.org/entity/Q36281",
+    "countryLabel": "Dominica",
+    "population": "73925"
+  },
+  {
+    "capitalLabel": "Yaren",
+    "country": "http://www.wikidata.org/entity/Q697",
+    "surface": "21",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Nauru%20on%20the%20globe%20%28small%20islands%20magnified%29%20%28Polynesia%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Nauru.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q423"
+    ],
+    "unicode": "\ud83c\uddf3\ud83c\uddf7",
+    "capital": "http://www.wikidata.org/entity/Q31026",
+    "countryLabel": "Nauru",
+    "population": "13650"
+  },
+  {
+    "capitalLabel": "Saint George's",
+    "country": "http://www.wikidata.org/entity/Q769",
+    "surface": "348.5",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Grenada%20in%20its%20region.svg",
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Grenada%20on%20the%20globe%20%28Americas%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Grenada.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q145",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q244",
+      "http://www.wikidata.org/entity/Q1016",
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q754"
+    ],
+    "unicode": "\ud83c\uddec\ud83c\udde9",
+    "capital": "http://www.wikidata.org/entity/Q41547",
+    "countryLabel": "Grenada",
+    "population": "107825"
+  },
+  {
+    "capitalLabel": "Apia",
+    "country": "http://www.wikidata.org/entity/Q683",
+    "surface": "2842",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Samoa%20on%20the%20globe%20%28small%20islands%20magnified%29%20%28Polynesia%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Samoa.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q183"
+    ],
+    "unicode": "\ud83c\uddfc\ud83c\uddf8",
+    "capital": "http://www.wikidata.org/entity/Q36260",
+    "countryLabel": "Samoa",
+    "population": "196440"
+  },
+  {
+    "capitalLabel": "Nuku\u02bbalofa",
+    "country": "http://www.wikidata.org/entity/Q678",
+    "surface": "748.506563",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Tonga%20on%20the%20globe%20%28small%20islands%20magnified%29%20%28Polynesia%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Tonga.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q712",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q30"
+    ],
+    "unicode": "\ud83c\uddf9\ud83c\uddf4",
+    "capital": "http://www.wikidata.org/entity/Q38834",
+    "countryLabel": "Tonga",
+    "population": "108020"
+  },
+  {
+    "capitalLabel": "Ngerulmud",
+    "country": "http://www.wikidata.org/entity/Q695",
+    "surface": "465.550362",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Palau%20on%20the%20globe%20%28Southeast%20Asia%20centered%29%20%28small%20islands%20magnified%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Palau.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q702",
+      "http://www.wikidata.org/entity/Q928",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q709",
+      "http://www.wikidata.org/entity/Q252"
+    ],
+    "unicode": "\ud83c\uddf5\ud83c\uddfc",
+    "capital": "http://www.wikidata.org/entity/Q515229",
+    "countryLabel": "Palau",
+    "population": "21729"
+  },
+  {
+    "capitalLabel": "Port of Spain",
+    "country": "http://www.wikidata.org/entity/Q754",
+    "surface": "5128",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Trinidad%20and%20Tobago%20%28orthographic%20projection%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Trinidad%20and%20Tobago.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q145",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q244",
+      "http://www.wikidata.org/entity/Q17",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q408"
+    ],
+    "unicode": "\ud83c\uddf9\ud83c\uddf9",
+    "capital": "http://www.wikidata.org/entity/Q39178",
+    "countryLabel": "Trinidad e Tobago",
+    "population": "1369125"
+  },
+  {
+    "capitalLabel": "Basseterre",
+    "country": "http://www.wikidata.org/entity/Q763",
+    "surface": "269.358763",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/KNA%20orthographic.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Saint%20Kitts%20and%20Nevis.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q145",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q717"
+    ],
+    "unicode": "\ud83c\uddf0\ud83c\uddf3",
+    "capital": "http://www.wikidata.org/entity/Q41295",
+    "countryLabel": "Saint Kitts e Nevis",
+    "population": "55345"
+  },
+  {
+    "capitalLabel": "Honiara",
+    "country": "http://www.wikidata.org/entity/Q685",
+    "surface": "28400",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Solomon%20Islands%20on%20the%20globe%20%28Oceania%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Solomon%20Islands.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q712",
+      "http://www.wikidata.org/entity/Q17",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q833",
+      "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q686"
+    ],
+    "unicode": "\ud83c\uddf8\ud83c\udde7",
+    "capital": "http://www.wikidata.org/entity/Q40921",
+    "countryLabel": "Isole Salomone",
+    "population": "611343"
+  },
+  {
+    "capitalLabel": "Port Vila",
+    "country": "http://www.wikidata.org/entity/Q686",
+    "surface": "12190",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Vanuatu%20on%20the%20globe%20%28Polynesia%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Vanuatu.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q1016"
+    ],
+    "unicode": "\ud83c\uddfb\ud83c\uddfa",
+    "capital": "http://www.wikidata.org/entity/Q37806",
+    "countryLabel": "Vanuatu",
+    "population": "276244"
+  },
+  {
+    "capitalLabel": "Tarawa Sud",
+    "country": "http://www.wikidata.org/entity/Q710",
+    "surface": "811",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Kiribati%20on%20the%20globe%20%28Polynesia%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Kiribati.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q148"
+    ],
+    "unicode": "\ud83c\uddf0\ud83c\uddee",
+    "capital": "http://www.wikidata.org/entity/Q131233",
+    "countryLabel": "Kiribati",
+    "population": "116398"
+  },
+  {
+    "capitalLabel": "Funafuti",
+    "country": "http://www.wikidata.org/entity/Q672",
+    "surface": "26",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Tuvalu%20on%20the%20globe%20%28small%20islands%20magnified%29%20%28Polynesia%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Tuvalu.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q712"
+    ],
+    "unicode": "\ud83c\uddf9\ud83c\uddfb",
+    "capital": "http://www.wikidata.org/entity/Q34126",
+    "countryLabel": "Tuvalu",
+    "population": "11192"
+  },
+  {
+    "capitalLabel": "Castries",
+    "country": "http://www.wikidata.org/entity/Q760",
+    "surface": "617.012867",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Saint%20Lucia%20on%20the%20globe%20%28Americas%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Saint%20Lucia.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q717"
+    ],
+    "unicode": "\ud83c\uddf1\ud83c\udde8",
+    "capital": "http://www.wikidata.org/entity/Q41699",
+    "countryLabel": "Saint Lucia",
+    "population": "178844"
+  },
+  {
+    "capitalLabel": "Kingstown",
+    "country": "http://www.wikidata.org/entity/Q757",
+    "surface": "389",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/VCT%20orthographic.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Saint%20Vincent%20and%20the%20Grenadines.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q717"
+    ],
+    "unicode": "\ud83c\uddfb\ud83c\udde8",
+    "capital": "http://www.wikidata.org/entity/Q41474",
+    "countryLabel": "Saint Vincent e Grenadine",
+    "population": "109897"
+  },
+  {
+    "capitalLabel": "Majuro",
+    "country": "http://www.wikidata.org/entity/Q709",
+    "surface": "181.43",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Marshall%20Islands%20on%20the%20globe%20%28small%20islands%20magnified%29%20%28Polynesia%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Marshall%20Islands.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q702",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q695",
+      "http://www.wikidata.org/entity/Q697",
+      "http://www.wikidata.org/entity/Q710"
+    ],
+    "unicode": "\ud83c\uddf2\ud83c\udded",
+    "capital": "http://www.wikidata.org/entity/Q12919",
+    "countryLabel": "Isole Marshall",
+    "population": "53127"
+  },
+  {
+    "capitalLabel": "Palikir",
+    "country": "http://www.wikidata.org/entity/Q702",
+    "surface": "702",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Micronesia%20on%20the%20globe%20%28small%20islands%20magnified%29%20%28Polynesia%20centered%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Federated%20States%20of%20Micronesia.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q148",
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q408",
+      "http://www.wikidata.org/entity/Q695",
+      "http://www.wikidata.org/entity/Q709"
+    ],
+    "unicode": "\ud83c\uddeb\ud83c\uddf2",
+    "capital": "http://www.wikidata.org/entity/Q42751",
+    "countryLabel": "Stati Federati di Micronesia",
+    "population": "105544"
+  },
+  {
+    "capitalLabel": "Amsterdam",
+    "country": "http://www.wikidata.org/entity/Q29999",
+    "surface": "42201",
+    "maps": [
+      "http://commons.wikimedia.org/wiki/Special:FilePath/Kingdom%20of%20the%20Netherlands%20in%20its%20region%20%28special%20marker%29.svg"
+    ],
+    "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Netherlands.svg",
+    "related": [
+      "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q55",
+      "http://www.wikidata.org/entity/Q717",
+      "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q16",
+      "http://www.wikidata.org/entity/Q155"
+    ],
+    "unicode": "\ud83c\uddf3\ud83c\uddf1",
+    "capital": "http://www.wikidata.org/entity/Q727",
+    "countryLabel": "Regno dei Paesi Bassi",
+    "population": "17100715"
+  }
+]
