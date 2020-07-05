@@ -63,7 +63,7 @@ def quiz(update, context):
         update.message.reply_photo(image)
 
     elif (quizType == 3):
-        result = popolation_question()
+        result = population_question()
         questions = result["options"]
         correct_option = questions.index(result["correct"])
 
@@ -146,20 +146,20 @@ def map_question():
     return result
 
 
-def popolation_question():
+def population_question():
     country_index = random.randrange(countries_count)
     country = countries[country_index]
-    popolation = country["popolation"]
-    options = ['{:,}'.format(popolation).replace(',', '.')]
+    population = int(country["population"])
+    options = ['{:,}'.format(population).replace(',', '.')]
     for i in range(options_number):
         options.append('{:,}'.format(
-            (round(popolation + popolation * (random.random() - 0.5)))).replace(',', '.'))
+            (round(population + population * (random.random() - 0.5)))).replace(',', '.'))
 
     random.shuffle(options)
     result = {
         "title": country["countryLabel"] + ": a quanto ammonta la sua popolazione?",
         "options": options,
-        "correct": '{:,}'.format(popolation).replace(',', '.')
+        "correct": '{:,}'.format(population).replace(',', '.')
     }
     return result
 
@@ -222,7 +222,7 @@ def main():
     updater.idle()
 
 
-with open("./assets/query.json") as input:
+with open("./data.json") as input:
     countries = json.load(input)
     countries_count = len(countries)
     i = 0
