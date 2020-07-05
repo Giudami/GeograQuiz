@@ -8,12 +8,14 @@
     ],
     "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Japan.svg",
     "related": [
+      "http://www.wikidata.org/entity/Q188712",
       "http://www.wikidata.org/entity/Q884",
       "http://www.wikidata.org/entity/Q148",
       "http://www.wikidata.org/entity/Q30",
       "http://www.wikidata.org/entity/Q159",
       "http://www.wikidata.org/entity/Q142",
-      "http://www.wikidata.org/entity/Q423"
+      "http://www.wikidata.org/entity/Q423",
+      "http://www.wikidata.org/entity/Q865"
     ],
     "unicode": "\ud83c\uddef\ud83c\uddf5",
     "capital": "http://www.wikidata.org/entity/Q1490",
@@ -30,6 +32,7 @@
     "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20United%20States.svg",
     "related": [
       "http://www.wikidata.org/entity/Q16",
+      "http://www.wikidata.org/entity/Q1183",
       "http://www.wikidata.org/entity/Q145",
       "http://www.wikidata.org/entity/Q142",
       "http://www.wikidata.org/entity/Q183",
@@ -53,10 +56,12 @@
     "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Russia.svg",
     "related": [
       "http://www.wikidata.org/entity/Q212",
+      "http://www.wikidata.org/entity/Q15180",
       "http://www.wikidata.org/entity/Q36",
       "http://www.wikidata.org/entity/Q184",
       "http://www.wikidata.org/entity/Q232",
       "http://www.wikidata.org/entity/Q399",
+      "http://www.wikidata.org/entity/Q34266",
       "http://www.wikidata.org/entity/Q183"
     ],
     "unicode": "\ud83c\uddf7\ud83c\uddfa",
@@ -77,6 +82,7 @@
       "http://www.wikidata.org/entity/Q41",
       "http://www.wikidata.org/entity/Q794",
       "http://www.wikidata.org/entity/Q399",
+      "http://www.wikidata.org/entity/Q12560",
       "http://www.wikidata.org/entity/Q227",
       "http://www.wikidata.org/entity/Q79",
       "http://www.wikidata.org/entity/Q229",
@@ -127,7 +133,8 @@
       "http://www.wikidata.org/entity/Q211",
       "http://www.wikidata.org/entity/Q35",
       "http://www.wikidata.org/entity/Q36",
-      "http://www.wikidata.org/entity/Q37"
+      "http://www.wikidata.org/entity/Q37",
+      "http://www.wikidata.org/entity/Q52062"
     ],
     "unicode": "\ud83c\uddeb\ud83c\uddee",
     "capital": "http://www.wikidata.org/entity/Q1757",
@@ -150,6 +157,7 @@
       "http://www.wikidata.org/entity/Q38",
       "http://www.wikidata.org/entity/Q36",
       "http://www.wikidata.org/entity/Q213",
+      "http://www.wikidata.org/entity/Q55",
       "http://www.wikidata.org/entity/Q35",
       "http://www.wikidata.org/entity/Q214"
     ],
@@ -174,6 +182,7 @@
       "http://www.wikidata.org/entity/Q183",
       "http://www.wikidata.org/entity/Q41",
       "http://www.wikidata.org/entity/Q215",
+      "http://www.wikidata.org/entity/Q172579",
       "http://www.wikidata.org/entity/Q233",
       "http://www.wikidata.org/entity/Q214"
     ],
@@ -192,8 +201,12 @@
     ],
     "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20People%27s%20Republic%20of%20China.svg",
     "related": [
+      "http://www.wikidata.org/entity/Q865",
+      "http://www.wikidata.org/entity/Q8733",
       "http://www.wikidata.org/entity/Q711",
       "http://www.wikidata.org/entity/Q884",
+      "http://www.wikidata.org/entity/Q8646",
+      "http://www.wikidata.org/entity/Q9903",
       "http://www.wikidata.org/entity/Q159",
       "http://www.wikidata.org/entity/Q17"
     ],
@@ -239,6 +252,7 @@
       "http://www.wikidata.org/entity/Q213",
       "http://www.wikidata.org/entity/Q37",
       "http://www.wikidata.org/entity/Q214",
+      "http://www.wikidata.org/entity/Q172107",
       "http://www.wikidata.org/entity/Q183",
       "http://www.wikidata.org/entity/Q191",
       "http://www.wikidata.org/entity/Q211",
@@ -265,7 +279,8 @@
       "http://www.wikidata.org/entity/Q837",
       "http://www.wikidata.org/entity/Q30",
       "http://www.wikidata.org/entity/Q252",
-      "http://www.wikidata.org/entity/Q1027"
+      "http://www.wikidata.org/entity/Q1027",
+      "http://www.wikidata.org/entity/Q129286"
     ],
     "unicode": "\ud83c\uddee\ud83c\uddf3",
     "capital": "http://www.wikidata.org/entity/Q987",
@@ -288,6 +303,7 @@
       "http://www.wikidata.org/entity/Q189",
       "http://www.wikidata.org/entity/Q36",
       "http://www.wikidata.org/entity/Q33",
+      "http://www.wikidata.org/entity/Q52062",
       "http://www.wikidata.org/entity/Q183",
       "http://www.wikidata.org/entity/Q142"
     ],
@@ -311,6 +327,8 @@
       "http://www.wikidata.org/entity/Q38",
       "http://www.wikidata.org/entity/Q142",
       "http://www.wikidata.org/entity/Q41",
+      "http://www.wikidata.org/entity/Q80702",
+      "http://www.wikidata.org/entity/Q186513",
       "http://www.wikidata.org/entity/Q183",
       "http://www.wikidata.org/entity/Q233"
     ],
@@ -355,6 +373,7 @@
     "related": [
       "http://www.wikidata.org/entity/Q414",
       "http://www.wikidata.org/entity/Q45",
+      "http://www.wikidata.org/entity/Q217230",
       "http://www.wikidata.org/entity/Q717",
       "http://www.wikidata.org/entity/Q30",
       "http://www.wikidata.org/entity/Q739",
@@ -402,7 +421,9 @@
     ],
     "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Greece.svg",
     "related": [
+      "http://www.wikidata.org/entity/Q209065",
       "http://www.wikidata.org/entity/Q43",
+      "http://www.wikidata.org/entity/Q17765809",
       "http://www.wikidata.org/entity/Q38",
       "http://www.wikidata.org/entity/Q229",
       "http://www.wikidata.org/entity/Q222",
@@ -425,6 +446,7 @@
     "related": [
       "http://www.wikidata.org/entity/Q27",
       "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q8680",
       "http://www.wikidata.org/entity/Q30",
       "http://www.wikidata.org/entity/Q183",
       "http://www.wikidata.org/entity/Q16",
@@ -453,6 +475,7 @@
       "http://www.wikidata.org/entity/Q218",
       "http://www.wikidata.org/entity/Q184",
       "http://www.wikidata.org/entity/Q213",
+      "http://www.wikidata.org/entity/Q133356",
       "http://www.wikidata.org/entity/Q399"
     ],
     "unicode": "\ud83c\uddfa\ud83c\udde6",
@@ -496,6 +519,7 @@
     "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Belgium%20%28civil%29.svg",
     "related": [
       "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q55",
       "http://www.wikidata.org/entity/Q183",
       "http://www.wikidata.org/entity/Q32",
       "http://www.wikidata.org/entity/Q29",
@@ -548,6 +572,7 @@
       "http://www.wikidata.org/entity/Q20",
       "http://www.wikidata.org/entity/Q36",
       "http://www.wikidata.org/entity/Q191",
+      "http://www.wikidata.org/entity/Q52062",
       "http://www.wikidata.org/entity/Q183",
       "http://www.wikidata.org/entity/Q189"
     ],
@@ -592,6 +617,8 @@
       "http://www.wikidata.org/entity/Q796",
       "http://www.wikidata.org/entity/Q43",
       "http://www.wikidata.org/entity/Q227",
+      "http://www.wikidata.org/entity/Q83891",
+      "http://www.wikidata.org/entity/Q389688",
       "http://www.wikidata.org/entity/Q399",
       "http://www.wikidata.org/entity/Q889",
       "http://www.wikidata.org/entity/Q79"
@@ -613,6 +640,7 @@
       "http://www.wikidata.org/entity/Q414",
       "http://www.wikidata.org/entity/Q30",
       "http://www.wikidata.org/entity/Q155",
+      "http://www.wikidata.org/entity/Q170603",
       "http://www.wikidata.org/entity/Q739",
       "http://www.wikidata.org/entity/Q792",
       "http://www.wikidata.org/entity/Q29",
@@ -663,6 +691,8 @@
       "http://www.wikidata.org/entity/Q41",
       "http://www.wikidata.org/entity/Q155",
       "http://www.wikidata.org/entity/Q38",
+      "http://www.wikidata.org/entity/Q824489",
+      "http://www.wikidata.org/entity/Q200464",
       "http://www.wikidata.org/entity/Q215"
     ],
     "unicode": "\ud83c\uddf5\ud83c\uddf9",
@@ -683,6 +713,7 @@
       "http://www.wikidata.org/entity/Q810",
       "http://www.wikidata.org/entity/Q79",
       "http://www.wikidata.org/entity/Q822",
+      "http://www.wikidata.org/entity/Q219060",
       "http://www.wikidata.org/entity/Q858",
       "http://www.wikidata.org/entity/Q43",
       "http://www.wikidata.org/entity/Q796",
@@ -756,6 +787,7 @@
       "http://www.wikidata.org/entity/Q43",
       "http://www.wikidata.org/entity/Q232",
       "http://www.wikidata.org/entity/Q212",
+      "http://www.wikidata.org/entity/Q131083",
       "http://www.wikidata.org/entity/Q159"
     ],
     "unicode": "\ud83c\udde6\ud83c\uddff",
@@ -778,6 +810,7 @@
       "http://www.wikidata.org/entity/Q236",
       "http://www.wikidata.org/entity/Q221",
       "http://www.wikidata.org/entity/Q224",
+      "http://www.wikidata.org/entity/Q1246",
       "http://www.wikidata.org/entity/Q215",
       "http://www.wikidata.org/entity/Q403",
       "http://www.wikidata.org/entity/Q43"
@@ -825,6 +858,7 @@
       "http://www.wikidata.org/entity/Q20",
       "http://www.wikidata.org/entity/Q35",
       "http://www.wikidata.org/entity/Q34",
+      "http://www.wikidata.org/entity/Q223",
       "http://www.wikidata.org/entity/Q36",
       "http://www.wikidata.org/entity/Q33",
       "http://www.wikidata.org/entity/Q183",
@@ -927,6 +961,7 @@
       "http://www.wikidata.org/entity/Q225",
       "http://www.wikidata.org/entity/Q215",
       "http://www.wikidata.org/entity/Q221",
+      "http://www.wikidata.org/entity/Q1246",
       "http://www.wikidata.org/entity/Q41",
       "http://www.wikidata.org/entity/Q213"
     ],
@@ -951,6 +986,7 @@
       "http://www.wikidata.org/entity/Q36",
       "http://www.wikidata.org/entity/Q33",
       "http://www.wikidata.org/entity/Q34",
+      "http://www.wikidata.org/entity/Q39731",
       "http://www.wikidata.org/entity/Q183",
       "http://www.wikidata.org/entity/Q20"
     ],
@@ -972,6 +1008,7 @@
       "http://www.wikidata.org/entity/Q668",
       "http://www.wikidata.org/entity/Q902",
       "http://www.wikidata.org/entity/Q889",
+      "http://www.wikidata.org/entity/Q2342822",
       "http://www.wikidata.org/entity/Q854",
       "http://www.wikidata.org/entity/Q794",
       "http://www.wikidata.org/entity/Q79",
@@ -1039,8 +1076,10 @@
     ],
     "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Indonesia.svg",
     "related": [
+      "http://www.wikidata.org/entity/Q188161",
       "http://www.wikidata.org/entity/Q833",
       "http://www.wikidata.org/entity/Q928",
+      "http://www.wikidata.org/entity/Q49326",
       "http://www.wikidata.org/entity/Q902",
       "http://www.wikidata.org/entity/Q854",
       "http://www.wikidata.org/entity/Q334",
@@ -1116,6 +1155,7 @@
       "http://www.wikidata.org/entity/Q40",
       "http://www.wikidata.org/entity/Q36",
       "http://www.wikidata.org/entity/Q215",
+      "http://www.wikidata.org/entity/Q171150",
       "http://www.wikidata.org/entity/Q183",
       "http://www.wikidata.org/entity/Q38"
     ],
@@ -1159,9 +1199,11 @@
     "related": [
       "http://www.wikidata.org/entity/Q399",
       "http://www.wikidata.org/entity/Q227",
+      "http://www.wikidata.org/entity/Q23334",
       "http://www.wikidata.org/entity/Q43",
       "http://www.wikidata.org/entity/Q159",
       "http://www.wikidata.org/entity/Q794",
+      "http://www.wikidata.org/entity/Q23427",
       "http://www.wikidata.org/entity/Q232"
     ],
     "unicode": "\ud83c\uddec\ud83c\uddea",
@@ -1207,6 +1249,7 @@
       "http://www.wikidata.org/entity/Q148",
       "http://www.wikidata.org/entity/Q928",
       "http://www.wikidata.org/entity/Q854",
+      "http://www.wikidata.org/entity/Q180573",
       "http://www.wikidata.org/entity/Q902",
       "http://www.wikidata.org/entity/Q252"
     ],
@@ -1277,6 +1320,7 @@
       "http://www.wikidata.org/entity/Q17",
       "http://www.wikidata.org/entity/Q148",
       "http://www.wikidata.org/entity/Q30",
+      "http://www.wikidata.org/entity/Q865",
       "http://www.wikidata.org/entity/Q43",
       "http://www.wikidata.org/entity/Q902",
       "http://www.wikidata.org/entity/Q159"
@@ -1345,8 +1389,11 @@
     "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Iraq.svg",
     "related": [
       "http://www.wikidata.org/entity/Q858",
+      "http://www.wikidata.org/entity/Q41137",
       "http://www.wikidata.org/entity/Q794",
+      "http://www.wikidata.org/entity/Q205047",
       "http://www.wikidata.org/entity/Q810",
+      "http://www.wikidata.org/entity/Q10914393",
       "http://www.wikidata.org/entity/Q398",
       "http://www.wikidata.org/entity/Q79"
     ],
@@ -1369,6 +1416,7 @@
       "http://www.wikidata.org/entity/Q191",
       "http://www.wikidata.org/entity/Q37",
       "http://www.wikidata.org/entity/Q36",
+      "http://www.wikidata.org/entity/Q39731",
       "http://www.wikidata.org/entity/Q33",
       "http://www.wikidata.org/entity/Q213",
       "http://www.wikidata.org/entity/Q215",
@@ -1416,6 +1464,7 @@
       "http://www.wikidata.org/entity/Q20",
       "http://www.wikidata.org/entity/Q34",
       "http://www.wikidata.org/entity/Q183",
+      "http://www.wikidata.org/entity/Q55",
       "http://www.wikidata.org/entity/Q189",
       "http://www.wikidata.org/entity/Q36",
       "http://www.wikidata.org/entity/Q33",
@@ -1467,6 +1516,7 @@
       "http://www.wikidata.org/entity/Q236",
       "http://www.wikidata.org/entity/Q215",
       "http://www.wikidata.org/entity/Q221",
+      "http://www.wikidata.org/entity/Q1246",
       "http://www.wikidata.org/entity/Q222",
       "http://www.wikidata.org/entity/Q41"
     ],
@@ -1490,6 +1540,7 @@
       "http://www.wikidata.org/entity/Q215",
       "http://www.wikidata.org/entity/Q183",
       "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q55",
       "http://www.wikidata.org/entity/Q35",
       "http://www.wikidata.org/entity/Q40",
       "http://www.wikidata.org/entity/Q39"
@@ -1512,6 +1563,7 @@
     "related": [
       "http://www.wikidata.org/entity/Q212",
       "http://www.wikidata.org/entity/Q218",
+      "http://www.wikidata.org/entity/Q907112",
       "http://www.wikidata.org/entity/Q159",
       "http://www.wikidata.org/entity/Q232",
       "http://www.wikidata.org/entity/Q399",
@@ -1607,6 +1659,7 @@
     "related": [
       "http://www.wikidata.org/entity/Q41",
       "http://www.wikidata.org/entity/Q43",
+      "http://www.wikidata.org/entity/Q23681",
       "http://www.wikidata.org/entity/Q233",
       "http://www.wikidata.org/entity/Q79",
       "http://www.wikidata.org/entity/Q858",
@@ -1728,6 +1781,7 @@
       "http://www.wikidata.org/entity/Q810",
       "http://www.wikidata.org/entity/Q822",
       "http://www.wikidata.org/entity/Q79",
+      "http://www.wikidata.org/entity/Q41137",
       "http://www.wikidata.org/entity/Q43",
       "http://www.wikidata.org/entity/Q801",
       "http://www.wikidata.org/entity/Q794"
@@ -1748,6 +1802,7 @@
     "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Cuba.svg",
     "related": [
       "http://www.wikidata.org/entity/Q786",
+      "http://www.wikidata.org/entity/Q1183",
       "http://www.wikidata.org/entity/Q790",
       "http://www.wikidata.org/entity/Q739",
       "http://www.wikidata.org/entity/Q811",
@@ -1792,6 +1847,7 @@
     ],
     "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Nepal.svg",
     "related": [
+      "http://www.wikidata.org/entity/Q1078602",
       "http://www.wikidata.org/entity/Q668",
       "http://www.wikidata.org/entity/Q902",
       "http://www.wikidata.org/entity/Q917",
@@ -1842,6 +1898,7 @@
     "related": [
       "http://www.wikidata.org/entity/Q403",
       "http://www.wikidata.org/entity/Q236",
+      "http://www.wikidata.org/entity/Q1246",
       "http://www.wikidata.org/entity/Q41",
       "http://www.wikidata.org/entity/Q224",
       "http://www.wikidata.org/entity/Q215",
@@ -1894,6 +1951,7 @@
       "http://www.wikidata.org/entity/Q695",
       "http://www.wikidata.org/entity/Q902",
       "http://www.wikidata.org/entity/Q921",
+      "http://www.wikidata.org/entity/Q5870217",
       "http://www.wikidata.org/entity/Q334"
     ],
     "unicode": "\ud83c\uddf5\ud83c\udded",
@@ -1916,7 +1974,9 @@
       "http://www.wikidata.org/entity/Q159",
       "http://www.wikidata.org/entity/Q399",
       "http://www.wikidata.org/entity/Q813",
-      "http://www.wikidata.org/entity/Q884"
+      "http://www.wikidata.org/entity/Q212056",
+      "http://www.wikidata.org/entity/Q884",
+      "http://www.wikidata.org/entity/Q8959"
     ],
     "unicode": "\ud83c\uddf2\ud83c\uddf3",
     "capital": "http://www.wikidata.org/entity/Q23430",
@@ -1939,6 +1999,7 @@
       "http://www.wikidata.org/entity/Q215",
       "http://www.wikidata.org/entity/Q225",
       "http://www.wikidata.org/entity/Q221",
+      "http://www.wikidata.org/entity/Q1246",
       "http://www.wikidata.org/entity/Q222",
       "http://www.wikidata.org/entity/Q41"
     ],
@@ -1960,8 +2021,10 @@
       "http://www.wikidata.org/entity/Q145",
       "http://www.wikidata.org/entity/Q36",
       "http://www.wikidata.org/entity/Q29",
+      "http://www.wikidata.org/entity/Q55",
       "http://www.wikidata.org/entity/Q34",
       "http://www.wikidata.org/entity/Q41",
+      "http://www.wikidata.org/entity/Q31747",
       "http://www.wikidata.org/entity/Q20"
     ],
     "unicode": "\ud83c\uddee\ud83c\uddea",
@@ -2082,6 +2145,7 @@
       "http://www.wikidata.org/entity/Q32",
       "http://www.wikidata.org/entity/Q20",
       "http://www.wikidata.org/entity/Q142",
+      "http://www.wikidata.org/entity/Q55",
       "http://www.wikidata.org/entity/Q215"
     ],
     "unicode": "\ud83c\uddf1\ud83c\uddee",
@@ -2122,7 +2186,9 @@
     ],
     "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Somalia.svg",
     "related": [
+      "http://www.wikidata.org/entity/Q34754",
       "http://www.wikidata.org/entity/Q977",
+      "http://www.wikidata.org/entity/Q485112",
       "http://www.wikidata.org/entity/Q115",
       "http://www.wikidata.org/entity/Q986",
       "http://www.wikidata.org/entity/Q1049",
@@ -2293,6 +2359,7 @@
       "http://www.wikidata.org/entity/Q258",
       "http://www.wikidata.org/entity/Q1020",
       "http://www.wikidata.org/entity/Q1029",
+      "http://www.wikidata.org/entity/Q217169",
       "http://www.wikidata.org/entity/Q1037",
       "http://www.wikidata.org/entity/Q114",
       "http://www.wikidata.org/entity/Q924"
@@ -2462,6 +2529,7 @@
       "http://www.wikidata.org/entity/Q739",
       "http://www.wikidata.org/entity/Q414",
       "http://www.wikidata.org/entity/Q298",
+      "http://www.wikidata.org/entity/Q16258142",
       "http://www.wikidata.org/entity/Q717",
       "http://www.wikidata.org/entity/Q419"
     ],
@@ -2935,6 +3003,7 @@
       "http://www.wikidata.org/entity/Q953",
       "http://www.wikidata.org/entity/Q916",
       "http://www.wikidata.org/entity/Q1020",
+      "http://www.wikidata.org/entity/Q889394",
       "http://www.wikidata.org/entity/Q924",
       "http://www.wikidata.org/entity/Q954",
       "http://www.wikidata.org/entity/Q1007",
@@ -3509,6 +3578,7 @@
       "http://www.wikidata.org/entity/Q241",
       "http://www.wikidata.org/entity/Q30",
       "http://www.wikidata.org/entity/Q766",
+      "http://www.wikidata.org/entity/Q1183",
       "http://www.wikidata.org/entity/Q155",
       "http://www.wikidata.org/entity/Q739"
     ],
@@ -3647,6 +3717,7 @@
     "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Suriname.svg",
     "related": [
       "http://www.wikidata.org/entity/Q734",
+      "http://www.wikidata.org/entity/Q55",
       "http://www.wikidata.org/entity/Q790",
       "http://www.wikidata.org/entity/Q242",
       "http://www.wikidata.org/entity/Q902",
@@ -4151,6 +4222,7 @@
       "http://www.wikidata.org/entity/Q790",
       "http://www.wikidata.org/entity/Q739",
       "http://www.wikidata.org/entity/Q241",
+      "http://www.wikidata.org/entity/Q1183",
       "http://www.wikidata.org/entity/Q811",
       "http://www.wikidata.org/entity/Q30",
       "http://www.wikidata.org/entity/Q800",
@@ -4244,6 +4316,7 @@
       "http://www.wikidata.org/entity/Q712",
       "http://www.wikidata.org/entity/Q695",
       "http://www.wikidata.org/entity/Q709",
+      "http://www.wikidata.org/entity/Q775327",
       "http://www.wikidata.org/entity/Q702",
       "http://www.wikidata.org/entity/Q686",
       "http://www.wikidata.org/entity/Q233"
@@ -4288,6 +4361,7 @@
     "related": [
       "http://www.wikidata.org/entity/Q678",
       "http://www.wikidata.org/entity/Q712",
+      "http://www.wikidata.org/entity/Q16641",
       "http://www.wikidata.org/entity/Q664",
       "http://www.wikidata.org/entity/Q672",
       "http://www.wikidata.org/entity/Q686",
@@ -4310,6 +4384,7 @@
     "related": [
       "http://www.wikidata.org/entity/Q712",
       "http://www.wikidata.org/entity/Q683",
+      "http://www.wikidata.org/entity/Q34020",
       "http://www.wikidata.org/entity/Q672",
       "http://www.wikidata.org/entity/Q664",
       "http://www.wikidata.org/entity/Q685",
@@ -4332,9 +4407,11 @@
     "related": [
       "http://www.wikidata.org/entity/Q709",
       "http://www.wikidata.org/entity/Q702",
+      "http://www.wikidata.org/entity/Q16644",
       "http://www.wikidata.org/entity/Q928",
       "http://www.wikidata.org/entity/Q30",
       "http://www.wikidata.org/entity/Q686",
+      "http://www.wikidata.org/entity/Q16635",
       "http://www.wikidata.org/entity/Q697"
     ],
     "unicode": "\ud83c\uddf5\ud83c\uddfc",
@@ -4379,6 +4456,7 @@
       "http://www.wikidata.org/entity/Q757",
       "http://www.wikidata.org/entity/Q760",
       "http://www.wikidata.org/entity/Q784",
+      "http://www.wikidata.org/entity/Q207794",
       "http://www.wikidata.org/entity/Q754",
       "http://www.wikidata.org/entity/Q244"
     ],
@@ -4471,7 +4549,8 @@
       "http://www.wikidata.org/entity/Q678",
       "http://www.wikidata.org/entity/Q778",
       "http://www.wikidata.org/entity/Q664",
-      "http://www.wikidata.org/entity/Q686"
+      "http://www.wikidata.org/entity/Q686",
+      "http://www.wikidata.org/entity/Q34020"
     ],
     "unicode": "\ud83c\uddf9\ud83c\uddfb",
     "capital": "http://www.wikidata.org/entity/Q34126",
@@ -4535,9 +4614,11 @@
     "related": [
       "http://www.wikidata.org/entity/Q695",
       "http://www.wikidata.org/entity/Q702",
+      "http://www.wikidata.org/entity/Q16644",
       "http://www.wikidata.org/entity/Q928",
       "http://www.wikidata.org/entity/Q710",
       "http://www.wikidata.org/entity/Q697",
+      "http://www.wikidata.org/entity/Q16635",
       "http://www.wikidata.org/entity/Q712"
     ],
     "unicode": "\ud83c\uddf2\ud83c\udded",
@@ -4556,8 +4637,10 @@
     "related": [
       "http://www.wikidata.org/entity/Q695",
       "http://www.wikidata.org/entity/Q709",
+      "http://www.wikidata.org/entity/Q16644",
       "http://www.wikidata.org/entity/Q928",
       "http://www.wikidata.org/entity/Q697",
+      "http://www.wikidata.org/entity/Q16635",
       "http://www.wikidata.org/entity/Q30",
       "http://www.wikidata.org/entity/Q710"
     ],
@@ -4575,9 +4658,13 @@
     ],
     "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Netherlands.svg",
     "related": [
+      "http://www.wikidata.org/entity/Q55",
       "http://www.wikidata.org/entity/Q31",
       "http://www.wikidata.org/entity/Q29",
+      "http://www.wikidata.org/entity/Q21203",
       "http://www.wikidata.org/entity/Q32",
+      "http://www.wikidata.org/entity/Q25227",
+      "http://www.wikidata.org/entity/Q25279",
       "http://www.wikidata.org/entity/Q142"
     ],
     "unicode": "\ud83c\uddf3\ud83c\uddf1",
