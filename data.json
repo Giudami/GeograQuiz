@@ -4456,8 +4456,7 @@
     "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Kiribati.svg",
     "related": [
       "http://www.wikidata.org/entity/Q30",
-      "http://www.wikidata.org/entity/Q148",
-      "http://www.wikidata.org/entity/Q712"
+      "http://www.wikidata.org/entity/Q148"
     ],
     "unicode": "\ud83c\uddf0\ud83c\uddee",
     "capital": "http://www.wikidata.org/entity/Q131233",
@@ -4474,8 +4473,7 @@
     "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Tuvalu.svg",
     "related": [
       "http://www.wikidata.org/entity/Q30",
-      "http://www.wikidata.org/entity/Q712",
-      "http://www.wikidata.org/entity/Q148"
+      "http://www.wikidata.org/entity/Q712"
     ],
     "unicode": "\ud83c\uddf9\ud83c\uddfb",
     "capital": "http://www.wikidata.org/entity/Q34126",
