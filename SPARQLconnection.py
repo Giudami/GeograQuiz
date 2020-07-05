@@ -53,23 +53,25 @@ for result in final_results:
   result["population"] = result["population"]["value"]
   result["countryLabel"] = result["countryLabel"]["value"]
 
+sparql = SPARQLWrapper("https://dbpedia.org/sparql")
 
 query = """
-  SELECT ?related (COUNT(?properties) AS ?commonsCount )
-  WHERE{{
-    {0} ?properties ?ontology.
-    #not a former country
-    FILTER NOT EXISTS {{?related wdt:P31 wd:Q3024240}}
-    #and no an ancient civilisation (needed to exclude ancient Egypt)
-    FILTER NOT EXISTS {{?related wdt:P31 wd:Q28171280}}
-    ?related wdt:P31 wd:Q6256.
-    {0}  ?properties ?ontology ;
-         ?properties ?related
-    FILTER({0} != ?ontology)
-    }} GROUP BY ?related
-    ORDER BY DESC(?commonsCount)
-    LIMIT 8
+SELECT ?countryWikidata
+WHERE
+{{
+?key owl:sameAs {0}.
+?key ?p ?o .
+?country rdf:type dbo:Country ;
+?p ?o .
+?country owl:sameAs ?countryWikidata .
+FILTER(strstarts(str(?countryWikidata),str(wikidata:))).
+FILTER (?country != ?key).
+}} GROUP BY ?countryWikidata
+ORDER BY DESC(COUNT(?p))
+LIMIT 8
 """
+
+sparql.setReturnFormat(JSON)
 
 related_array = []
 
@@ -77,8 +79,8 @@ for result in final_results:
   sparql.setQuery(query.format("<" + result["country"] + ">"))
   results = sparql.query().convert()
   for i in range(0, len(results["results"]["bindings"])):
-    related_array.append(results["results"]["bindings"][i]["related"]["value"])
-    print(related_array)
+    related_array.append(results["results"]["bindings"][i]["countryWikidata"]["value"])
+  print(related_array)
   result["related"] = related_array
   related_array = []
 
