@@ -32,7 +32,7 @@ def new_quiz(update, context):
 
 
 def quiz(update, context):
-    quizType = random.randrange(quiz_types)
+    quizType = 3  # random.randrange(quiz_types)
 
     if (quizType == 0):
         result = country_for_capital_question()
@@ -152,8 +152,17 @@ def population_question():
     population = int(country["population"])
     options = ['{:,}'.format(population).replace(',', '.')]
     for i in range(options_number):
-        options.append('{:,}'.format(
-            (round(population + population * (random.random() - 0.5)))).replace(',', '.'))
+        x = random.randrange(4)
+        if (x == 0):
+            x = 5
+        elif (x == 1):
+            x = 1 / 5
+        elif (x == 2):
+            x = 8
+        elif (x == 3):
+            x = 1 / 8
+        pop = round((population + population * (random.random() - 0.5)) * x)
+        options.append('{:,}'.format(pop).replace(',', '.'))
 
     random.shuffle(options)
     result = {
