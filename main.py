@@ -29,7 +29,7 @@ quiz_types = 4
 def start_bot_handler(update, context):
     if (update.message.chat.type == 'group'):
         update.message.reply_text(
-            'Digita /nuovo per creare un nuovo quiz, /aiuto per ricevere le istruzioni')
+            'Digita /nuovo@GeograQuizBot per creare un nuovo quiz, /aiuto@GeograQuizBot per ricevere le istruzioni')
     else:
         update.message.reply_text(
             'Questo bot è pensato per i gruppi, aggiungilo ad un gruppo @GeograQuizBot')
@@ -40,13 +40,13 @@ def new_handler(update, context):
     chat_id = update.message.chat.id
     if (chat_id in sessions):
         update.message.reply_text(
-            'Il quiz è già stato avviato, digita /termina per terminarlo')
+            'Il quiz è già stato avviato, digita /termina@GeograQuizBot per terminarlo')
     elif (update.message.chat.type == 'group'):
         # mettere numero round variabile
-        sessions[chat_id] = {"participants": {}, "names": {},
-                             "is_started": False, "can_request": True, "rounds_left": 8}
+        sessions[chat_id] = {'participants': {}, 'names': {},
+                             'is_started': False, 'can_request': True, 'rounds_left': 10}
         update.message.reply_text(
-            'Digita /partecipa per prendere parte al quiz, /avvia per avviare il quiz')
+            'Digita /partecipa@GeograQuizBot per prendere parte al quiz, /avvia@GeograQuizBot per avviare il quiz')
     else:
         update.message.reply_text(
             'Questo bot è pensato per i gruppi, aggiungilo ad un gruppo @GeograQuizBot')
@@ -70,7 +70,7 @@ def taking_part_handler(update, context):
     else:
         if (update.message.chat.type == 'group'):
             update.message.reply_text(
-                'Digita /nuovo per avviare un nuovo quiz')
+                'Digita /nuovo@GeograQuizBot per avviare un nuovo quiz')
         else:
             update.message.reply_text(
                 'Questo bot è pensato per i gruppi, aggiungilo ad un gruppo @GeograQuizBot')
@@ -95,81 +95,62 @@ def start_handler(update, context):
             if (len(sessions[chat_id]['participants']) > 1):
                 sessions[chat_id]['is_started'] = True
                 update.message.reply_text(
-                    'Digita /quiz per ricevere le domande')
+                    'Digita /prossima@GeograQuizBot per ricevere le domande')
             else:
                 update.message.reply_text(
-                    'Servono almeno due partecipanti, digita /partecipa per partecipare')
+                    'Servono almeno due partecipanti, digita /partecipa@GeograQuizBot per partecipare')
 
     else:
         update.message.reply_text(
-            'Digita /nuovo per creare un nuovo quiz prima di avviarlo')
+            'Digita /nuovo@GeograQuizBot per creare un nuovo quiz prima di avviarlo')
 
 
-def quiz(update, context):
+def next_question_handler(update, context):
     chat = sessions[update.message.chat.id]
     if update.message.from_user.id not in chat['participants']:
         update.message.reply_text(
-            'Digita /nuovo per creare un nuovo quiz')
+            'Digita /nuovo@GeograQuizBot per creare un nuovo quiz')
     elif not chat['is_started']:
         update.message.reply_text(
-            'Digita /avvia per avviare un nuovo quiz')
+            'Digita /avvia@GeograQuizBot per avviare un nuovo quiz')
     elif not chat['can_request']:
         update.message.reply_text(
             'Dovete dare tutti una risposta prima di procedere alla prossima domanda')
     else:
         chat['can_request'] = False
         quiz_type = random.randrange(quiz_types)
-        if (quiz_type == 0):
-            result = country_for_capital_question()
-            questions = result["options"]
-            correct_option = questions.index(result["correct"])
-            questions = [get_country_label(question) for question in questions]
 
-        elif (quiz_type == 1):
-            result = map_question()
-            questions = result["options"]
-            correct_option = questions.index(result["correct"])
-            questions = [get_country_label(question) for question in questions]
-            image = svg2png(result["image"])
-            update.message.reply_photo(image)
+        questions = [population_question, country_for_capital_question,
+                     map_question, flag_question]
+        result = random.choice(questions)()
 
-        elif (quiz_type == 2):
-            result = flag_question()
-            questions = result["options"]
-            correct_option = questions.index(result["correct"])
-            questions = [get_country_label(question) for question in questions]
-            image = svg2png(result["image"])
-            update.message.reply_photo(image)
+        if result['image'] is not None:
+            update.message.reply_photo(svg2png(result['image']))
 
-        elif (quiz_type == 3):
-            result = population_question()
-            questions = result["options"]
-            correct_option = questions.index(result["correct"])
-
-        message = update.effective_message.reply_poll(result["title"],
-                                                      questions, type=Poll.QUIZ,
+        message = update.effective_message.reply_poll(result['title'],
+                                                      result['options'], type=Poll.QUIZ,
                                                       is_anonymous=False,
-                                                      correct_option_id=correct_option)
+                                                      explanation=result['explanation'],
+                                                      correct_option_id=result['correct'])
 
         # Save some info about the poll the bot_data for later use in receive_quiz_answer
         payload = {
             message.poll.id: {
-                "chat_id":
+                'chat_id':
                 update.effective_chat.id,
-                "message_id":
+                'message_id':
                 message.message_id,
-                "correct_option_id": correct_option,
-                "current_answers": 0
+                'correct_option_id': result['correct'],
+                'current_answers': 0
             }
         }
         context.bot_data.update(payload)
 
 
-def receive_quiz_answer(update, context):
-    """Summarize a users poll vote"""
+def receive_question_answer(update, context):
     answer = update.poll_answer
     poll_id = answer.poll_id
-    chat_id = context.bot_data[poll_id]["chat_id"]
+    chat_id = context.bot_data[poll_id]['chat_id']
     user_id = answer.user.id
     option_id = answer['option_ids'][0]
     correct_option_id = context.bot_data[poll_id]['correct_option_id']
@@ -184,9 +165,9 @@ def receive_quiz_answer(update, context):
             participants[user_id] += 1
 
         # if the quiz recevied all the answer then procede to the next one
-        if context.bot_data[poll_id]["current_answers"] == len(participants):
+        if context.bot_data[poll_id]['current_answers'] == len(participants):
             context.bot.stop_poll(
-                chat_id, context.bot_data[poll_id]["message_id"])
+                chat_id, context.bot_data[poll_id]['message_id'])
 
             sessions[chat_id]['can_request'] = True
             sessions[chat_id]['rounds_left'] -= 1
@@ -195,44 +176,51 @@ def receive_quiz_answer(update, context):
                 winner_key = max(participants, key=participants.get)
                 sorted_partecipants = sorted(
                     participants.items(), key=lambda x: x[1], reverse=True)
-                text = ""
+                text = ''
                 for x in sorted_partecipants:
                     text += '@' + sessions[chat_id]['names'][x[0]] + \
                         ': ' + str(x[1]) + ' corrette\n'
                 context.bot.send_message(
                     chat_id, text='La classifica è: \n' + text)
                 del sessions[chat_id]
-
+            else:
+                context.bot.send_message(
+                    chat_id, text='/prossima@GeograQuizBot')
     # print(context.bot_data[poll_id]['current_answers'])
 
 ###################################
 #   QUESTIONS
 ###################################
 
+# quaa
+
+
+def question_data():
+    country = countries[random.randrange(countries_count)]
+    options = random_elems(country['related'], options_number)
+    options.append(country['country'])
+    random.shuffle(options)
+    correct_index = options.index(country['country'])
+    options = [get_country_label(o) for o in options]
+    return (country, options, correct_index)
+
 
 def map_question():
-    country_index = random.randrange(countries_count)
-    country = countries[country_index]
-    options = random_elems(country["related"], options_number)
-    options.append(country["country"])
-    random.shuffle(options)
-    mapIndex = random.randrange(len(country["maps"]))
-    image = country["maps"][mapIndex]
 
-    result = {
-        "title": "Qual è la nazione in figura?",
-        "image": image,
-        "options": options,
-        "correct": country["country"]
+    (country, options, correct_index) = question_data()
+    return {
+        'title': 'Qual è la nazione in figura?',
+        'options': options,
+        'correct': correct_index,
+        'explanation': country['wikipedia'],
+        'image': random.choice(country['maps'])
     }
-    return result
 
 
 def population_question():
-    country_index = random.randrange(countries_count)
-    country = countries[country_index]
-    population = int(country["population"])
-    options = ['{:,}'.format(population).replace(',', '.')]
+    (country, options, correct_index) = question_data()
+    population = int(country['population'])
+    options = [population]
     for i in range(options_number):
         x = random.randrange(4)
         if (x == 0):
@@ -243,47 +231,41 @@ def population_question():
             x = 8
         elif (x == 3):
             x = 1 / 8
-        pop = round((population + population * (random.random() - 0.5)) * x)
-        options.append('{:,}'.format(pop).replace(',', '.'))
-
+        option = round((population + population * (random.random() - 0.5)) * x)
+        options.append(option)
     random.shuffle(options)
-    result = {
-        "title": country["countryLabel"] + ": a quanto ammonta la sua popolazione?",
-        "options": options,
-        "correct": '{:,}'.format(population).replace(',', '.')
+    correct_index = options.index(population)
+    options = ['{:,}'.format(o).replace(',', '.') for o in options]
+
+    return {
+        'title': country['countryLabel'] + ': a quanto ammonta la sua popolazione?',
+        'options': options,
+        'correct': correct_index,
+        'explanation': country['wikipedia'],
+        'image': None
     }
-    return result
 
 
 def country_for_capital_question():
-    countryIndex = random.randrange(countries_count)
-    country = countries[countryIndex]
-    options = random_elems(country["related"], options_number)
-    options.append(country["country"])
-    random.shuffle(options)
-    result = {
-        "title": country["capitalLabel"] + " è la capitale di quale tra le seguenti nazioni?",
-        "options": options,
-        "correct": country["country"]
+    (country, options, correct_index) = question_data()
+    return {
+        'title': country['capitalLabel'] + ' è la capitale di quale tra le seguenti nazioni?',
+        'options': options,
+        'correct': correct_index,
+        'explanation': country['wikipedia'],
+        'image': None
     }
-    return result
 
 
 def flag_question():
-    country_index = random.randrange(countries_count)
-    country = countries[country_index]
-    options = random_elems(country["related"], options_number)
-    options.append(country["country"])
-    random.shuffle(options)
-    image = country["flag"]
-
-    result = {
-        "title": "A quale nazione appartiene questa bandiera?",
-        "image": image,
-        "options": options,
-        "correct": country["country"]
+    (country, options, correct_index) = question_data()
+    return {
+        'title': 'A quale nazione appartiene questa bandiera?',
+        'options': options,
+        'correct': correct_index,
+        'explanation': country['wikipedia'],
+        'image': country['flag']
     }
-    return result
 
 ###################################
 #   UTILS
@@ -292,9 +274,9 @@ def flag_question():
 
 def svg2png(url):
     url = requests.get(url).url
-    url = url.split("/")
-    ans = "https://upload.wikimedia.org/wikipedia/commons/thumb/" + \
-        url[-3] + "/" + url[-2] + "/" + url[-1] + "/400px-" + url[-1] + ".png"
+    url = url.split('/')
+    ans = 'https://upload.wikimedia.org/wikipedia/commons/thumb/' + \
+        url[-3] + '/' + url[-2] + '/' + url[-1] + '/400px-' + url[-1] + '.png'
     return ans
 
 
@@ -303,23 +285,23 @@ def random_elems(elems, n):
 
 
 def get_country_label(URI):
-    return countries[index_for_uri[URI]]["countryLabel"]
+    return countries[index_for_uri[URI]]['countryLabel']
 
 ###################################
 #   MAIN
 ###################################
 
 
-with open("./data.json") as input:
+with open('./data.json') as input:
     countries = json.load(input)
     countries_count = len(countries)
     i = 0
     for country in countries:
-        index_for_uri[country["country"]] = i
+        index_for_uri[country['country']] = i
         i += 1
 
 updater = Updater(
-    "1368648049:AAFIi3WlDUVvRBHRMp_llCBXmrHIcB6KXQ4", use_context=True)
+    '1368648049:AAFIi3WlDUVvRBHRMp_llCBXmrHIcB6KXQ4', use_context=True)
 
 dispatcher = updater.dispatcher
 dispatcher.add_handler(CommandHandler('start', start_bot_handler))
@@ -327,8 +309,8 @@ dispatcher.add_handler(CommandHandler('avvia', start_handler))
 dispatcher.add_handler(CommandHandler('nuovo', new_handler))
 dispatcher.add_handler(CommandHandler('partecipa', taking_part_handler))
 dispatcher.add_handler(CommandHandler('termina', stop_handler))
-dispatcher.add_handler(CommandHandler('quiz', quiz))
-dispatcher.add_handler(PollAnswerHandler(receive_quiz_answer))
+dispatcher.add_handler(CommandHandler('prossima', next_question_handler))
+dispatcher.add_handler(PollAnswerHandler(receive_question_answer))
 dispatcher.add_handler(CommandHandler('avvia', stop_handler))
 updater.start_polling()
 updater.idle()
