@@ -191,13 +191,13 @@ L'output della query è il seguente:
 
 ![photo_2020-07-06_16-16-12](./img/photo_2020-07-06_16-16-12.jpg)
 
-Non abbiamo utilizzato i risultati nel nostro dataset poiché avendo 195 paesi  nel caso in cui venga estratto un paese poco conosciuto non si è in grado di associare il luogo di interesse al paese corretto.
+Non abbiamo utilizzato i risultati nel nostro dataset poiché avendo 195 paesi nel caso in cui venga estratto un paese poco conosciuto (il che è molto probabile, perché di questi 195 paesi quelli molto noti dalla media sono una minima parte) non si è in grado di associare il luogo di interesse al paese corretto.
 
 ### Pipeline di elaborazione
 
 Abbiamo elaborato i dati ottenuti dalle query attraverso degli script in Python, in modo da ottenere dei file JSON utilizzabili dal bot come base di conoscenza. In particolare abbiamo agito sulle mappe e sui correlati di ogni paese. 
 
-Per quanto riguarda le mappe, per alcuni paesi, wikidata ci forniva più di una mappa e questo creava dei conflitti in quanto il paese veniva riconosciuto più volte dato che le informazioni differivano per la mappa, e quindi venivano riconosciuti come paesi diversi. Pertanto abbiamo realizzato uno script che ci ha permesso di raggruppare le mappe differenti per un paese in una lista per la stessa entità piuttosto che per tre entità diverse.
+Per quanto riguarda le mappe, per alcuni paesi, wikidata ci forniva più di una mappa e questo creava dei conflitti in quanto il paese veniva riconosciuto più volte dato che le informazioni differivano per la mappa, e quindi venivano riconosciuti come paesi diversi. Pertanto abbiamo realizzato uno script che ci ha permesso di raggruppare le mappe differenti per un paese in una lista per la stessa entità piuttosto che per più entità diverse.
 
 ```python
 #SCRIPT MAPPE
@@ -218,7 +218,7 @@ results["results"]["bindings"][-1]["maps"]["value"] = maps_array
 final_results.append(results["results"]["bindings"][-1])
 ```
 
- Per raggruppare le mappe di un paese in una lista accediamo ai vari campi dell'entità fino ad arrivare alla mappa, e controlliamo se il paese dell'elemento successivo a quello che stiamo analizzando è uguale, e nel caso in cui lo è aggiungiamo la mappa alla lista delle mappe di quel paese, altrimenti continuiamo la scansione, procedendo allo stesso modo. 
+ Per raggruppare le mappe di un paese in una lista accediamo ai vari campi dell'entità fino ad arrivare alla mappa, e controlliamo se il paese dell'elemento successivo a quello che stiamo analizzando è uguale, e nel caso in cui lo è aggiungiamo la mappa alla lista delle mappe di quel paese ignorando successivamente il paese da cui abbiamo preso la mappa, altrimenti continuiamo la scansione, procedendo allo stesso modo. 
 
 Per quanto riguarda i correlati sono stati aggiunti in un secondo momento attraverso uno script, che è il seguente:
 
@@ -236,7 +236,7 @@ for result in final_results:
   related_array = []
 ```
 
-Dato il problema precedente delle mappe, si è deciso di creare direttamente related come lista di paesi correlati, che inizialmente ne conteneva 8 per ogni paese, ma successivamente è stato necessario filtrare questa lista e riportare i paesi correlati tra i paesi presenti nel dataset.
+Dato il problema precedente delle mappe, si è deciso di creare direttamente related come lista di paesi correlati, che inizialmente ne conteneva 8 per ogni paese, ma successivamente è stato necessario filtrare questa lista e riportare i paesi correlati tra i paesi presenti nel dataset. Sono quindi stati eliminati dai correlati quei paesi che risultavano essere paesi non riconosciuti o territori contesi. 
 
 ```python
 countries = [c["country"] for c in data]
@@ -244,7 +244,7 @@ for i in range(len(data)):
     data[i]["related"] = [r for r in data[i]["related"] if r in countries]
 ```
 
-I dati sono stati rappresentati in formato JSON, inizialmente decorato, e successivamente elaborato in python per renderlo non decorato e renderlo ideale per il nostro bot. Questa elaborazione del JSON è stata fatta nel seguente modo:
+I dati sono stati rappresentati in formato JSON, inizialmente decorato, e successivamente elaborato in python per renderlo non decorato e ideale per l'utilizzo del nostro bot. Questa elaborazione del JSON è stata fatta nel seguente modo:
 
 ```python
 #ESEMPIO JSON DECORATO
