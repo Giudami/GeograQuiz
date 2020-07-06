@@ -72,7 +72,16 @@ sparql.setQuery(query.format("<" + result["country"] + ">"))
 
 dove **result["country"]** conterrà la URI di Wikidata.
 
-
+Allo stesso abbiamo lavorato con la query per ottenere la pagina wikipedia del paese soggetto, la quale viene utilizzata per i suggerimenti nel bot:
+```SPARQL
+SELECT ?article WHERE {{
+    ?article schema:about {0} .
+    ?article schema:isPartOf <https://it.wikipedia.org/>.
+    SERVICE wikibase:label {{
+        bd:serviceParam wikibase:language "it"
+    }}
+}}
+```
 
 Sono state elaborate anche altre query per ottenere più informazioni riguardanti i Paesi. Ad esempio query per gli scienziati, i politici, gli atleti, gli attori, gli architetti, ecc. e per i luoghi di interesse, come musei, parchi, chiese, stadi, ecc.
 
@@ -244,6 +253,15 @@ Dato il problema precedente delle mappe, si è deciso di creare direttamente rel
 countries = [c["country"] for c in data]
 for i in range(len(data)):
     data[i]["related"] = [r for r in data[i]["related"] if r in countries]
+```
+
+Per aggiungere i dati di wikipedia al JSON abbiamo invece utilizzato il seguente script:
+```python
+for i in range(len(data)):
+    print(countries[i])
+    sparql.setQuery(query.format("<" + countries[i] + ">"))
+    results = sparql.query().convert()
+    data[i]["wikipedia"] = results["results"]["bindings"][0]["article"]["value"]
 ```
 
 I dati sono stati rappresentati in formato JSON, inizialmente decorato, e successivamente elaborato in python per renderlo non decorato e ideale per l'utilizzo del nostro bot. Questa elaborazione del JSON è stata fatta nel seguente modo:
