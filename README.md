@@ -4,11 +4,13 @@
 
 ​																	**Davide Avellone, 0670611**
 ​																	**Michele Sanfilippo, 0664184**
-​																	**Giuseppe Marino,** **0664577**
+​																	**Giuseppe Marino, 0664577**
 
 ### **Introduzione**
 
 Il progetto ha come obiettivo quello di creare un dataset riguardante dati geografici sulla base delle informazioni ottenute da Wikidata e DBpedia, e successivamente utilizzare questo dataset come base di conoscenza per un bot Telegram sviluppato in Python. Tale bot sarà utilizzabile soltanto da gruppi Telegram e attraverso i dati ottenuti creerà dei quiz geografici con opportune possibilità di risposta. 
+
+Wikidata mette a disposizione i propri dati con licenza CC0, mentre DBpedia con licenza CC-BY-SA ShareAlike 3.0. Quindi i dati utilizzati da Wikidata sono compatibili con qualsiasi altra licenza, mentre quelli di DBpedia soltanto con licenze CC-BY-SA, a tal proposito il nostro dataset sarà rilasciato con una licenza di tipo CC-BY-SA per mantenere la compatibilità.
 
 ### **Dataset**
 
