@@ -44,22 +44,16 @@ def quiz(update, context):
         result = map_question()
         questions = result["options"]
         correct_option = questions.index(result["correct"])
-        questions = [get_country_label(question)
-                     for question in questions]
-
+        questions = [get_country_label(question) for question in questions]
         image = svg2png(result["image"])
-
         update.message.reply_photo(image)
 
     elif (quizType == 2):
         result = flag_question()
         questions = result["options"]
         correct_option = questions.index(result["correct"])
-        questions = [get_country_label(question)
-                     for question in questions]
-
+        questions = [get_country_label(question) for question in questions]
         image = svg2png(result["image"])
-
         update.message.reply_photo(image)
 
     elif (quizType == 3):
@@ -82,7 +76,7 @@ def quiz(update, context):
         }
     }
 
-    print("id:", payload)  # id della chat
+    # print("id:", payload)  # id della chat
 
     context.bot_data.update(payload)
 
