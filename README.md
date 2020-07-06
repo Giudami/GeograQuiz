@@ -252,7 +252,7 @@ SELECT DISTINCT ?painter ?country WHERE {
 ORDER BY DESC (?linkcount)
 LIMIT 200
 ```
-## vaffanculo
+## related countries
 ```
 SELECT ?country ?related (COUNT(?properties) AS ?commonsCount )
 WHERE
