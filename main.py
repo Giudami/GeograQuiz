@@ -73,9 +73,9 @@ def new_handler(update, context):
     elif update.message.chat.type == 'group':
         # mettere numero round variabile
         sessions[chat_id] = {'participants': {}, 'usernames': {},
-                             'is_started': False, 'can_request': True, 'rounds_left': rounds_count}
+                             'is_started': False, 'can_request': False, 'rounds_left': rounds_count}
         update.message.reply_text(
-            'Digita\n\n👉 /partecipo per prendere parte al quiz\n\n 👉 /avvia quando siete pronti per avviare il quiz')
+            'Digita\n\n👉 /partecipo per prendere parte al quiz\n\n👉 /avvia quando siete pronti per avviare il quiz')
     else:
         update.message.reply_text(
             'Questo bot è pensato per i gruppi, aggiungilo ad un gruppo @GeograQuizBot')
@@ -120,6 +120,7 @@ def start_handler(update, context):
         else:
             if len(sessions[chat_id]['participants']) > 1:
                 sessions[chat_id]['is_started'] = True
+                sessions[chat_id]['can_request'] = True
                 update.message.reply_text(
                     'Digita 👉 /avanti per la prossima domanda')
             else:
@@ -134,49 +135,53 @@ def start_handler(update, context):
 def next_question_handler(update, context):
     chat_id = update.message.chat.id
     user_id = update.message.from_user.id
-    session = sessions[chat_id]
-    if user_id not in session['participants']:
+    if chat_id not in sessions:
         update.message.reply_text(
-            'Digita 👉 /avanti per la prossima domanda')
-    elif not session['is_started']:
-        update.message.reply_text(
-            'Digita 👉 /avanti per avviare un nuovo quiz')
-    elif not session['can_request']:
-        update.message.reply_text(
-            'Dovete dare tutti una risposta prima di procedere alla prossima domanda! 😉')
+            'Digita 👉 /nuovo per avviare un nuovo quiz!')
     else:
-        session['can_request'] = False
-        quiz_type = random.randrange(quiz_types)
+        session = sessions[chat_id]
+        if user_id not in session['participants']:
+            update.message.reply_text(
+                'Digita 👉 /avanti per la prossima domanda')
+        elif not session['is_started']:
+            update.message.reply_text(
+                'Digita 👉 /avanti per avviare un nuovo quiz')
+        elif not session['can_request']:
+            update.message.reply_text(
+                'Dovete dare tutti una risposta prima di procedere alla prossima domanda! 😉')
+        else:
+            session['can_request'] = False
+            quiz_type = random.randrange(quiz_types)
 
-        questions = [population_question,
-                     country_for_capital_question,
-                     map_question,
-                     flag_question]
+            questions = [population_question,
+                         country_for_capital_question,
+                         map_question,
+                         flag_question]
 
-        result = random.choice(questions)()
+            result = random.choice(questions)()
 
-        if result['image'] is not None:
-            update.effective_message.reply_photo(svg2png(result['image']))
+            if result['image'] is not None:
+                update.effective_message.reply_photo(svg2png(result['image']))
 
-        message = update.effective_message.reply_poll(result['title'],
-                                                      result['options'],
-                                                      type=Poll.QUIZ,
-                                                      is_anonymous=False,
-                                                      explanation=result['explanation'],
-                                                      correct_option_id=result['correct'])
+            message = update.effective_message.reply_poll(result['title'],
+                                                          result['options'],
+                                                          type=Poll.QUIZ,
+                                                          is_anonymous=False,
+                                                          explanation=result['explanation'],
+                                                          correct_option_id=result['correct'])
 
-        # Save some info about the poll the bot_data for later use in receive_quiz_answer
-        payload = {
-            message.poll.id: {
-                'chat_id':
-                update.effective_chat.id,
-                'message_id':
-                message.message_id,
-                'correct_option_id': result['correct'],
-                'current_answers': 0
+            # Save some info about the poll the bot_data for later use in receive_quiz_answer
+            payload = {
+                message.poll.id: {
+                    'chat_id':
+                    update.effective_chat.id,
+                    'message_id':
+                    message.message_id,
+                    'correct_option_id': result['correct'],
+                    'current_answers': 0
+                }
             }
-        }
-        context.bot_data.update(payload)
+            context.bot_data.update(payload)
 
 
 def receive_question_answer(update, context):

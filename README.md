@@ -2,17 +2,15 @@
 
 ### GeograQuiz
 
-​																	**Davide Avellone, matricola:0670611**
-																	 **Michele Sanfilippo, matricola: 0664184**
-																	 **Giuseppe Marino, matricola:0664577**
+<p align="center">Davide Avellone, matricola: 0670611 <br> Michele Sanfilippo, matricola: 0664184 <br> Giuseppe Marino, matricola: 0664577</p>
 
-### **Introduzione**
+### Introduzione
 
 Il progetto ha come obiettivo quello di creare un dataset riguardante dati geografici sulla base delle informazioni ottenute da Wikidata e DBpedia, e successivamente utilizzare questo dataset come base di conoscenza per un bot Telegram sviluppato in Python. Tale bot sarà utilizzabile soltanto da gruppi Telegram e attraverso i dati ottenuti creerà dei quiz geografici con opportune possibilità di risposta. 
 
 Wikidata mette a disposizione i propri dati con licenza CC0, mentre DBpedia con licenza CC-BY-SA ShareAlike 3.0. Quindi i dati utilizzati da Wikidata sono compatibili con qualsiasi altra licenza, mentre quelli di DBpedia soltanto con licenze CC-BY-SA, a tal proposito il nostro dataset sarà rilasciato con una licenza di tipo CC-BY-SA per mantenere la compatibilità.
 
-### **Dataset**
+### Dataset
 
 Il dataset utilizzato è stato opportunamente realizzato da noi ricavando le informazioni da Wikidata e DBpedia attraverso i loro rispettivi endpoint ed utilizzando query in formato SPARQL con la libreria SPARQLWrapper:
 
@@ -352,4 +350,199 @@ Dopo l'elaborazione in python otteniamo i dati nel seguente formato:
   }
 ```
 
-### Bot Telegram
+## Bot Telegram
+
+### Introduzione
+
+Una volta estratte le informazioni di nostro interesse, la cosa da fare è stata predisporre un metodo agevole per generare delle domande, tenere traccia delle risposte date, e poter competere insieme ad i propri amici. A tal proposito la soluzione più rapida ed efficace è stata quella di sviluppare un bot Telegram. L'idea è stata quella di permettere al bot di inviare dei messaggi di tipo quiz all'interno dei gruppi, tenendo il conto delle risposte corrette date dai vari partecipanti. 
+
+
+### Libreria
+
+L'API di Telegram può essere utilizzata in un qualsiasi linguaggio di programmazione che supporti le richieste HTTP, in questo caso si è preferito utilizzare il linguaggio Python più la libreria [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot). Questa libreria si installa molto facilemnte tramite il gestore dei pacchetti Pip di Python, e fornisce un wrapper completo per tutte le funzionalità dell'API Telegram.
+
+per l'installazione basta eseguire da riga di comando: `pip install python-telegram-bot --upgrade`
+
+
+### Funzionamento
+
+Il bot di fatto viene aggiunto al gruppo come fosse un normale utente, e l'interazione con esso avviene tramite i cosiddetti *comandi*, altro non sono che semplici parole chiave antecedute da uno *slash* che vengono intercettate dal bot non appena si invia un messaggio che le contiene. Inoltre questi comandi vengono resi accessibili tramite un pannello predisposto che rende l'interazione ancora più pratica.  
+
+Di fatto il bot può mantenere una sessione per ogni gruppo, per ogni sessione ha una lista dei partecipanti con i relativi punteggi, questa è memorizzata dentro il dizionario `session`. All'avvio del bot esso stampa un messaggio di aiuto contenente una descrizione di tutti i comandi e la sua modalità di funzionamento.
+
+Il primo passo per creare un quiz è quello di dare il comando `/nuovo`, così facendo si innesca l'handler `new_handler`, esso nel caso in cui il comando sia stato lanciato in una chat adeguata, aggiunge la chat alla sessione, inizializzando il conteggio dei round residui a `rounds_left: rounds_count`, lo stato del quiz come `is_started: False` e la possibilità di richiedere le domande come `can_request: False`. Questo perché a questo punto il bot è in attesa che gli utenti diano la loro patecipazione.
+
+```
+def new_handler(update, context):
+
+    chat_id = update.message.chat.id
+    if chat_id in sessions:
+        update.message.reply_text(
+            'C \'è già un quiz in corso\n\n digita 👉 /termina per terminarlo')
+    elif update.message.chat.type == 'group':
+        # mettere numero round variabile
+        sessions[chat_id] = {'participants': {}, 'usernames': {},
+                             'is_started': False, 'can_request': False, 'rounds_left': rounds_count}
+        update.message.reply_text(
+            'Digita\n\n👉 /partecipo per prendere parte al quiz\n\n👉 /avvia quando siete pronti per avviare il quiz')
+    else:
+        update.message.reply_text(
+            'Questo bot è pensato per i gruppi, aggiungilo ad un gruppo @GeograQuizBot')
+```
+
+![nuovo](./img/nuovo.png)
+
+Per prendere parte al gioco, gli utenti del gruppo devono dare il comando `/partecipo`. Si fa notare che si è preferito definire esplicitamente i partecipanti piuttosto che rendere il quiz aperto direttamente a tutto il gruppo per poter bloccare l'invio di domande successive fino a che tutti gli effettivi interessati al quiz avranno risposto. Una volta che l'utente sarà stato aggiunto alla partita il suo contatore di risposte corrette verrà posto a zero `sessions[chat_id]['participants'][user_id] = 0`.
+
+```
+
+def taking_part_handler(update, context):
+    chat_id = update.message.chat.id
+    user_id = update.message.from_user.id
+    if chat_id in sessions:
+        if sessions[chat_id]['is_started']:
+            update.message.reply_text(
+                'Non puoi prendere parte ad un quiz già iniziato! 😢')
+        elif user_id not in sessions[chat_id]['participants']:
+            sessions[chat_id]['participants'][user_id] = 0
+            sessions[chat_id]['usernames'][user_id] = update.message.from_user.username
+        else:
+            update.message.reply_text('Sei già un partecipante! 😎')
+    else:
+        if update.message.chat.type == 'group':
+            update.message.reply_text(
+                'Digita 👉 /nuovo per avviare un nuovo quiz!')
+        else:
+            update.message.reply_text(
+                'Questo bot è pensato per i gruppi, aggiungilo ad un gruppo @GeograQuizBot')
+
+```
+
+![partecipo](./img/partecipo.png)
+
+Una volta stabilita la lista dei partecipanti si può procedere al quiz tramite il comando `/avvia` . Questo di fatto imposta per la partita sessions `[chat_id]['is_started'] = True` e `sessions[chat_id]['can_request'] = True` mettendo il bot in attesa del comando `/avanti`. Affinché si possa avviare il gioco sono richiesti almeno due partecipanti, se così non fosse il bot invierà un messaggio informativo.
+
+```python
+
+def start_handler(update, context):
+    chat_id = update.message.chat.id
+    if chat_id in sessions:
+        if sessions[chat_id]['is_started']:
+            update.message.reply_text('Il quiz è già avviato 😎')
+        else:
+            if len(sessions[chat_id]['participants']) > 1:
+                sessions[chat_id]['is_started'] = True
+                sessions[chat_id]['can_request'] = True
+                update.message.reply_text(
+                    'Digita 👉 /avanti per la prossima domanda')
+            else:
+                update.message.reply_text(
+                    'Servono almeno due partecipanti, Digita\n\n👉 /partecipo per prendere parte al quiz')
+
+    else:
+        update.message.reply_text(
+            'Digita 👉 /nuovo per creare un nuovo quiz prima di avviarlo')
+
+```
+
+![avvia](./img/partecipo.png)
+
+Per richiedere la nuova domanda, come già detto, è necessario che tutti i partecipanti al quiz abbiano comunicato la loro risposta, o che comunque lo stato sia in `sessions[chat_id]['can_request'] = True`. A questo punto lo stato passa in `sessions[chat_id]['can_request'] = False`, e viene preparata ed inviata la domanda. 
+
+Di volta in volta il contenuto viene ricavato partendo da una tra le quattro funzioni per la generazione di domande, scelta a caso. I valori restituiti dalle le funzioni sono coerenti tra di loro, e prevedono un testo, delle risposte, l'indice della risposta corretta ed, eventualmente, una immagine. La produzione delle domande verrà approfondita in seguito.
+
+```python
+def next_question_handler(update, context):
+    chat_id = update.message.chat.id
+    user_id = update.message.from_user.id
+    if chat_id not in sessions:
+        update.message.reply_text(
+            'Digita 👉 /nuovo per avviare un nuovo quiz!')
+    else:
+        session = sessions[chat_id]
+        if user_id not in session['participants']:
+            update.message.reply_text(
+                'Digita 👉 /avanti per la prossima domanda')
+        elif not session['is_started']:
+            update.message.reply_text(
+                'Digita 👉 /avanti per avviare un nuovo quiz')
+        elif not session['can_request']:
+            update.message.reply_text(
+                'Dovete dare tutti una risposta prima di procedere alla prossima domanda! 😉')
+        else:
+            session['can_request'] = False
+            quiz_type = random.randrange(quiz_types)
+
+            questions = [population_question,
+                         country_for_capital_question,
+                         map_question,
+                         flag_question]
+
+            result = random.choice(questions)()
+
+            if result['image'] is not None:
+                update.effective_message.reply_photo(svg2png(result['image']))
+
+            message = update.effective_message.reply_poll(result['title'],
+                                                          result['options'],
+                                                          type=Poll.QUIZ,
+                                                          is_anonymous=False,
+                                                          explanation=result['explanation'],
+                                                          correct_option_id=result['correct'])
+
+            # Save some info about the poll the bot_data for later use in receive_quiz_answer
+            payload = {
+                message.poll.id: {
+                    'chat_id':
+                    update.effective_chat.id,
+                    'message_id':
+                    message.message_id,
+                    'correct_option_id': result['correct'],
+                    'current_answers': 0
+                }
+            }
+            context.bot_data.update(payload)
+```
+
+È possibile annullare la partita in corso in un suo punto qualsiasi digitando `/termina`. Questo comando rimuove direttamente la sessione per la chat all'interno della quale è chiamato.
+
+```python
+def stop_handler(update, context):
+
+    chat_id = update.message.chat.id
+    if chat_id in sessions:
+        del sessions[chat_id]
+        update.message.reply_text('Quiz cancellato 😢')
+    else:
+        update.message.reply_text('Non c\'è nessun quiz in corso 🤔')
+```
+
+## Generazione delle domande
+
+Come già anticipato, sono state implementate quattro possibili tipi di domanda:
+
++ Popolazione: data una nazione, a quanto ammonta la sua popolazione?
++ Bandiera: data l'immagine di una bandiera, a quale nazione appartiene?
++ Capitale: dato il nome di una capitale, a quale nazione appartiene?
++ Mappa: data l'immagine di una mappa con un territorio evidenziato, di che nazione si tratta?
+
+Il testo della domanda, e l'eventuale immagine, vengono ricavati partendo da una delle nazioni del nostro dataset, estratta a caso.
+
+Per ciascuna di queste domande sono fornite quattro possibili alternative, di cui, naturalmente, solo una è corretta.
+
+Nel caso della popolazione, le alternative sono dei valori numerici generati a caso, predisposti in modo tale da discostarsi abbastanza dal valore vero, pur restando all'interno di un intervallo verosimile, così da poter permettere di rispondere senza sapere la cifra con esattezza.
+
+Per tutte le altre alternative vengono forniti dei nomi di nazione ricavati tramite i `related` della nazione della risposta esatta, estraendone tre a caso dall'insieme.
+
+Quiz con mappa geografica:
+![esempio1](./img/avanti1.png)
+Quiz con bandiera del Paese:
+![esempio2](./img/avanti2.png)
+Quiz sull
+![esempio3](./img/popolazione.png)
+
+
+Già dal nostro dataset, estratto così com'è, si potrebbero pensare delle altre possibili domande. Ad esempio per ogni nazione 
+
+
+### Funzionamento
