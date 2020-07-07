@@ -3,7 +3,7 @@ from SPARQLWrapper import SPARQLWrapper, JSON
 
 with open('data.json', 'r') as data_file:
     data = json.load(data_file)
-
+# vogliamo ottenere i luoghi di interesse relativi ad ogni nazione
 sparql = SPARQLWrapper("https://dbpedia.org/sparql")
 
 query = """
@@ -73,13 +73,11 @@ array = []
 for result in data:
     sparql.setQuery(query.format("<" + result["country"] + ">"))
     results = sparql.query().convert()
-    print(results)
     for i in range(0, len(results["results"]["bindings"])):
-        array.append(results["results"]["bindings"][i]["thingWikidata"]["value"])
-    print(array)
+        array.append(results["results"]["bindings"]
+                     [i]["thingWikidata"]["value"])
     result["pointsOfInterest"] = array
     array = []
 
 with open('data2.json', 'wb') as f:
-  data = json.dump(data, f)
-
+    data = json.dump(data, f)

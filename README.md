@@ -5,29 +5,46 @@
 
 [TOC]
 
-
+ contenente dati sulle nazioni del mondo sulla base delle informazioni ottenute attraverso Wikidata e DBpedia
 
 ## Introduzione
 
-Il progetto ha come obiettivo quello di creare un bot Telegram in Python che lavora con un dataset creato da noi contenente dati sulle nazioni del mondo sulla base delle informazioni ottenute attraverso Wikidata e DBpedia. Tale bot sarà utilizzabile soltanto da gruppi Telegram e attraverso delle opportune elaborazioni creerà quiz geografici. 
+Il progetto ha come obiettivo lo sviluppo di un bot Telegram in Python, che lavora con un dataset da noi ricavato, per creare in automatico dei quiz geografici ai quali partecipare in compagnia con i propri amici dentro delle chat di gruppo. 
+
+Le basi di conoscenza coinvolte per realizzare il nostro dataset sono state Wikidata e DBpedia. Nello specifico Wikidata è stata la fonte principale, dalla quale abbiamo estrapolato informazioni ed immagini, mentre DBpedia è stata importante per ottenere, partendo da una nazione, un insieme di *correlati*, in altri termini delle nazioni affini, che potessero essere utilizzate come possibili risposte al quiz.
 
 Wikidata mette a disposizione i propri dati con licenza CC0, mentre DBpedia con licenza CC-BY-SA ShareAlike 3.0. Quindi i dati utilizzati da Wikidata sono compatibili con qualsiasi altra licenza, mentre quelli di DBpedia soltanto con licenze CC-BY-SA, motivo per cui il nostro dataset sarà rilasciato con una licenza di tipo CC-BY-SA per mantenere la compatibilità.
 
 ## Dataset
 
-Il dataset utilizzato è stato opportunamente realizzato da noi ricavando le informazioni da Wikidata e DBpedia attraverso i loro rispettivi endpoint `https://query.wikidata.org/sparql` e `https://dbpedia.org/sparql` ed utilizzando query in formato SPARQL con la libreria SPARQLWrapper.
-Nello specifico abbiamo sfruttato questi endpoint per ottenere informazioni riguardanti i vari Paesi del mondo (dai quali dobbiamo escludere le civiltà antiche o paesi non riconosciuti) tra cui: capitale, bandiera, popolazione, superficie, unicode, mappe... I Paesi ottenuti saranno ordinati attraverso un `linkcount`  (che ci permette di capire quali paesi hanno più informazioni e quindi sono più rilevanti) per averli dal più significativo al meno significativo. 
-La query risulta essere la seguente:
+Il dataset è stato realizzato da noi attraverso degli script Python che utilizzano delle query in formato SPARQL, grazie alla libreria SPARQLWrapper, per accedere agli endpoint di Wikidata e DBpedia, rispettivamente `https://query.wikidata.org/sparql` e `https://dbpedia.org/sparql`. Nello specifico abbiamo sfruttato questi endpoint per ottenere le informazioni riguardanti gli stati sovrani del mondo (quindi sono stati esclusi gli ex stati e gli stati non universalmente riconosciuti). Le etichette sono state estratte in italiano, anche se si è pensato di predisporre in futuro dei dataset localizzati in più lingue.
+
+Le informazioni estratte sono:
+
++ la capitale: sia come URI Wikidata che come label
++ la bandiera: come risorsa SVG su Wikidata
++ la popolazione: come valore intero
++ la superficie: come valore intero
++ il codice unicode: emoji della bandiera relativa
++ delle mappe: come risorse SVG su Wikidata
++ la pagina Wikipedia: come collegamento alla voce Wikipedia
++ i paesi correlati: come URI WIkidata
+
+I Paesi sono stati ottenuti ordinati sulla base del loro `linkcount`. Questo permette di determinare l'importanza di una voce su Wikidata. L'idea iniziale dietro a questo ordinamento era quella di attribuire un moltiplicatore diverso alle varie nazioni, facendo pesare di meno le risposte relative ai paesi più conosciuti, e di più le risposte per i Paesi meno conosciuti. Dalle nostre prove sono sorti dei problemi, per esempio Il Regno dei Paesi Bassi risulta essere all'ultimo posto, in quanto buona parte delle voci che permetterebbero di collocarlo nelle parti più alte della classifica, sono direttamente collegate ai Paesi Bassi, ossia una delle quattro nazioni costitutive del Regno (Insieme a Aruba, Curaçao e Sint Maarten). Onde evitare problematiche di questo tipo abbiamo deciso di dare a tutte le nazioni lo stesso peso.
+
+
+La query per fare ciò, utilizzata dentro il il file `connection.py`, risulta essere la seguente:
 
 ```SPARQL
-SELECT ?country ?countryLabel ?capital ?capitalLabel ?flag ?population ?surface ?unicode ?maps
+SELECT ?country ?countryLabel ?capital ?capitalLabel ?flag ?population ?surface ?unicode ?maps ?articleLabel
 
 WHERE
 {
+ \# per includere gli stati sovrani
  ?country wdt:P31 wd:Q3624078 .
- \#not a former country
+ \# per escludere le ex nazioni
  FILTER NOT EXISTS {?country wdt:P31 wd:Q3024240}
- \#and no an ancient civilisation (needed to exclude ancient Egypt)
+ \# per escludere gli stati dei popoli antichi
  FILTER NOT EXISTS {?country wdt:P31 wd:Q28171280}
   ?country wdt:P36 ?capital .
   ?country wdt:P41 ?flag .
@@ -36,12 +53,21 @@ WHERE
   ?country wdt:P487 ?unicode .
   ?country wdt:P242 ?maps .
   ?country wikibase:sitelinks ?linkcount . 
+  ?article schema:about ?country .
+  ?article schema:isPartOf <https://it.wikipedia.org/> .
  SERVICE wikibase:label { bd:serviceParam wikibase:language "it" }
 } ORDER BY DESC(?linkcount)
 ```
 
-Attualmente siamo in possesso dei Paesi che ci interessano con le loro proprietà. Siamo interessati, al fine di ottenere delle alternative coerenti con le risposte corrette dei quiz, a ricercare, per ogni Paese presente nella query, una lista di Paesi ad esso correlati. Con correlati intendiamo quei Paesi che più sono simili al Paese soggetto del quiz, ad esempio se sarà presente una domanda sull'Italia vogliamo che le alternative siano Paesi "simili" all'Italia (ad esempio Spagna, Francia... piuttosto che Congo, Corea del Nord...) per avere quiz più coerenti. 
-Per implementare questa logica della correlazione abbiamo utilizzato la seguente query processata in Python:
+A questo punto siamo in possesso delle nazioni con le loro proprietà. Come già accennato, al fine di ottenere delle alternative coerenti con le risposte corrette dei quiz siamo interessati ad ottenere una lista di nazioni per ogni elemento precedentemente ricavato. Con correlati intendiamo quelle nazioni che più sono simili alla nazione soggetto del quiz. Ad esempio per una domanda che ha come risposta corretta l'Italia vogliamo che le alternative siano "prossime" dal punto di vista concettuale all'Italia (ad esempio la Spagna, la Francia... piuttosto che il Congo, la Corea del Nord...). Si fa notare che non si tratta di semplice vicinanza geografica (per esempio l'Australia è correlata sia a nazioni come la Nuova Zelanda che al Regno Unito).
+
+Per riuscire in ciò abbiamo valutato varie opzioni. Ad esempio abbiamo provato ad estrapolare i correlati come nazioni che condividono molte proprietà rispetto alla nazione considerata su Wikidata, ma questo approccio forniva risultati poco coerenti, infatti nazioni come gli Stati Uniti, Regno Unito e la Corea del Nord risultavano tra i primi risultati quasi sempre. Altro esempio è dato dall'India che risultava essere la seconda nazione più correlata all'Italia.
+
+I risultati migliori sono stati ottenuti ordinando sulla base delle proprietà comuni tra le nazioni in DBpedia, probabilmente le rappresentazioni su questa base di conoscenza sono più affini a quello che noi tendiamo a notare come correlazione importante.  
+
+Il primo passaggio è stato quello di ricavare l'entità corrispondente su DBpedia, sulla base dell'URI Wikidata, per fortuna i dati sono collegati tra le due basi ed il passaggio è risultato molto agevole. Una volta ottenuta la lista degli URI Wikidata ordinata per grado di correlazione, abbiamo estratto solo i primi otto risultati.
+
+La query per fare ciò, utilizzata dentro il il file `connection.py`, risulta essere la seguente:
 
 ```SPARQL
 SELECT ?countryWikidata
@@ -59,26 +85,12 @@ ORDER BY DESC(COUNT(?p))
 LIMIT 8
 ```
 
-In questa query utilizziamo la similarità di DBpedia attraverso  le URI di Wikidata e otteniamo le informazioni dei paesi correlati sotto forma di URI di Wikidata. Viene utilizzato `{0}` poiché il Paese di cui vogliamo i correlati deve variare. Esso prende il proprio valore attraverso: 
+**Nota bene**: la query rappresentata è formattata in modo da essere processata in Python, infatti verrà eseguita una volta per nazione, tramite `sparql.setQuery(query.format("<" + result["country"] + ">"))`, per cui di volta in volta `{0}` verrà sostituito con l'URI Wikidata della nazione.
 
-```python
-sparql.setQuery(query.format("<" + result["country"] + ">"))
-```
 
-dove `result["country]"` conterrà la URI di Wikidata.
+In un primo momento era stato pensato di fornire, per ogni nazione, anche un insieme di persone famose, e un insieme di posti, edifici e monumenti importanti. Tuttavia questa opzione è stata esclusa, senza ulteriori affinamenti avrebbe reso il gioco troppo difficile, infatti per le nazioni meno famose questi risultati erano praticamente sconosciuti. Si era pensato di includerli proporzionalmente all'importanza della nazione, ma per gli stessi motivi legati al punteggio, questa opzione è stata esclusa (ad esempio pur essendo Van Gogh uno dei pittori più famosi della storia, sarebbe stato escluso perché appartenente al Regno dei Paesi Bassi).
 
-In questo stesso modo abbiamo lavorato con la query per ottenere la pagina wikipedia del paese soggetto, la quale viene utilizzata per i suggerimenti nel bot:
-```SPARQL
-SELECT ?article WHERE {{
-    ?article schema:about {0} .
-    ?article schema:isPartOf <https://it.wikipedia.org/>.
-    SERVICE wikibase:label {{
-        bd:serviceParam wikibase:language "it"
-    }}
-}}
-```
-
-Sono state elaborate anche altre query per ottenere più informazioni riguardanti i Paesi. Ad esempio query per gli scienziati, i politici, gli atleti, gli attori, gli architetti, ecc. e per i luoghi di interesse come musei, parchi, chiese, stadi, ecc.
+Qui di seguito le query proposte, ma non implementate. Si fa notare che per ottenere le varie entità ordinate per importanza abbiamo utilizzato sia il servizio di Page Rank su DBpedia che i linkcount su Wikidata.
 
 ```SPARQL
 #CALCIATORI FAMOSI
@@ -92,8 +104,6 @@ WHERE {
 ?r vrank:rankValue ?rank .
 } ORDER by DESC(?rank)
 ```
-
-
 
 ```SPARQL
 #ATTORI
@@ -109,7 +119,7 @@ SELECT DISTINCT ?actor ?country WHERE {
 }
 ORDER BY DESC (?linkcount)
 LIMIT 200
-#il MINUS per escludere quei musicisti e scrittori che erano apparsi in qualche film
+# il MINUS per escludere quei musicisti e scrittori che erano apparsi in qualche film
 ```
 
 
@@ -126,10 +136,6 @@ SELECT DISTINCT ?scientist ?country WHERE {
 ORDER BY DESC (?linkcount)
 LIMIT 200
 ```
-
-Queste query dovevano essere utilizzate per ogni paese, quindi al variare del paese avremmo dovuto ottenere scienziati, calciatori, attori e persone famose in generale relative a quel dato paese ordinate rispetto al `linkcount`. 
-Il problema che sorge è che nel caso in cui il paese soggetto sia un Paese poco conosciuto dalla media (ad esempio il Brunei) potrebbe succedere che esso non abbia scienziati o altri personaggi famosi di particolare rilevanza tanto da non essere presenti in Wikidata, ma anche nel caso in cui siano presenti si nota che è difficile, a meno di tirare a sorte, indovinare la risposta esatta. Pertanto è stato ritenuto più opportuno non utilizzare queste query e di conseguenza questi dati non sono stati aggiunti al dataset.
-La seguente, invece, è la query per i luoghi di interesse. Si è pensato di far variare i paesi e prendere 12 dei luoghi di interesse più famosi per quel paese. Nell'esempio sotto il paese viene fissato a Spain.
 
 ```SPARQL
 #LUOGHI DI INTERESSE
