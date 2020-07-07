@@ -1,7 +1,7 @@
 import json
 from SPARQLWrapper import SPARQLWrapper, JSON
 
-# per ottenere tempi di timeout più lunghi
+# per ottenere tempi di timeout piu' lunghi
 # modifichiamo l'user agent
 sparql = SPARQLWrapper("https://query.wikidata.org/sparql",
                        agent='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36')
@@ -39,7 +39,7 @@ maps_array = []
 final_results = []
 # otteniamo le URI relative alle mappe e le inseriamo in maps_array
 maps_array.append(results["results"]["bindings"][0]["maps"]["value"])
-# operiamo per ottenere un solo stato con più mappe (altrimenti lo stesso stato con mappa diversa viene riconosciuto come entità diversa)
+# operiamo per ottenere un solo stato con piu' mappe (altrimenti lo stesso stato con mappa diversa viene riconosciuto come entita' diversa)
 for i in range(1, len(results["results"]["bindings"])):
     r1 = results["results"]["bindings"][i-1]
     r2 = results["results"]["bindings"][i]
@@ -63,7 +63,7 @@ for result in final_results:
     result["capital"] = result["capital"]["value"]
     result["population"] = result["population"]["value"]
     result["countryLabel"] = result["countryLabel"]["value"]
-    result["wikipedia"] = result["article"]["value"]
+    result["article"] = result["article"]["value"]
 
 # settiamo l'endpoint a DBpedia per la prossima query
 sparql = SPARQLWrapper("https://dbpedia.org/sparql")

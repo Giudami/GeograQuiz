@@ -10,3 +10,6 @@ countries = [c["country"] for c in data]
 for i in range(len(data)):
     # se viene trovato manteniamo l'informazione
     data[i]["related"] = [r for r in data[i]["related"] if r in countries]
+
+with open('data.json', 'wb') as f:
+    json.dump(data, f)
