@@ -242,7 +242,7 @@ def map_question():
         'title': 'Qual è la nazione in figura?',
         'options': options,
         'correct': correct_index,
-        'explanation': country['wikipedia'],
+        'explanation': country['article'],
         'image': random.choice(country['maps'])
     }
 
@@ -271,7 +271,7 @@ def population_question():
         'title': country['countryLabel'] + ': a quanto ammonta la sua popolazione?',
         'options': options,
         'correct': correct_index,
-        'explanation': country['wikipedia'],
+        'explanation': country['article'],
         'image': None
     }
 
@@ -282,7 +282,7 @@ def country_for_capital_question():
         'title': country['capitalLabel'] + ' è la capitale di quale tra le seguenti nazioni?',
         'options': options,
         'correct': correct_index,
-        'explanation': country['wikipedia'],
+        'explanation': country['article'],
         'image': None
     }
 
@@ -293,7 +293,7 @@ def flag_question():
         'title': 'A quale nazione appartiene questa bandiera?',
         'options': options,
         'correct': correct_index,
-        'explanation': country['wikipedia'],
+        'explanation': country['article'],
         'image': country['flag']
     }
 

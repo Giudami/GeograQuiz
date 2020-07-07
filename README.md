@@ -122,8 +122,6 @@ LIMIT 200
 # il MINUS per escludere quei musicisti e scrittori che erano apparsi in qualche film
 ```
 
-
-
 ```SPARQL
 #SCIENZIATI
 SELECT DISTINCT ?scientist ?country WHERE {
@@ -202,13 +200,13 @@ L'output della query è il seguente:
 
 ![photo_2020-07-06_16-16-12](./img/photo_2020-07-06_16-16-12.jpg)
 
-Non abbiamo utilizzato i risultati nel nostro dataset poiché avendo 195 paesi nel caso in cui venga estratto un paese poco conosciuto (il che è molto probabile, perché di questi 195 paesi quelli molto noti dalla media sono una minima parte) non si è in grado di associare il luogo di interesse al paese corretto.
+
 
 ## Pipeline di elaborazione
 
-Abbiamo elaborato i dati ottenuti dalle query attraverso degli script in Python, in modo da ottenere dei file JSON utilizzabili dal bot come base di conoscenza. In particolare abbiamo agito sulle mappe e sui correlati di ogni paese. 
+Come già introdotto, le query sono state eseguite in Python, inoltre dentro gli stressi script sono state svolte le operazioni di affinamento e pulizia in modo da ottenere un file JSON agevolmente utilizzabile dal bot come base di conoscenza.
 
-Per quanto riguarda le mappe, per alcuni paesi, Wikidata ci forniva più di una mappa e questo creava dei conflitti in quanto il paese veniva riconosciuto più volte dato che le informazioni differivano per la mappa, e quindi venivano riconosciuti come paesi diversi. Pertanto abbiamo realizzato uno script che ci ha permesso di raggruppare le mappe differenti per un paese in una lista per la stessa entità piuttosto che per più entità diverse.
+Per quanto riguarda le mappe geografiche, per alcuni paesi, Wikidata fornisce più risultati e questo si traduce in un record per ogni mappa, L'obiettivo era quello di ottenere piuttosto un array di mappe dentro l'oggetto JSON per la nazione. Pertanto è stato realizzato il seguente script.
 
 ```python
 #SCRIPT MAPPE
@@ -229,9 +227,9 @@ results["results"]["bindings"][-1]["maps"]["value"] = maps_array
 final_results.append(results["results"]["bindings"][-1])
 ```
 
- Per raggruppare le mappe di un paese in una lista accediamo ai vari campi dell'entità fino ad arrivare alla mappa, e controlliamo se il paese dell'elemento successivo a quello che stiamo analizzando è uguale, e nel caso in cui lo è aggiungiamo la mappa alla lista delle mappe di quel paese ignorando successivamente il paese da cui abbiamo preso la mappa, altrimenti continuiamo la scansione, procedendo allo stesso modo. 
+Per raggruppare le mappe di un paese in una lista accediamo ai vari campi dell'entità fino ad arrivare alla mappa, e controlliamo se il paese dell'elemento successivo a quello che stiamo analizzando è uguale, e nel caso in cui lo sia aggiungiamo la mappa alla lista delle mappe di quel paese ignorando l'oggetto successivo da cui abbiamo preso la mappa, altrimenti continuiamo la scansione, procedendo allo stesso modo. 
 
-Per quanto riguarda i correlati sono stati aggiunti in un secondo momento attraverso uno script, che è il seguente:
+Per quanto riguarda i correlati, essi sono stati aggiunti in un secondo momento, attraverso il seguente script.
 
 ```python
 #SCRIPT CORRELATI
@@ -247,7 +245,7 @@ for result in final_results:
   related_array = []
 ```
 
-Dato il problema precedente delle mappe, si è deciso di creare direttamente related come lista di paesi correlati, che inizialmente ne conteneva 8 per ogni paese, ma successivamente è stato necessario filtrare questa lista e riportare i paesi correlati tra i paesi presenti nel dataset. Sono quindi stati eliminati dai correlati quei paesi che risultavano essere paesi non riconosciuti o territori contesi. 
+Dato il problema precedente delle mappe, si è deciso di creare direttamente related come lista di paesi correlati. Successivamente è stato necessario filtrare da queste liste gli stati non sovrani o non ricnosciuti, accidentalmente inclusi in quanto ricavati da DBpedia, che ha una rappresentazione leggermente diversa rispetto a Wikidata.
 
 ```python
 countries = [c["country"] for c in data]
@@ -255,16 +253,7 @@ for i in range(len(data)):
     data[i]["related"] = [r for r in data[i]["related"] if r in countries]
 ```
 
-Per aggiungere i dati di wikipedia al JSON abbiamo invece utilizzato il seguente script:
-```python
-for i in range(len(data)):
-    print(countries[i])
-    sparql.setQuery(query.format("<" + countries[i] + ">"))
-    results = sparql.query().convert()
-    data[i]["wikipedia"] = results["results"]["bindings"][0]["article"]["value"]
-```
-
-I dati sono stati rappresentati in formato JSON, inizialmente decorato, e successivamente elaborato in python per renderlo non decorato e ideale per l'utilizzo del nostro bot. Questa elaborazione del JSON è stata fatta nel seguente modo:
+I dati sono stati restituiti in un formato JSON decorato, ossia con dei campi per indicare i tipi dei dati rappresentati. La nostra intenzione era quella di escludere queste decorazioni, quindi sono state rimosse successivamente.
 
 ```python
 #ESEMPIO JSON DECORATO
