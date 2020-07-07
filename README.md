@@ -366,13 +366,56 @@ per l'installazione basta eseguire da riga di comando: `pip install python-teleg
 
 ### Funzionamento
 
-Il bot di fatto viene aggiunto al gruppo come fosse un normale utente, e l'interazione con esso avviene tramite i cosiddetti *comandi*, altro non sono che semplici parole chiave antecedute da uno *slash* che vengono intercettate dal bot non appena si invia un messaggio che le contiene. Inoltre questi comandi vengono resi accessibili tramite un pannello predisposto che rende l'interazione ancora più pratica.  
 
-Di fatto il bot può mantenere una sessione per ogni gruppo, per ogni sessione ha una lista dei partecipanti con i relativi punteggi, questa è memorizzata dentro il dizionario `session`. All'avvio del bot esso stampa un messaggio di aiuto contenente una descrizione di tutti i comandi e la sua modalità di funzionamento.
+Qui di seguito le variabili globali utili alla comprensione degli snippet di codice:
+
++ `sessions = {}` tiene conto delle sessioni di gioco
++ `options_number = 3` rappresenta il numero di opzioni, oltre la corretta, presenti nelle domande
++ `countries = None` conterrà il dataset una volta caricato il dataset 
++ `countries_count = 0` conterrà il numero di nazioni dentro il dataset
++ `index_for_uri = {}`  una volta caricato il dataset conterrà l'indice per un URI, tornerà utile per accedere usando l'URI della nazione come chiave
++ `quiz_types = 4` rappresenta il numero di domande che sono state implementate
++ `rounds_count = 10` rappresenta il numero di round per un quiz
+
+Il dataset viene caricato ancora prima di istanziare il bot:
+
+```python
+with open('./data.json') as input:
+    countries = json.load(input)
+    countries_count = len(countries)
+    i = 0
+    for country in countries:
+        index_for_uri[country['country']] = i
+        i += 1
+```
+
+Il bot di fatto viene aggiunto al gruppo come fosse un normale utente, e l'interazione con esso avviene tramite i cosiddetti *comandi*, altro non sono che semplici parole chiave antecedute da uno *slash* che vengono intercettate dal bot non appena si invia un messaggio che le contiene. Inoltre questi comandi vengono resi accessibili tramite un pannello predisposto che rende l'interazione ancora più pratica. 
+
+Il bot può mantenere una sessione di gioco per ogni gruppo, per ogni sessione ha una lista dei partecipanti con i relativi punteggi, questa è memorizzata dentro il dizionario `session`. All'avvio del bot esso stampa un messaggio di aiuto contenente una descrizione di tutti i comandi e la sua modalità di funzionamento.
+
+Di seguito la dichiarazione e l'assegnazione del bot e dei suoi handler:
+
+```python
+updater = Updater(
+    '<TOKEN>', use_context=True)
+
+dispatcher = updater.dispatcher
+dispatcher.add_handler(CommandHandler('start', help_handler))
+dispatcher.add_handler(CommandHandler('aiuto', help_handler))
+dispatcher.add_handler(CommandHandler('nuovo', new_handler))
+dispatcher.add_handler(CommandHandler('avanti', next_question_handler))
+dispatcher.add_handler(CommandHandler('avvia', start_handler))
+dispatcher.add_handler(CommandHandler('partecipo', taking_part_handler))
+dispatcher.add_handler(CommandHandler('termina', stop_handler))
+dispatcher.add_handler(PollAnswerHandler(receive_question_answer))
+updater.start_polling()
+updater.idle()
+```
+
 
 Il primo passo per creare un quiz è quello di dare il comando `/nuovo`, così facendo si innesca l'handler `new_handler`, esso nel caso in cui il comando sia stato lanciato in una chat adeguata, aggiunge la chat alla sessione, inizializzando il conteggio dei round residui a `rounds_left: rounds_count`, lo stato del quiz come `is_started: False` e la possibilità di richiedere le domande come `can_request: False`. Questo perché a questo punto il bot è in attesa che gli utenti diano la loro patecipazione.
 
-```
+```python
 def new_handler(update, context):
 
     chat_id = update.message.chat.id
@@ -445,8 +488,6 @@ def start_handler(update, context):
 
 ```
 
-![avvia](./img/partecipo.png)
-
 Per richiedere la nuova domanda, come già detto, è necessario che tutti i partecipanti al quiz abbiano comunicato la loro risposta, o che comunque lo stato sia in `sessions[chat_id]['can_request'] = True`. A questo punto lo stato passa in `sessions[chat_id]['can_request'] = False`, e viene preparata ed inviata la domanda. 
 
 Di volta in volta il contenuto viene ricavato partendo da una tra le quattro funzioni per la generazione di domande, scelta a caso. I valori restituiti dalle le funzioni sono coerenti tra di loro, e prevedono un testo, delle risposte, l'indice della risposta corretta ed, eventualmente, una immagine. La produzione delle domande verrà approfondita in seguito.
@@ -517,6 +558,9 @@ def stop_handler(update, context):
         update.message.reply_text('Non c\'è nessun quiz in corso 🤔')
 ```
 
+Una volta terminati i round viene stampata la classifica dei partecipanti, con i relativi punteggi.
+![classifica](./img/classifica.png)
+
 ## Generazione delle domande
 
 Come già anticipato, sono state implementate quattro possibili tipi di domanda:
@@ -534,15 +578,90 @@ Nel caso della popolazione, le alternative sono dei valori numerici generati a c
 
 Per tutte le altre alternative vengono forniti dei nomi di nazione ricavati tramite i `related` della nazione della risposta esatta, estraendone tre a caso dall'insieme.
 
-Quiz con mappa geografica:
+Quiz sulle mappe geografiche:
 ![esempio1](./img/avanti1.png)
-Quiz con bandiera del Paese:
+Quiz sulle bandiere:
 ![esempio2](./img/avanti2.png)
-Quiz sull
+Quiz sulla popolazione:
 ![esempio3](./img/popolazione.png)
 
+Telegram permette di impostare una *spiegazione* per ogni domanda del quiz, in un primo momento avevamo pensato di aggiungere la descrizione dell'about di dbpedia per la nazione della risposta corretta, purtroppo il limite nel numero dei caratteri della spiegazione ci ha costretti ad una soluzione più antiestetica, ma anche più funzionale, cioè il link a Wikipedia.
 
-Già dal nostro dataset, estratto così com'è, si potrebbero pensare delle altre possibili domande. Ad esempio per ogni nazione 
+![tip](./img/tip.png)
 
 
-### Funzionamento
+Già dal nostro dataset, estratto così com'è, si potrebbero pensare delle altre possibili domande. Ad esempio per ogni nazione abbiamo il codice unicode relativo all'emoji della propria bandiera, quindi si potrebbe pensare ad una domanda del tipo *Per il nome di una nazione, qual è la sua bandiera?*. Tuttavia abbiamo preferito escluderla perché da una emoji troppo piccola sarebbe stato difficile cogliere le differenze tra bandiere simili come quelle dell'Honduras, Nicaragua ed El Salvador, che di fatto capitano spesso come correlati.
+
+```python
+def question_data():
+    country = countries[random.randrange(countries_count)]
+    options = random_elems(country['related'], options_number)
+    options.append(country['country'])
+    random.shuffle(options)
+    correct_index = options.index(country['country'])
+    options = [get_country_label(o) for o in options]
+    return (country, options, correct_index)
+
+
+def map_question():
+
+    (country, options, correct_index) = question_data()
+    return {
+        'title': 'Qual è la nazione in figura?',
+        'options': options,
+        'correct': correct_index,
+        'explanation': country['wikipedia'],
+        'image': random.choice(country['maps'])
+    }
+
+
+def population_question():
+    (country, options, correct_index) = question_data()
+    population = int(country['population'])
+    options = [population]
+    for i in range(options_number):
+        x = random.randrange(4)
+        if (x == 0):
+            x = 5
+        elif (x == 1):
+            x = 1 / 5
+        elif (x == 2):
+            x = 8
+        elif (x == 3):
+            x = 1 / 8
+        option = round((population + population * (random.random() - 0.5)) * x)
+        options.append(option)
+    random.shuffle(options)
+    correct_index = options.index(population)
+    options = ['{:,}'.format(o).replace(',', '.') for o in options]
+
+    return {
+        'title': country['countryLabel'] + ': a quanto ammonta la sua popolazione?',
+        'options': options,
+        'correct': correct_index,
+        'explanation': country['wikipedia'],
+        'image': None
+    }
+
+
+def country_for_capital_question():
+    (country, options, correct_index) = question_data()
+    return {
+        'title': country['capitalLabel'] + ' è la capitale di quale tra le seguenti nazioni?',
+        'options': options,
+        'correct': correct_index,
+        'explanation': country['wikipedia'],
+        'image': None
+    }
+
+
+def flag_question():
+    (country, options, correct_index) = question_data()
+    return {
+        'title': 'A quale nazione appartiene questa bandiera?',
+        'options': options,
+        'correct': correct_index,
+        'explanation': country['wikipedia'],
+        'image': country['flag']
+    }
+```
