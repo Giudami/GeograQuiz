@@ -3,8 +3,8 @@
 ### GeograQuiz
 
 ​																	**Davide Avellone, matricola:0670611**
-​																	**Michele Sanfilippo, matricola: 0664184**
-​																	**Giuseppe Marino, matricola:0664577**
+																	 **Michele Sanfilippo, matricola: 0664184**
+																	 **Giuseppe Marino, matricola:0664577**
 
 ### **Introduzione**
 
