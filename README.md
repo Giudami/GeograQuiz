@@ -6,8 +6,6 @@
 <p align="right">Davide Avellone, matricola: 0670611 <br> Michele Sanfilippo, matricola: 0664184 <br> Giuseppe Marino, matricola: 0664577</p>
 
 
-[TOC]
-
 
 ## Introduzione
 
