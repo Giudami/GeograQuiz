@@ -1,23 +1,23 @@
 <p style="font-size:40px;text-align:center;font-weight:bold">GeograQuiz</p>
 <p style="font-size:20px;text-align:center;font-weight:bold">Tecniche per la Gestione degli Open Data A.A 2019/2020</p>
 
+
+
 <p align="right">Davide Avellone, matricola: 0670611 <br> Michele Sanfilippo, matricola: 0664184 <br> Giuseppe Marino, matricola: 0664577</p>
+
 
 [TOC]
 
- contenente dati sulle nazioni del mondo sulla base delle informazioni ottenute attraverso Wikidata e DBpedia
 
 ## Introduzione
 
-Il progetto ha come obiettivo lo sviluppo di un bot Telegram in Python, che lavora con un dataset da noi ricavato, per creare in automatico dei quiz geografici ai quali partecipare in compagnia con i propri amici dentro delle chat di gruppo. 
+Il progetto ha come obiettivo lo sviluppo di un bot Telegram in Python che elabora un dataset da noi ricavato, per creare in automatico dei quiz geografici ai quali partecipare in compagnia dei propri amici, dentro le chat di gruppo di Telegram. 
 
-Le basi di conoscenza coinvolte per realizzare il nostro dataset sono state Wikidata e DBpedia. Nello specifico Wikidata è stata la fonte principale, dalla quale abbiamo estrapolato informazioni ed immagini, mentre DBpedia è stata importante per ottenere, partendo da una nazione, un insieme di *correlati*, in altri termini delle nazioni affini, che potessero essere utilizzate come possibili risposte al quiz.
-
-Wikidata mette a disposizione i propri dati con licenza CC0, mentre DBpedia con licenza CC-BY-SA ShareAlike 3.0. Quindi i dati utilizzati da Wikidata sono compatibili con qualsiasi altra licenza, mentre quelli di DBpedia soltanto con licenze CC-BY-SA, motivo per cui il nostro dataset sarà rilasciato con una licenza di tipo CC-BY-SA per mantenere la compatibilità.
+Le basi di conoscenza coinvolte per realizzare il nostro dataset sono state Wikidata e DBpedia. Nello specifico Wikidata è stata la fonte principale, dalla quale abbiamo estrapolato informazioni ed immagini, mentre DBpedia è stata importante per ottenere l'insieme delle nazioni affini, ossia delle alternative che potessero essere utilizzate come possibili risposte al quiz.
 
 ## Dataset
 
-Il dataset è stato realizzato da noi attraverso degli script Python che utilizzano delle query in formato SPARQL, grazie alla libreria SPARQLWrapper, per accedere agli endpoint di Wikidata e DBpedia, rispettivamente `https://query.wikidata.org/sparql` e `https://dbpedia.org/sparql`. Nello specifico abbiamo sfruttato questi endpoint per ottenere le informazioni riguardanti gli stati sovrani del mondo (quindi sono stati esclusi gli ex stati e gli stati non universalmente riconosciuti). Le etichette sono state estratte in italiano, anche se si è pensato di predisporre in futuro dei dataset localizzati in più lingue.
+Il dataset è stato realizzato attraverso degli script Python, tramite questi è stato possibile interrogare gli endpoint di Wikidata e DBpedia. Le interrogazioni in SPARQL sono state possibili grazie alla libreria SPARQLWrapper. Nello specifico abbiamo sfruttato questi endpoint per ottenere le informazioni riguardanti solamente gli stati sovrani, quindi sono stati esclusi gli ex stati e gli stati non riconosciuti. Le etichette sono state estratte in italiano, anche se si è pensato di predisporre in futuro dei dataset localizzati in più lingue.
 
 Le informazioni estratte sono:
 
@@ -59,13 +59,13 @@ WHERE
 } ORDER BY DESC(?linkcount)
 ```
 
-A questo punto siamo in possesso delle nazioni con le loro proprietà. Come già accennato, al fine di ottenere delle alternative coerenti con le risposte corrette dei quiz siamo interessati ad ottenere una lista di nazioni per ogni elemento precedentemente ricavato. Con correlati intendiamo quelle nazioni che più sono simili alla nazione soggetto del quiz. Ad esempio per una domanda che ha come risposta corretta l'Italia vogliamo che le alternative siano "prossime" dal punto di vista concettuale all'Italia (ad esempio la Spagna, la Francia... piuttosto che il Congo, la Corea del Nord...). Si fa notare che non si tratta di semplice vicinanza geografica (per esempio l'Australia è correlata sia a nazioni come la Nuova Zelanda che al Regno Unito).
+A questo punto siamo in possesso delle nazioni con le loro proprietà. Come già accennato, al fine di ottenere delle alternative coerenti con le risposte corrette dei quiz, siamo interessati ad ottenere una lista di nazioni correlate per ogni elemento precedentemente ricavato. Con correlati intendiamo quelle nazioni che più sono simili alla nazione soggetto del quiz. Ad esempio per una domanda che ha come risposta corretta l'Italia vogliamo che le alternative siano "prossime" dal punto di vista concettuale all'Italia (ad esempio la Spagna, la Francia... piuttosto che il Congo, la Corea del Nord...). Si fa notare che non si tratta di semplice vicinanza geografica (per esempio l'Australia è correlata sia a nazioni come la Nuova Zelanda che al Regno Unito).
 
-Per riuscire in ciò abbiamo valutato varie opzioni. Ad esempio abbiamo provato ad estrapolare i correlati come nazioni che condividono molte proprietà rispetto alla nazione considerata su Wikidata, ma questo approccio forniva risultati poco coerenti, infatti nazioni come gli Stati Uniti, Regno Unito e la Corea del Nord risultavano tra i primi risultati quasi sempre. Altro esempio è dato dall'India che risultava essere la seconda nazione più correlata all'Italia.
+Per riuscire in ciò abbiamo valutato varie opzioni. Ad esempio abbiamo provato ad estrapolare i correlati come nazioni che condividono molte proprietà rispetto alla nazione considerata, su Wikidata, ma questo approccio forniva risultati poco coerenti. Infatti nazioni come gli Stati Uniti, Regno Unito e la Corea del Nord risultavano tra i primi risultati quasi sempre. Altro esempio è dato dall'India che risultava essere la seconda nazione più correlata all'Italia.
 
 I risultati migliori sono stati ottenuti ordinando sulla base delle proprietà comuni tra le nazioni in DBpedia, probabilmente le rappresentazioni su questa base di conoscenza sono più affini a quello che noi tendiamo a notare come correlazione importante.  
 
-Il primo passaggio è stato quello di ricavare l'entità corrispondente su DBpedia, sulla base dell'URI Wikidata, per fortuna i dati sono collegati tra le due basi ed il passaggio è risultato molto agevole. Una volta ottenuta la lista degli URI Wikidata ordinata per grado di correlazione, abbiamo estratto solo i primi otto risultati.
+Il primo passaggio è stato quello di ricavare l'entità corrispondente su DBpedia, sulla base dell'URI Wikidata. Grazie al fatto che i dati sono collegati tra le due basi il passaggio è risultato molto agevole. Una volta ottenuta la lista degli URI Wikidata, ordinata per grado di correlazione, abbiamo estratto solo i primi otto risultati.
 
 La query per fare ciò, utilizzata dentro il il file `connection.py`, risulta essere la seguente:
 
@@ -85,10 +85,10 @@ ORDER BY DESC(COUNT(?p))
 LIMIT 8
 ```
 
-**Nota bene**: la query rappresentata è formattata in modo da essere processata in Python, infatti verrà eseguita una volta per nazione, tramite `sparql.setQuery(query.format("<" + result["country"] + ">"))`, per cui di volta in volta `{0}` verrà sostituito con l'URI Wikidata della nazione.
+**Nota bene**: la query rappresentata è formattata in modo da essere processata in Python, verrà eseguita una volta per nazione, tramite `sparql.setQuery(query.format("<" + result["country"] + ">"))`, per cui di volta in volta `{0}` verrà sostituito con l'URI Wikidata della nazione.
 
 
-In un primo momento era stato pensato di fornire, per ogni nazione, anche un insieme di persone famose, e un insieme di posti, edifici e monumenti importanti. Tuttavia questa opzione è stata esclusa, senza ulteriori affinamenti avrebbe reso il gioco troppo difficile, infatti per le nazioni meno famose questi risultati erano praticamente sconosciuti. Si era pensato di includerli proporzionalmente all'importanza della nazione, ma per gli stessi motivi legati al punteggio, questa opzione è stata esclusa (ad esempio pur essendo Van Gogh uno dei pittori più famosi della storia, sarebbe stato escluso perché appartenente al Regno dei Paesi Bassi).
+In un primo momento era stato pensato di fornire, per ogni nazione, anche un insieme di persone famose, e un insieme di posti, edifici e monumenti importanti. Tuttavia questa opzione è stata esclusa, senza ulteriori affinamenti avrebbe reso il gioco troppo difficile, infatti per le nazioni meno famose questi risultati erano praticamente sconosciuti. Si era pensato di includerli in numero proporzionale alla rilevanza della nazione, ma per gli stessi motivi legati al punteggio, questa opzione è stata esclusa (ad esempio pur essendo Van Gogh uno dei pittori più famosi della storia, sarebbe stato escluso perché appartenente al Regno dei Paesi Bassi).
 
 Qui di seguito le query proposte, ma non implementate. Si fa notare che per ottenere le varie entità ordinate per importanza abbiamo utilizzato sia il servizio di Page Rank su DBpedia che i linkcount su Wikidata.
 
@@ -200,7 +200,9 @@ L'output della query è il seguente:
 
 ![photo_2020-07-06_16-16-12](./img/photo_2020-07-06_16-16-12.jpg)
 
+### Licenze
 
+Wikidata mette a disposizione i propri dati con licenza CC0, mentre DBpedia con licenza CC-BY-SA ShareAlike 3.0. Quindi i dati utilizzati da Wikidata sono compatibili con qualsiasi altra licenza, mentre quelli di DBpedia soltanto con licenze CC-BY-SA, motivo per cui il nostro dataset sarà rilasciato con una licenza di tipo CC-BY-SA per mantenere la compatibilità.
 
 ## Pipeline di elaborazione
 
@@ -227,10 +229,7 @@ results["results"]["bindings"][-1]["maps"]["value"] = maps_array
 final_results.append(results["results"]["bindings"][-1])
 ```
 
-Per raggruppare le mappe di un paese in una lista accediamo ai vari campi dell'entità fino ad arrivare alla mappa, e controlliamo se il paese dell'elemento successivo a quello che stiamo analizzando è uguale, e nel caso in cui lo sia aggiungiamo la mappa alla lista delle mappe di quel paese ignorando l'oggetto successivo da cui abbiamo preso la mappa, altrimenti continuiamo la scansione, procedendo allo stesso modo. 
-
-Per quanto riguarda i correlati, essi sono stati aggiunti in un secondo momento, attraverso il seguente script che si trova
-in `connection.py`
+Per raggruppare le mappe di un paese in una lista accediamo ai vari campi dell'entità fino ad arrivare alla mappa, e controlliamo se il paese dell'elemento successivo a quello che stiamo analizzando è uguale, e nel caso in cui lo sia aggiungiamo la mappa alla lista delle mappe di quel paese, ignorando l'oggetto successivo da cui abbiamo preso la mappa, altrimenti continuiamo la scansione, procedendo allo stesso modo. Per quanto riguarda i correlati, essi sono stati aggiunti in un secondo momento, attraverso il seguente script che si trova in `connection.py`
 
 ```python
 #SCRIPT CORRELATI
@@ -246,7 +245,7 @@ for result in final_results:
   related_array = []
 ```
 
-Dato il problema precedente delle mappe, si è deciso di creare direttamente related come lista di paesi correlati. Successivamente è stato necessario filtrare da queste liste gli stati non sovrani o non ricnosciuti, accidentalmente inclusi in quanto ricavati da DBpedia, che ha una rappresentazione leggermente diversa rispetto a Wikidata. Il filtraggio è avvenuto tramite uno script presente nel file `Processing.py`
+Dato il problema precedente delle mappe, si è deciso di creare direttamente related come lista di paesi correlati. Successivamente è stato necessario filtrare da queste liste gli stati non sovrani o non riconosciuti, accidentalmente inclusi in quanto ricavati da DBpedia, che ha una rappresentazione leggermente diversa rispetto a Wikidata. Il filtraggio è avvenuto tramite uno script presente nel file `Processing.py`
 
 ```python
 countries = [c["country"] for c in data]
@@ -315,7 +314,7 @@ for result in final_results:
   result["countryLabel"] = result["countryLabel"]["value"]
 ```
 
-Dopo l'elaborazione in python otteniamo i dati nel seguente formato:
+Dopo l'elaborazione in Python otteniamo i dati nel seguente formato che saranno i dati da noi utilizzati presenti nel file `data.json` :
 
 ```python
 #ESEMPIO JSON NON DECORATO
@@ -338,6 +337,7 @@ Dopo l'elaborazione in python otteniamo i dati nel seguente formato:
     "unicode": "\ud83c\uddef\ud83c\uddf5",
     "capital": "http://www.wikidata.org/entity/Q1490",
     "countryLabel": "Giappone",
+  	"article": "https://it.wikipedia.org/wiki/Giappone",
     "population": "126785797"
   }
 ```
@@ -345,30 +345,32 @@ che saranno i dati da noi utilizzati presenti nel file `data.json`
 
 ## Bot Telegram
 
+
+
 ### Introduzione
 
-Una volta estratte le informazioni di nostro interesse, la cosa da fare è stata predisporre un metodo agevole per generare delle domande, tenere traccia delle risposte date, e poter competere insieme ad i propri amici. A tal proposito la soluzione più rapida ed efficace è stata quella di sviluppare un bot Telegram. L'idea è stata quella di permettere al bot di inviare dei messaggi di tipo quiz all'interno dei gruppi, tenendo il conto delle risposte corrette date dai vari partecipanti. 
+Una volta estratte le informazioni di nostro interesse, la cosa da fare è stata predisporre un metodo agevole per generare delle domande, tenere traccia delle risposte date, e competere insieme ai propri amici. A tal proposito la soluzione più rapida ed efficace è stata quella di sviluppare un bot Telegram. L'idea è stata quella di permettere al bot di inviare dei messaggi di tipo quiz all'interno dei gruppi, tenendo il conto delle risposte corrette date dai vari partecipanti. 
 
 
 ### Libreria
 
-L'API di Telegram può essere utilizzata in un qualsiasi linguaggio di programmazione che supporti le richieste HTTP, in questo caso si è preferito utilizzare il linguaggio Python più la libreria [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot). Questa libreria si installa molto facilemnte tramite il gestore dei pacchetti Pip di Python, e fornisce un wrapper completo per tutte le funzionalità dell'API Telegram.
+L'API di Telegram può essere utilizzata in un qualsiasi linguaggio di programmazione che supporti le richieste HTTP, in questo caso si è preferito utilizzare il linguaggio Python più la libreria [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot). Questa libreria si installa molto facilmente tramite il gestore dei pacchetti Pip di Python, e fornisce un wrapper completo per tutte le funzionalità dell'API Telegram.
 
-per l'installazione basta eseguire da riga di comando: `pip install python-telegram-bot --upgrade`
+Per l'installazione basta eseguire da riga di comando: `pip install python-telegram-bot --upgrade`
 
 
 ### Funzionamento
 
 
-Qui di seguito le variabili globali utili alla comprensione degli snippet di codice:
+Qui di seguito le variabili globali utili alla comprensione dei seguenti snippet di codice:
 
-+ `sessions = {}` tiene conto delle sessioni di gioco
-+ `options_number = 3` rappresenta il numero di opzioni, oltre la corretta, presenti nelle domande
-+ `countries = None` conterrà il dataset una volta caricato il dataset 
-+ `countries_count = 0` conterrà il numero di nazioni dentro il dataset
-+ `index_for_uri = {}`  una volta caricato il dataset conterrà l'indice per un URI, tornerà utile per accedere usando l'URI della nazione come chiave
-+ `quiz_types = 4` rappresenta il numero di domande che sono state implementate
-+ `rounds_count = 10` rappresenta il numero di round per un quiz
++ `sessions = {}` 	tiene conto delle sessioni di gioco
++ `options_number = 3`    rappresenta il numero di opzioni, oltre la corretta, presenti nelle domande
++ `countries = None`     conterrà il dataset una volta caricato il dataset 
++ `countries_count = 0`    conterrà il numero di nazioni dentro il dataset
++ `index_for_uri = {}`     una volta caricato il dataset conterrà l'indice per un URI, tornerà utile per accedere usando l'URI della nazione come chiave
++ `quiz_types = 4`    rappresenta il numero di domande che sono state implementate
++ `rounds_count = 10`    rappresenta il numero di round per un quiz
 
 Il dataset viene caricato ancora prima di istanziare il bot:
 
@@ -382,9 +384,11 @@ with open('./data.json') as input:
         i += 1
 ```
 
-Il bot di fatto viene aggiunto al gruppo come fosse un normale utente, e l'interazione con esso avviene tramite i cosiddetti *comandi*, altro non sono che semplici parole chiave antecedute da uno *slash* che vengono intercettate dal bot non appena si invia un messaggio che le contiene. Inoltre questi comandi vengono resi accessibili tramite un pannello predisposto che rende l'interazione ancora più pratica. 
+Il bot di fatto viene aggiunto al gruppo come fosse un normale utente, e l'interazione con esso avviene tramite i cosiddetti *comandi*. Quest'ultimi altro non sono che semplici parole chiave antecedute da uno *slash*, che vengono intercettate dal bot non appena si invia un messaggio che le contiene. Inoltre questi comandi vengono resi accessibili tramite un pannello predisposto che rende l'interazione ancora più pratica. 
 
-Il bot può mantenere una sessione di gioco per ogni gruppo, per ogni sessione ha una lista dei partecipanti con i relativi punteggi, questa è memorizzata dentro il dizionario `session`. All'avvio del bot esso stampa un messaggio di aiuto contenente una descrizione di tutti i comandi e la sua modalità di funzionamento.
+Il bot può mantenere una sessione di gioco per ogni gruppo e per ogni sessione ha una lista dei partecipanti con i relativi punteggi, questa lista è memorizzata dentro il dizionario `session`. All'avvio del bot esso stampa un messaggio di aiuto contenente una descrizione di tutti i comandi e la sua modalità di funzionamento.
+
+![aiuto](./img/aiuto.png)
 
 Di seguito la dichiarazione e l'assegnazione del bot e dei suoi handler:
 
@@ -428,7 +432,7 @@ def new_handler(update, context):
 
 ![nuovo](./img/nuovo.png)
 
-Per prendere parte al gioco, gli utenti del gruppo devono dare il comando `/partecipo`. Si fa notare che si è preferito definire esplicitamente i partecipanti piuttosto che rendere il quiz aperto direttamente a tutto il gruppo per poter bloccare l'invio di domande successive fino a che tutti gli effettivi interessati al quiz avranno risposto. Una volta che l'utente sarà stato aggiunto alla partita il suo contatore di risposte corrette verrà posto a zero `sessions[chat_id]['participants'][user_id] = 0`.
+Per prendere parte al gioco, gli utenti del gruppo devono dare il comando `/partecipo`. Si fa notare che si è preferito definire esplicitamente i partecipanti piuttosto che rendere il quiz aperto direttamente a tutto il gruppo per poter bloccare l'invio di domande successive fino a che tutti gli effettivi interessati al quiz avranno risposto. Una volta che l'utente sarà stato aggiunto alla partita, il suo contatore di risposte corrette verrà posto a zero `sessions[chat_id]['participants'][user_id] = 0`.
 
 ```
 
@@ -483,7 +487,7 @@ def start_handler(update, context):
 
 Per richiedere la nuova domanda, come già detto, è necessario che tutti i partecipanti al quiz abbiano comunicato la loro risposta, o che comunque lo stato sia in `sessions[chat_id]['can_request'] = True`. A questo punto lo stato passa in `sessions[chat_id]['can_request'] = False`, e viene preparata ed inviata la domanda. 
 
-Di volta in volta il contenuto viene ricavato partendo da una tra le quattro funzioni per la generazione di domande, scelta a caso. I valori restituiti dalle le funzioni sono coerenti tra di loro, e prevedono un testo, delle risposte, l'indice della risposta corretta ed, eventualmente, una immagine. La produzione delle domande verrà approfondita in seguito.
+Di volta in volta il contenuto viene ricavato partendo da una tra le quattro funzioni per la generazione di domande, scelta a caso. I valori restituiti dalle le funzioni sono coerenti tra di loro, e prevedono un testo, delle risposte, l'indice della risposta corretta ed, eventualmente, un'immagine. La produzione delle domande verrà approfondita in seguito.
 
 ```python
 def next_question_handler(update, context):
@@ -556,16 +560,14 @@ Una volta terminati i round viene stampata la classifica dei partecipanti, con i
 
 ### Generazione delle domande
 
-Come già anticipato, sono state implementate quattro possibili tipi di domanda:
+Come già anticipato, sono stati implementati quattro possibili tipi di domanda:
 
 + Popolazione: data una nazione, a quanto ammonta la sua popolazione?
 + Bandiera: data l'immagine di una bandiera, a quale nazione appartiene?
 + Capitale: dato il nome di una capitale, a quale nazione appartiene?
 + Mappa: data l'immagine di una mappa con un territorio evidenziato, di che nazione si tratta?
 
-Il testo della domanda, e l'eventuale immagine, vengono ricavati partendo da una delle nazioni del nostro dataset, estratta a caso.
-
-Per ciascuna di queste domande sono fornite quattro possibili alternative, di cui, naturalmente, solo una è corretta.
+Il testo della domanda, e l'eventuale immagine, vengono ricavati partendo da una delle nazioni del nostro dataset, estratta casualmente. Per ciascuna di queste domande sono fornite quattro possibili alternative, di cui, naturalmente, solo una è corretta.
 
 Nel caso della popolazione, le alternative sono dei valori numerici generati a caso, predisposti in modo tale da discostarsi abbastanza dal valore vero, pur restando all'interno di un intervallo verosimile, così da poter permettere di rispondere senza sapere la cifra con esattezza.
 
@@ -578,7 +580,7 @@ Quiz sulle bandiere:
 Quiz sulla popolazione:
 ![esempio3](./img/popolazione.png)
 
-Telegram permette di impostare una *spiegazione* per ogni domanda del quiz, in un primo momento avevamo pensato di aggiungere la descrizione dell'about di dbpedia per la nazione della risposta corretta, purtroppo il limite nel numero dei caratteri della spiegazione ci ha costretti ad una soluzione più antiestetica, ma anche più funzionale, cioè il link a Wikipedia.
+Telegram permette di impostare una *spiegazione* per ogni domanda del quiz, in un primo momento avevamo pensato di aggiungere la descrizione dell'about di DBpedia per la nazione della risposta corretta, purtroppo il limite nel numero dei caratteri della spiegazione ci ha costretti ad una soluzione differente, anche più funzionale, cioè il link a Wikipedia.
 
 ![tip](./img/tip.png)
 
