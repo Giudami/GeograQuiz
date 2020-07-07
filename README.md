@@ -206,7 +206,7 @@ L'output della query è il seguente:
 
 Come già introdotto, le query sono state eseguite in Python, inoltre dentro gli stressi script sono state svolte le operazioni di affinamento e pulizia in modo da ottenere un file JSON agevolmente utilizzabile dal bot come base di conoscenza.
 
-Per quanto riguarda le mappe geografiche, per alcuni paesi, Wikidata fornisce più risultati e questo si traduce in un record per ogni mappa, L'obiettivo era quello di ottenere piuttosto un array di mappe dentro l'oggetto JSON per la nazione. Pertanto è stato realizzato il seguente script.
+Per quanto riguarda le mappe geografiche, per alcuni paesi, Wikidata fornisce più risultati e questo si traduce in un record per ogni mappa, L'obiettivo era quello di ottenere piuttosto un array di mappe dentro l'oggetto JSON per la nazione. Pertanto è stato realizzato il seguente script che si trova nel file `connection.py`
 
 ```python
 #SCRIPT MAPPE
@@ -229,7 +229,8 @@ final_results.append(results["results"]["bindings"][-1])
 
 Per raggruppare le mappe di un paese in una lista accediamo ai vari campi dell'entità fino ad arrivare alla mappa, e controlliamo se il paese dell'elemento successivo a quello che stiamo analizzando è uguale, e nel caso in cui lo sia aggiungiamo la mappa alla lista delle mappe di quel paese ignorando l'oggetto successivo da cui abbiamo preso la mappa, altrimenti continuiamo la scansione, procedendo allo stesso modo. 
 
-Per quanto riguarda i correlati, essi sono stati aggiunti in un secondo momento, attraverso il seguente script.
+Per quanto riguarda i correlati, essi sono stati aggiunti in un secondo momento, attraverso il seguente script che si trova
+in `connection.py`
 
 ```python
 #SCRIPT CORRELATI
@@ -245,7 +246,7 @@ for result in final_results:
   related_array = []
 ```
 
-Dato il problema precedente delle mappe, si è deciso di creare direttamente related come lista di paesi correlati. Successivamente è stato necessario filtrare da queste liste gli stati non sovrani o non ricnosciuti, accidentalmente inclusi in quanto ricavati da DBpedia, che ha una rappresentazione leggermente diversa rispetto a Wikidata.
+Dato il problema precedente delle mappe, si è deciso di creare direttamente related come lista di paesi correlati. Successivamente è stato necessario filtrare da queste liste gli stati non sovrani o non ricnosciuti, accidentalmente inclusi in quanto ricavati da DBpedia, che ha una rappresentazione leggermente diversa rispetto a Wikidata. Il filtraggio è avvenuto tramite uno script presente nel file `Processing.py`
 
 ```python
 countries = [c["country"] for c in data]
@@ -340,6 +341,7 @@ Dopo l'elaborazione in python otteniamo i dati nel seguente formato:
     "population": "126785797"
   }
 ```
+che saranno i dati da noi utilizzati presenti nel file `data.json`
 
 ## Bot Telegram
 
