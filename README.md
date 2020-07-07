@@ -1,25 +1,22 @@
-## PROGETTO TECNICHE PER LA GESTIONE DEGLI OPEN DATA A.A. 2019/2020
+<p style="font-size:40px;text-align:center;font-weight:bold">GeograQuiz</p>
+<p style="font-size:20px;text-align:center;font-weight:bold">Tecniche per la Gestione degli Open Data A.A 2019/2020</p>
 
-### GeograQuiz
+<p align="right">Davide Avellone, matricola: 0670611 <br> Michele Sanfilippo, matricola: 0664184 <br> Giuseppe Marino, matricola: 0664577</p>
 
-<p align="center">Davide Avellone, matricola: 0670611 <br> Michele Sanfilippo, matricola: 0664184 <br> Giuseppe Marino, matricola: 0664577</p>
+[TOC]
 
-### Introduzione
 
-Il progetto ha come obiettivo quello di creare un dataset riguardante dati geografici sulla base delle informazioni ottenute da Wikidata e DBpedia, e successivamente utilizzare questo dataset come base di conoscenza per un bot Telegram sviluppato in Python. Tale bot sarà utilizzabile soltanto da gruppi Telegram e attraverso i dati ottenuti creerà dei quiz geografici con opportune possibilità di risposta. 
 
-Wikidata mette a disposizione i propri dati con licenza CC0, mentre DBpedia con licenza CC-BY-SA ShareAlike 3.0. Quindi i dati utilizzati da Wikidata sono compatibili con qualsiasi altra licenza, mentre quelli di DBpedia soltanto con licenze CC-BY-SA, a tal proposito il nostro dataset sarà rilasciato con una licenza di tipo CC-BY-SA per mantenere la compatibilità.
+## Introduzione
 
-### Dataset
+Il progetto ha come obiettivo quello di creare un bot Telegram in Python che lavora con un dataset creato da noi contenente dati sulle nazioni del mondo sulla base delle informazioni ottenute attraverso Wikidata e DBpedia. Tale bot sarà utilizzabile soltanto da gruppi Telegram e attraverso delle opportune elaborazioni creerà quiz geografici. 
 
-Il dataset utilizzato è stato opportunamente realizzato da noi ricavando le informazioni da Wikidata e DBpedia attraverso i loro rispettivi endpoint ed utilizzando query in formato SPARQL con la libreria SPARQLWrapper:
+Wikidata mette a disposizione i propri dati con licenza CC0, mentre DBpedia con licenza CC-BY-SA ShareAlike 3.0. Quindi i dati utilizzati da Wikidata sono compatibili con qualsiasi altra licenza, mentre quelli di DBpedia soltanto con licenze CC-BY-SA, motivo per cui il nostro dataset sarà rilasciato con una licenza di tipo CC-BY-SA per mantenere la compatibilità.
 
-```python
-https://query.wikidata.org/sparql 
-https://dbpedia.org/sparql
-```
+## Dataset
 
-Nello specifico abbiamo sfruttato questi endpoint per ottenere informazioni riguardanti i vari Paesi del mondo (dai quali dobbiamo escludere le civiltà antiche o paesi non riconosciuti) : capitale, bandiera, popolazione, superficie, unicode e mappe. I Paesi ottenuti saranno ordinati attraverso un linkcount (che ci permette di capire quali paesi hanno più informazioni e quindi sono più rilevanti) per averli dal più significativo al meno significativo. 
+Il dataset utilizzato è stato opportunamente realizzato da noi ricavando le informazioni da Wikidata e DBpedia attraverso i loro rispettivi endpoint `https://query.wikidata.org/sparql` e `https://dbpedia.org/sparql` ed utilizzando query in formato SPARQL con la libreria SPARQLWrapper.
+Nello specifico abbiamo sfruttato questi endpoint per ottenere informazioni riguardanti i vari Paesi del mondo (dai quali dobbiamo escludere le civiltà antiche o paesi non riconosciuti) tra cui: capitale, bandiera, popolazione, superficie, unicode, mappe... I Paesi ottenuti saranno ordinati attraverso un `linkcount`  (che ci permette di capire quali paesi hanno più informazioni e quindi sono più rilevanti) per averli dal più significativo al meno significativo. 
 La query risulta essere la seguente:
 
 ```SPARQL
@@ -62,15 +59,15 @@ ORDER BY DESC(COUNT(?p))
 LIMIT 8
 ```
 
-In questa query utilizziamo la similarità di DBpedia attraverso  le URI di Wikidata e otteniamo le informazioni dei paesi correlati sotto forma di URI di Wikidata. Viene utilizzato **{0}** poiché il Paese di cui vogliamo i correlati deve variare. Esso prende il proprio valore attraverso: 
+In questa query utilizziamo la similarità di DBpedia attraverso  le URI di Wikidata e otteniamo le informazioni dei paesi correlati sotto forma di URI di Wikidata. Viene utilizzato `{0}` poiché il Paese di cui vogliamo i correlati deve variare. Esso prende il proprio valore attraverso: 
 
 ```python
 sparql.setQuery(query.format("<" + result["country"] + ">"))
 ```
 
-dove **result["country"]** conterrà la URI di Wikidata.
+dove `result["country]"` conterrà la URI di Wikidata.
 
-Allo stesso abbiamo lavorato con la query per ottenere la pagina wikipedia del paese soggetto, la quale viene utilizzata per i suggerimenti nel bot:
+In questo stesso modo abbiamo lavorato con la query per ottenere la pagina wikipedia del paese soggetto, la quale viene utilizzata per i suggerimenti nel bot:
 ```SPARQL
 SELECT ?article WHERE {{
     ?article schema:about {0} .
@@ -81,7 +78,7 @@ SELECT ?article WHERE {{
 }}
 ```
 
-Sono state elaborate anche altre query per ottenere più informazioni riguardanti i Paesi. Ad esempio query per gli scienziati, i politici, gli atleti, gli attori, gli architetti, ecc. e per i luoghi di interesse, come musei, parchi, chiese, stadi, ecc.
+Sono state elaborate anche altre query per ottenere più informazioni riguardanti i Paesi. Ad esempio query per gli scienziati, i politici, gli atleti, gli attori, gli architetti, ecc. e per i luoghi di interesse come musei, parchi, chiese, stadi, ecc.
 
 ```SPARQL
 #CALCIATORI FAMOSI
@@ -130,9 +127,8 @@ ORDER BY DESC (?linkcount)
 LIMIT 200
 ```
 
-Queste query dovevano essere utilizzate per ogni paese, quindi al variare del paese avremmo dovuto ottenere scienziati, calciatori, attori e persone famose in generale relative a quel dato paese ordinate rispetto al linkcount. 
+Queste query dovevano essere utilizzate per ogni paese, quindi al variare del paese avremmo dovuto ottenere scienziati, calciatori, attori e persone famose in generale relative a quel dato paese ordinate rispetto al `linkcount`. 
 Il problema che sorge è che nel caso in cui il paese soggetto sia un Paese poco conosciuto dalla media (ad esempio il Brunei) potrebbe succedere che esso non abbia scienziati o altri personaggi famosi di particolare rilevanza tanto da non essere presenti in Wikidata, ma anche nel caso in cui siano presenti si nota che è difficile, a meno di tirare a sorte, indovinare la risposta esatta. Pertanto è stato ritenuto più opportuno non utilizzare queste query e di conseguenza questi dati non sono stati aggiunti al dataset.
-
 La seguente, invece, è la query per i luoghi di interesse. Si è pensato di far variare i paesi e prendere 12 dei luoghi di interesse più famosi per quel paese. Nell'esempio sotto il paese viene fissato a Spain.
 
 ```SPARQL
@@ -202,11 +198,11 @@ L'output della query è il seguente:
 
 Non abbiamo utilizzato i risultati nel nostro dataset poiché avendo 195 paesi nel caso in cui venga estratto un paese poco conosciuto (il che è molto probabile, perché di questi 195 paesi quelli molto noti dalla media sono una minima parte) non si è in grado di associare il luogo di interesse al paese corretto.
 
-### Pipeline di elaborazione
+## Pipeline di elaborazione
 
 Abbiamo elaborato i dati ottenuti dalle query attraverso degli script in Python, in modo da ottenere dei file JSON utilizzabili dal bot come base di conoscenza. In particolare abbiamo agito sulle mappe e sui correlati di ogni paese. 
 
-Per quanto riguarda le mappe, per alcuni paesi, wikidata ci forniva più di una mappa e questo creava dei conflitti in quanto il paese veniva riconosciuto più volte dato che le informazioni differivano per la mappa, e quindi venivano riconosciuti come paesi diversi. Pertanto abbiamo realizzato uno script che ci ha permesso di raggruppare le mappe differenti per un paese in una lista per la stessa entità piuttosto che per più entità diverse.
+Per quanto riguarda le mappe, per alcuni paesi, Wikidata ci forniva più di una mappa e questo creava dei conflitti in quanto il paese veniva riconosciuto più volte dato che le informazioni differivano per la mappa, e quindi venivano riconosciuti come paesi diversi. Pertanto abbiamo realizzato uno script che ci ha permesso di raggruppare le mappe differenti per un paese in una lista per la stessa entità piuttosto che per più entità diverse.
 
 ```python
 #SCRIPT MAPPE
@@ -561,7 +557,7 @@ def stop_handler(update, context):
 Una volta terminati i round viene stampata la classifica dei partecipanti, con i relativi punteggi.
 ![classifica](./img/classifica.png)
 
-## Generazione delle domande
+### Generazione delle domande
 
 Come già anticipato, sono state implementate quattro possibili tipi di domanda:
 
