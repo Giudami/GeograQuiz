@@ -200,9 +200,13 @@ L'output della query è il seguente:
 
 ![photo_2020-07-06_16-16-12](./img/photo_2020-07-06_16-16-12.jpg)
 
-### Licenze
+
+
+## Licenze
 
 Wikidata mette a disposizione i propri dati con licenza CC0, mentre DBpedia con licenza CC-BY-SA ShareAlike 3.0. Quindi i dati utilizzati da Wikidata sono compatibili con qualsiasi altra licenza, mentre quelli di DBpedia soltanto con licenze CC-BY-SA, motivo per cui il nostro dataset sarà rilasciato con una licenza di tipo CC-BY-SA per mantenere la compatibilità.
+
+
 
 ## Pipeline di elaborazione
 
@@ -314,7 +318,7 @@ for result in final_results:
   result["countryLabel"] = result["countryLabel"]["value"]
 ```
 
-Dopo l'elaborazione in Python otteniamo i dati nel seguente formato che saranno i dati da noi utilizzati presenti nel file `data.json` :
+Dopo l'elaborazione in Python otteniamo i dati nel seguente formato, all'interno del file `data.json` :
 
 ```python
 #ESEMPIO JSON NON DECORATO
@@ -341,11 +345,9 @@ Dopo l'elaborazione in Python otteniamo i dati nel seguente formato che saranno 
     "population": "126785797"
   }
 ```
-che saranno i dati da noi utilizzati presenti nel file `data.json`
+
 
 ## Bot Telegram
-
-
 
 ### Introduzione
 
