@@ -1,10 +1,10 @@
-## PROGETTO OPEN DATA A.A. 2019/2020
+## PROGETTO TECNICHE PER LA GESTIONE DEGLI OPEN DATA A.A. 2019/2020
 
 ### GeograQuiz
 
-​																	**Davide Avellone, 0670611**
-​																	**Michele Sanfilippo, 0664184**
-​																	**Giuseppe Marino, 0664577**
+​																	**Davide Avellone, matricola:0670611**
+​																	**Michele Sanfilippo, matricola: 0664184**
+​																	**Giuseppe Marino, matricola:0664577**
 
 ### **Introduzione**
 
